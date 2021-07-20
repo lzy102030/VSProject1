@@ -107,18 +107,22 @@ public class Choose extends JFrame {
     }
 
     public void launchFrame() {
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.add(jp1);
         this.add(jp2);
         this.add(jp3);
         this.add(jp4);
-        this.setSize(1000, 800);
+
         jp1.setBounds(0, 0, 1000, 600);
 
-        ImageIcon icon1 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\source\\草薙京.jpg");
-        ImageIcon icon2 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\source\\草薙京.jpg");
+        ImageIcon icon1 = new ImageIcon(Objects.requireNonNull(
+                this.getClass().getResource("/client/source/草薙京.jpg")));
+        ImageIcon icon2 = new ImageIcon(Objects.requireNonNull(
+                this.getClass().getResource("/client/source/草薙京.jpg")));
         ImageIcon icon3 = new ImageIcon(Objects.requireNonNull(
                 this.getClass().getResource("/client/source/草薙京.jpg")));
-        ImageIcon icon4 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\source\\草薙京.jpg");
+        ImageIcon icon4 = new ImageIcon(Objects.requireNonNull(
+                this.getClass().getResource("/client/source/草薙京.jpg")));
         icon1.setImage(icon1.getImage().getScaledInstance(this.getWidth() / 4, this.getHeight(), Image.SCALE_DEFAULT));
         icon2.setImage(icon2.getImage().getScaledInstance(this.getWidth() / 4, this.getHeight(), Image.SCALE_DEFAULT));
         icon3.setImage(icon3.getImage().getScaledInstance(this.getWidth() / 4, this.getHeight(), Image.SCALE_DEFAULT));

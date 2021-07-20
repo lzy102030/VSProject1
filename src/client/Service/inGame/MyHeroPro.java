@@ -101,6 +101,26 @@ public class MyHeroPro implements Serializable, Comparable {
         return gameOverFlag;
     }
 
+    public myLinkedList<Image> getWalkImages() {
+        return walkImages;
+    }
+
+    public myLinkedList<Image> getStandImages() {
+        return standImages;
+    }
+
+    public myLinkedList<Image> getAttackImages() {
+        return attackImages;
+    }
+
+    public myLinkedList<Image> getSkillUImages() {
+        return skillUImages;
+    }
+
+    public myLinkedList<Image> getUpImages() {
+        return upImages;
+    }
+
     public void setLoc(int xLoc, int yLoc, int xHead) {
         this.xLoc = xLoc;
         this.yLoc = yLoc;
