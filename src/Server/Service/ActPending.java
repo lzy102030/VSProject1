@@ -1,6 +1,6 @@
 package Server.Service;
 
-import Client.Service.InGame.MyHeroPro;
+import client.Service.inGame.MyHeroPro;
 
 public class ActPending {
     private int actDis = 3, mpAmt = 1;
