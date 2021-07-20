@@ -1,13 +1,14 @@
-tFieldName2,
-            tFieldXLoc2,
-            tFieldYLoc2,
-            tFieldXHead2,
-            tFieldImpactAmt2,
-            tFieldDefendInt2,
-            tFieldDefendAmt2,
-            tFieldFlashDis2,
-            tFieldHp2,
-            tFieldMp2,
-            tFielduserID2,
-            tFieldGameFlag2,
-            tFieldNowCondt2
+tFieldName2.getText().equals("") |
+                tFieldName2.getText().equals("") |
+                tFieldXLoc2.getText().equals("") |
+                tFieldYLoc2.getText().equals("") |
+                tFieldXHead2.getText().equals("") |
+                tFieldImpactAmt2.getText().equals("") |
+                tFieldDefendInt2.getText().equals("") |
+                tFieldDefendAmt2.getText().equals("") |
+                tFieldFlashDis2.getText().equals("") |
+                tFieldHp2.getText().equals("") |
+                tFieldMp2.getText().equals("") |
+                tFielduserID2.getText().equals("") |
+                tFieldGameFlag2.getText().equals("") |
+                tFieldNowCondt2.getText().equals("")
