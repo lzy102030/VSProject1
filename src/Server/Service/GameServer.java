@@ -16,6 +16,7 @@ public class GameServer extends Thread {
     Socket s;
     static int count = 1, port = 2000;
     int clientID;
+    ObjectOutputStream out;
 
     //constructor
     private GameServer(Socket clientSok) {
@@ -30,21 +31,23 @@ public class GameServer extends Thread {
 
         //get the input stream from client
         try {
-            in = new ObjectInputStream(
-                    s.getInputStream());
+            in = new ObjectInputStream(s.getInputStream());
+            out = new ObjectOutputStream(s.getOutputStream());
 
             while (true) {
                 try {
                     if ((hero = in.readObject()) == null) break;
                 } catch (ClassNotFoundException e) {
-                    System.err.println("No Object from socket has been received!");
+                    System.err.println("[ERROR]None Object from socket has been received!");
                     e.printStackTrace();
                 }
+
+                System.out.println("Client #" + clientID + " transferred " + ((MyHeroPro) hero).getName());
 
                 updateHeroList((MyHeroPro) hero);
 
                 /*
-                //hero对象如何处理？
+                //[TODO]hero对象如何处理？
                 //方法#1
                 if (clientID == 1) {
                     actPending.setActPending((MyHeroPro) hero, null);
@@ -54,31 +57,33 @@ public class GameServer extends Thread {
                  */
 
                 //方法#2
-                actPending.setActPending(heroList.get(0), heroList.get(1));
+                if (heroList.size() == 2) {
+                    actPending.setActPending(heroList.get(0), heroList.get(1));
 
-                actPending.actPend();
+                    actPending.actPend();
 
-                //send message to every client
-                sendCondition(hero);
+                    //send message to every client
+                    sendCondition(hero);
 
-                //胜负判定
-                //若为一方胜利则退出循环
-                int winPendFlag = new WinnerPending(
-                        heroList.get(0).getHp(),
-                        heroList.get(1).getHp()).winPending();
-                if (winPendFlag != -1) {
-                    //发送胜负方
-                    if(winPendFlag == 1) {
-                        heroList.get(0).setGameOverFlag(1);
-                        heroList.get(1).setGameOverFlag(2);
-                    } else if (winPendFlag == 2) {
-                        heroList.get(0).setGameOverFlag(2);
-                        heroList.get(1).setGameOverFlag(1);
-                    } else if (winPendFlag == 0) {
-                        heroList.get(0).setGameOverFlag(0);
-                        heroList.get(1).setGameOverFlag(0);
+                    //胜负判定
+                    //若为一方胜利则退出循环
+                    int winPendFlag = new WinnerPending(
+                            heroList.get(0).getHp(),
+                            heroList.get(1).getHp()).winPending();
+                    if (winPendFlag != -1) {
+                        //发送胜负方
+                        if (winPendFlag == 1) {
+                            heroList.get(0).setGameOverFlag(1);
+                            heroList.get(1).setGameOverFlag(2);
+                        } else if (winPendFlag == 2) {
+                            heroList.get(0).setGameOverFlag(2);
+                            heroList.get(1).setGameOverFlag(1);
+                        } else if (winPendFlag == 0) {
+                            heroList.get(0).setGameOverFlag(0);
+                            heroList.get(1).setGameOverFlag(0);
+                        }
+                        break;
                     }
-                    break;
                 }
             }
 
@@ -93,10 +98,8 @@ public class GameServer extends Thread {
     private void updateHeroList(MyHeroPro heroPro) {
         if (heroList.contains(heroPro)) {
             heroList.remove(heroPro);
-            heroList.add(heroPro);
-        } else {
-            heroList.add(heroPro);
         }
+        heroList.add(heroPro);
     }
 
     //send message for every client

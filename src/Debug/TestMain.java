@@ -1,4 +1,4 @@
-package Server.Service;
+package Debug;
 
 import client.Service.inGame.MyHeroPro;
 
@@ -7,7 +7,7 @@ import java.net.Socket;
 
 import static java.lang.Thread.sleep;
 
-public class test {
+public class TestMain {
     static Socket connection;
     static ObjectOutputStream serverOut;
     static ObjectInputStream serverIn;
@@ -16,7 +16,7 @@ public class test {
     public static void main(String[] args) {
         //get connect to the server
         boolean connectFlag = false;
-        while(!connectFlag){
+        while (!connectFlag) {
             try {
                 connection = new Socket("127.0.0.1", 2000);
                 connectFlag = true;
@@ -45,14 +45,21 @@ public class test {
             e.printStackTrace();
         }
 
-
-
+        MyHeroPro hero1 = new MyHeroPro("test1");
+        MyHeroPro hero2 = new MyHeroPro("test2");
+        try {
+            serverOut.writeObject(hero1);
+            serverOut.writeObject(hero2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private static class RemoteReader implements Runnable {
         @Override
         public void run() {
             Object heroReceive = null;
+            /*
             try {
                 while (true) {
                     do {
@@ -68,6 +75,9 @@ public class test {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+
+             */
         }
     }
 }
