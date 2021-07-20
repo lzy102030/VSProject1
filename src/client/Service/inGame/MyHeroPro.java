@@ -1,5 +1,6 @@
 package client.Service.inGame;
 
+import java.awt.*;
 import java.io.Serializable;
 
 public class MyHeroPro implements Serializable, Comparable {
@@ -8,6 +9,11 @@ public class MyHeroPro implements Serializable, Comparable {
     private int xLoc;
     private int yLoc;
     private int xHead;
+    myLinkedList<Image> walkImages;
+    myLinkedList<Image> standImages;
+    myLinkedList<Image> attackImages;
+    myLinkedList<Image> skillUImages;
+    myLinkedList<Image> upImages;
 
     private int impactAmt;
     private int defendInt;
@@ -60,6 +66,12 @@ public class MyHeroPro implements Serializable, Comparable {
         this.flashDis = flashDis;
         this.hp = hp;
         this.mp = mp;
+
+        walkImages = new myLinkedList<>();
+        standImages = new myLinkedList<>();
+        attackImages = new myLinkedList<>();
+        skillUImages = new myLinkedList<>();
+        upImages = new myLinkedList<>();
     }
 
     public String getName() {
