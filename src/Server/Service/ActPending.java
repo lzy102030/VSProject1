@@ -65,6 +65,7 @@ public class ActPending {
 
         int o1DefendAmt = o1.getDefendAmt(), o2DefendAmt = o2.getDefendAmt();
 
+        //[TODO]检查ide报错
         if (o1Condition == 10 && o2Condition == 14) {
             if (o2DefendAmt - o1.getImpactAmt() < 0) {
                 o2.setHp(o2.getHp() - o1.getImpactAmt());

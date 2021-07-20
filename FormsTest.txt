@@ -1,0 +1,13 @@
+tFieldName2,
+            tFieldXLoc2,
+            tFieldYLoc2,
+            tFieldXHead2,
+            tFieldImpactAmt2,
+            tFieldDefendInt2,
+            tFieldDefendAmt2,
+            tFieldFlashDis2,
+            tFieldHp2,
+            tFieldMp2,
+            tFielduserID2,
+            tFieldGameFlag2,
+            tFieldNowCondt2

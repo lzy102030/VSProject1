@@ -1,6 +1,5 @@
 package client.UI.Lobby;
 
-import Server.Service.test;
 import client.Service.inGame.MyHeroPro;
 
 import javax.swing.*;
@@ -63,7 +62,7 @@ public class Choose extends JFrame {
             serverIn = new ObjectInputStream(connection.getInputStream());
             serverOut = new ObjectOutputStream(connection.getOutputStream());
         } catch (IOException e) {
-            System.err.println("[ERROR]Cannot get object from the server.");
+            System.err.println("[ERROR]Cannot get transfer stream from the server.");
             e.printStackTrace();
         }
     }

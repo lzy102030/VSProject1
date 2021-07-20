@@ -1,0 +1,7 @@
+labelNowCondt = new JLabel("NowCondt");
+        labelNowCondt.setForeground(Color.WHITE);
+        labelNowCondt.setFont(new Font("Arial", Font.BOLD, 12));
+        c.gridx = 2;
+        c.gridy = 6;
+        c.insets = new Insets(5, 5, 5, 5);
+        pane.add(labelNowCondt, c);
