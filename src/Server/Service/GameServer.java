@@ -95,7 +95,7 @@ public class GameServer extends Thread {
         }
     }
 
-    private void updateHeroList(MyHeroPro heroPro) {
+    private synchronized void updateHeroList(MyHeroPro heroPro) {
         if (heroList.contains(heroPro)) {
             heroList.remove(heroPro);
         }
@@ -103,7 +103,7 @@ public class GameServer extends Thread {
     }
 
     //send message for every client
-    private void sendCondition(Object o) {
+    private synchronized void sendCondition(Object o) {
         System.out.println(o);
         ObjectOutputStream out;
 

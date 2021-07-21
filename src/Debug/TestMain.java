@@ -13,7 +13,7 @@ public class TestMain {
     static ObjectInputStream serverIn;
     static MyHeroPro hero;
 
-    public static void main(String[] args) {
+    public TestMain() {
         //get connect to the server
         boolean connectFlag = false;
         while (!connectFlag) {
@@ -47,6 +47,7 @@ public class TestMain {
 
         MyHeroPro hero1 = new MyHeroPro("test1");
         MyHeroPro hero2 = new MyHeroPro("test2");
+
         try {
             serverOut.writeObject(hero1);
             serverOut.writeObject(hero2);
@@ -55,11 +56,19 @@ public class TestMain {
         }
     }
 
+    public ObjectInputStream getServerIn() {
+        return serverIn;
+    }
+
+    public ObjectOutputStream getServerOut() {
+        return serverOut;
+    }
+
     private static class RemoteReader implements Runnable {
         @Override
         public void run() {
             Object heroReceive = null;
-            /*
+
             try {
                 while (true) {
                     do {
@@ -75,9 +84,6 @@ public class TestMain {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-
-             */
         }
     }
 }
