@@ -19,16 +19,18 @@ public class Play extends JFrame{
 
     public static void main(String[] args) {
         Play battle = new Play();
+        battle.setResizable(false);
         battle.launchFrame();
         battle.setVisible(true);
-
     }
 
     public void launchFrame(){
-        hero = new role1("chunli",1,1,1,1,1,1,1,1);
+        //hero = new role1("chunli",1,1,1,1,1,1,1,1);
         //myJPanel = new myJPanel(hero);
-        this.setSize(1000, 800);
-        this.add(jp1);
+        this.setSize(900, 500);
+        this.add(new MPanel());
+
+        /*this.add(jp1);
         jp1.add(jl1);
         ImageIcon icon1 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\source\\草薙京.jpg");
         icon1.setImage(icon1.getImage().getScaledInstance(100,100, Image.SCALE_DEFAULT));
@@ -83,7 +85,7 @@ public class Play extends JFrame{
             public void keyReleased(KeyEvent e) {
 
             }
-        });
+        });*/
 
     }
 

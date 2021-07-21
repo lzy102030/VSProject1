@@ -37,7 +37,7 @@ public class Choose extends JFrame {
 
         //网络部分
         //get connect to the server
-        boolean connectFlag = false;
+        /*boolean connectFlag = false;
         while (!connectFlag) {
             try {
                 connection = new Socket(host, port);
@@ -103,7 +103,7 @@ public class Choose extends JFrame {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
     }
 
     public void launchFrame() {
@@ -117,10 +117,10 @@ public class Choose extends JFrame {
 
         jp1.setSize(1000,600);
 
-        ImageIcon icon1 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\source\\草薙京.jpg");
-        ImageIcon icon2 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\source\\草薙京.jpg");
-        ImageIcon icon3 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\source\\草薙京.jpg");
-        ImageIcon icon4 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\source\\草薙京.jpg");
+        ImageIcon icon1 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\草薙京.jpg");
+        ImageIcon icon2 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\不知火舞.jpg");
+        ImageIcon icon3 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\春丽.jpg");
+        ImageIcon icon4 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\八神庵.jpg");
         icon1.setImage(icon1.getImage().getScaledInstance(200, 600, Image.SCALE_DEFAULT));
         icon2.setImage(icon2.getImage().getScaledInstance(200, 600, Image.SCALE_DEFAULT));
         icon3.setImage(icon3.getImage().getScaledInstance(200, 600, Image.SCALE_DEFAULT));
