@@ -82,7 +82,7 @@ public class GameServer extends Thread {
                             heroList.get(0).getHp(),
                             heroList.get(1).getHp()).winPending();
                     if (winPendFlag != -1) {
-                        //发送胜负方
+                        //修改获胜方标记
                         if (winPendFlag == 1) {
                             heroList.get(0).setGameOverFlag(1);
                             heroList.get(1).setGameOverFlag(2);
@@ -93,11 +93,15 @@ public class GameServer extends Thread {
                             heroList.get(0).setGameOverFlag(0);
                             heroList.get(1).setGameOverFlag(0);
                         }
-                        break;
                     }
 
                     //send message to every client
                     sendCondition(heroList);
+
+                    //结束游戏network
+                    if (winPendFlag != -1) {
+                        break;
+                    }
                 }
             }
 
