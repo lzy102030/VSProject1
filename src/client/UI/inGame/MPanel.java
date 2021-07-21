@@ -38,9 +38,9 @@ public class MPanel extends JPanel implements KeyListener {
             roleStand.paintIcon(this, g, xLoc-=50, yLoc);
         }else if(direction == "D"&&yLoc<=250) {
             roleStand.paintIcon(this, g, xLoc, yLoc+=100);
-        }else if(direction == "U"&&yLoc>=200) {//250
-            roleStand.paintIcon(this, g, xLoc, yLoc+=100);
-            System.out.println(yLoc+"落地");
+        }else if(direction == "U"&&yLoc>=250) {//250
+            roleStand.paintIcon(this, g, xLoc, yLoc-=100);
+            //System.out.println(yLoc+"落地");
         }else if(direction == "R"&&xLoc>=790){
             roleStand.paintIcon(this, g, xLoc, yLoc);
         }else if(direction == "L"&&xLoc<=30){
@@ -66,7 +66,8 @@ public class MPanel extends JPanel implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode()==KeyEvent.VK_W){
-            System.out.println(yLoc);
+            direction = "U";
+            /*System.out.println(yLoc);
             direction = "U";
             yLoc-=100;
             repaint();
@@ -77,7 +78,7 @@ public class MPanel extends JPanel implements KeyListener {
                 interruptedException.printStackTrace();
             }
             //repaint();
-            System.out.println(yLoc+"sleep over");
+            System.out.println(yLoc+"sleep over");*/
         }
         if(e.getKeyCode()==KeyEvent.VK_D){
             direction = "R";
