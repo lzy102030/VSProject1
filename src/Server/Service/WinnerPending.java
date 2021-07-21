@@ -13,11 +13,11 @@ public class WinnerPending {
     }
 
     public int winPending() {
-        if (hp1 < 0 && hp2 > 0) {
+        if (hp1 <= 0 && hp2 > 0) {
             return 2; //2胜
-        } else if (hp1 > 0 && hp2 < 0) {
+        } else if (hp1 > 0 && hp2 <= 0) {
             return 1;  //1胜
-        } else if (hp1 < 0 && hp2 < 0) {
+        } else if (hp1 <= 0 && hp2 <= 0) {
             return 0;  //平
         } else {
             return -1;  //未结束
