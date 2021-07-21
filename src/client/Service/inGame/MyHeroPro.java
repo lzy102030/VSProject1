@@ -9,12 +9,16 @@ public class MyHeroPro implements Serializable, Comparable {
     private int xLoc;
     private int yLoc;
     private int xHead;
+/*
     myLinkedList<Image> walkImages;
     myLinkedList<Image> standImages;
     myLinkedList<Image> attackImages;
     myLinkedList<Image> skillUImages;
     myLinkedList<Image> upImages;
 
+
+
+ */
     private int impactAmt;
     private int defendInt;
     private int defendAmt;
@@ -32,9 +36,10 @@ public class MyHeroPro implements Serializable, Comparable {
     public MyHeroPro(String name) {
         this.name = name;
     }
+
     public MyHeroPro(String name, int xLoc, int yLoc, int xHead,
                      int impactAmt, int defendInt, int defendAmt, int flashDis,
-                     int hp, int mp,int userID, int gameOverFlag, int nowCondition) {
+                     int hp, int mp, int userID, int gameOverFlag, int nowCondition) {
         this.name = name;
         this.xLoc = xLoc;
         this.yLoc = yLoc;
@@ -52,7 +57,6 @@ public class MyHeroPro implements Serializable, Comparable {
     //到此
 
 
-
     public MyHeroPro(String name, int xLoc, int yLoc, int xHead,
                      int impactAmt, int defendInt, int flashDis,
                      int hp, int mp) {
@@ -66,12 +70,14 @@ public class MyHeroPro implements Serializable, Comparable {
         this.flashDis = flashDis;
         this.hp = hp;
         this.mp = mp;
-
+/*
         walkImages = new myLinkedList<>();
         standImages = new myLinkedList<>();
         attackImages = new myLinkedList<>();
         skillUImages = new myLinkedList<>();
         upImages = new myLinkedList<>();
+
+ */
     }
 
     public String getName() {
@@ -125,7 +131,7 @@ public class MyHeroPro implements Serializable, Comparable {
     public int isGameOverFlag() {
         return gameOverFlag;
     }
-
+/*
     public myLinkedList<Image> getWalkImages() {
         return walkImages;
     }
@@ -145,6 +151,8 @@ public class MyHeroPro implements Serializable, Comparable {
     public myLinkedList<Image> getUpImages() {
         return upImages;
     }
+
+ */
 
     public void setLoc(int xLoc, int yLoc, int xHead) {
         this.xLoc = xLoc;
@@ -188,7 +196,7 @@ public class MyHeroPro implements Serializable, Comparable {
 
     @Override
     public boolean equals(Object obj) {
-        if(!(obj instanceof MyHeroPro)) {
+        if (!(obj instanceof MyHeroPro)) {
             return false;
         }
 

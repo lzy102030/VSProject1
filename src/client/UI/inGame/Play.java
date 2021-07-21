@@ -46,7 +46,7 @@ public class Play extends JFrame{
             @Override
             public void keyPressed(KeyEvent e) {
                 if(e.getKeyCode()==KeyEvent.VK_W){
-                    hero.getWalkImages();
+                    //hero.getWalkImages();
                     jl1.setBounds(x,y-=10,100,100);
 
                 }
