@@ -1,4 +1,3 @@
-
 package Debug;
 
 import client.Service.inGame.MyHeroPro;
@@ -49,7 +48,7 @@ public class ConsoleUI {
             labeluserID2,
             labelGameFlag2,
             labelNowCondt2;
-    private static JTextField tFieldName1,
+    static JTextField tFieldName1,
             tFieldXLoc1,
             tFieldYLoc1,
             tFieldXHead1,
@@ -87,10 +86,8 @@ public class ConsoleUI {
             Objects.requireNonNull(
                     this.getClass().getResource("/source/bg.jpg")));
 
-    public static void main(String[] args) {
-        new preLoadData();
-
-        clientSim = new TestMain();
+    public ConsoleUI() {
+        clientSim = TestMain.testMain;
 
         try {
             UIManager.setLookAndFeel(
@@ -99,7 +96,7 @@ public class ConsoleUI {
             e.printStackTrace();
         }
 
-        new ConsoleUI();
+        javax.swing.SwingUtilities.invokeLater(this::createAndShowGUI);
     }
 
     private void createAndShowGUI() {
@@ -126,6 +123,8 @@ public class ConsoleUI {
         JPanel imagePanel = (JPanel) frame.getContentPane();
         imagePanel.setOpaque(false);
         frame.getLayeredPane().add(label, Integer.valueOf(Integer.MIN_VALUE));
+
+        new preLoadData();
 
         //Display the window.
         frame.setVisible(true);
@@ -572,7 +571,6 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(storeButton, c);
 
-
         //add action listener
         storeButton.addActionListener(new storeHandler());
         clearButton.addActionListener(new clearHandler());
@@ -582,13 +580,8 @@ public class ConsoleUI {
         frame.setVisible(true);
     }
 
-    public ConsoleUI() {
-        javax.swing.SwingUtilities.invokeLater(this::createAndShowGUI);
-    }
-
     private MyHeroPro hero1Packaged() {
         if (tFieldName1.getText().equals("") |
-                tFieldName1.getText().equals("") |
                 tFieldXLoc1.getText().equals("") |
                 tFieldYLoc1.getText().equals("") |
                 tFieldXHead1.getText().equals("") |
@@ -652,7 +645,7 @@ public class ConsoleUI {
         }
     }
 
-    private static void hero1UnPackage(MyHeroPro hero) {
+    private void hero1UnPackage(MyHeroPro hero) {
         tFieldName1.setText(hero.getName());
         tFieldXLoc1.setText(String.valueOf(hero.getxLoc()));
         tFieldYLoc1.setText(String.valueOf(hero.getyLoc()));
@@ -668,7 +661,7 @@ public class ConsoleUI {
         tFieldNowCondt1.setText(String.valueOf(hero.getNowCondition()));
     }
 
-    private static void hero2UnPackage(MyHeroPro hero) {
+    private void hero2UnPackage(MyHeroPro hero) {
         tFieldName2.setText(hero.getName());
         tFieldXLoc2.setText(String.valueOf(hero.getxLoc()));
         tFieldYLoc2.setText(String.valueOf(hero.getyLoc()));
@@ -731,8 +724,8 @@ public class ConsoleUI {
     }
 
     //pre-load data from the file
-    public static class preLoadData {
-        public preLoadData() {
+    private class preLoadData {
+        private preLoadData() {
             boolean preLoadFlag;
             MyHeroPro hero1 = null, hero2 = null;
 
@@ -746,6 +739,7 @@ public class ConsoleUI {
                 preLoadFlag = true;
             } catch (IOException | ClassNotFoundException e) {
                 preLoadFlag = false;
+                e.printStackTrace();
             }
 
             if (preLoadFlag) {
@@ -759,35 +753,42 @@ public class ConsoleUI {
         }
     }
 
+    //从服务器更新hero数据
+    public void updateHeroInfo(ArrayList<MyHeroPro> heroList) {
+        hero1UnPackage(heroList.get(0));
+        hero2UnPackage(heroList.get(1));
+        System.out.println(heroList.get(0).getName() + " and " + heroList.get(1).getName() + "  in  lenth = " + heroList.size());
+    }
+
     //clear the field
     private void clear() {
-        tFieldName1.setText(null);
-        tFieldXLoc1.setText(null);
-        tFieldYLoc1.setText(null);
-        tFieldXHead1.setText(null);
-        tFieldImpactAmt1.setText(null);
-        tFieldDefendInt1.setText(null);
-        tFieldDefendAmt1.setText(null);
-        tFieldFlashDis1.setText(null);
-        tFieldHp1.setText(null);
-        tFieldMp1.setText(null);
-        tFielduserID1.setText(null);
-        tFieldGameFlag1.setText(null);
-        tFieldNowCondt1.setText(null);
+        tFieldName1.setText("");
+        tFieldXLoc1.setText("");
+        tFieldYLoc1.setText("");
+        tFieldXHead1.setText("");
+        tFieldImpactAmt1.setText("");
+        tFieldDefendInt1.setText("");
+        tFieldDefendAmt1.setText("");
+        tFieldFlashDis1.setText("");
+        tFieldHp1.setText("");
+        tFieldMp1.setText("");
+        tFielduserID1.setText("");
+        tFieldGameFlag1.setText("");
+        tFieldNowCondt1.setText("");
 
-        tFieldName2.setText(null);
-        tFieldXLoc2.setText(null);
-        tFieldYLoc2.setText(null);
-        tFieldXHead2.setText(null);
-        tFieldImpactAmt2.setText(null);
-        tFieldDefendInt2.setText(null);
-        tFieldDefendAmt2.setText(null);
-        tFieldFlashDis2.setText(null);
-        tFieldHp2.setText(null);
-        tFieldMp2.setText(null);
-        tFielduserID2.setText(null);
-        tFieldGameFlag2.setText(null);
-        tFieldNowCondt2.setText(null);
+        tFieldName2.setText("");
+        tFieldXLoc2.setText("");
+        tFieldYLoc2.setText("");
+        tFieldXHead2.setText("");
+        tFieldImpactAmt2.setText("");
+        tFieldDefendInt2.setText("");
+        tFieldDefendAmt2.setText("");
+        tFieldFlashDis2.setText("");
+        tFieldHp2.setText("");
+        tFieldMp2.setText("");
+        tFielduserID2.setText("");
+        tFieldGameFlag2.setText("");
+        tFieldNowCondt2.setText("");
     }
 
     //store the data

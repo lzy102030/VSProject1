@@ -2,6 +2,10 @@ package Server.Service;
 
 import client.Service.inGame.MyHeroPro;
 
+import javax.swing.*;
+
+import static java.lang.Thread.sleep;
+
 public class ActPending {
     private int actDis = 3, mpAmt = 1;
     private MyHeroPro o1, o2;
@@ -16,11 +20,11 @@ public class ActPending {
     }
 
     public void setActPending(MyHeroPro o1, MyHeroPro o2) {
-        if (o1 == null) {
+        if (o1 == null | o2 == null) {
+            JOptionPane.showMessageDialog(null,
+                    "[ERROR]Logical Fatal in List Sorting.");
+        } else  {
             this.o2 = o2;
-        }
-
-        if (o2 == null) {
             this.o1 = o1;
         }
     }

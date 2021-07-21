@@ -4,6 +4,7 @@ import client.Service.inGame.MyHeroPro;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.ArrayList;
 
 import static java.lang.Thread.sleep;
 
@@ -11,7 +12,13 @@ public class TestMain {
     static Socket connection;
     static ObjectOutputStream serverOut;
     static ObjectInputStream serverIn;
-    static MyHeroPro hero;
+    static TestMain testMain;
+    static ConsoleUI consoleUI;
+
+    public static void main(String[] args) {
+        testMain = new TestMain();
+        consoleUI = new ConsoleUI();
+    }
 
     public TestMain() {
         //get connect to the server
@@ -32,19 +39,21 @@ public class TestMain {
             }
         }
 
-        //remote thread start for checking new contents
-        Thread thread = new Thread(new RemoteReader());
-        thread.start();
-
         //get the IO streams
         try {
-            serverIn = new ObjectInputStream(connection.getInputStream());
             serverOut = new ObjectOutputStream(connection.getOutputStream());
+            serverIn = new ObjectInputStream(connection.getInputStream());
         } catch (IOException e) {
             System.err.println("[ERROR]Cannot get file services the server.");
             e.printStackTrace();
         }
 
+        //remote thread start for checking new contents
+        Thread thread = new Thread(new RemoteReader());
+        thread.start();
+
+        /*
+        //basic test
         MyHeroPro hero1 = new MyHeroPro("test1");
         MyHeroPro hero2 = new MyHeroPro("test2");
 
@@ -54,6 +63,8 @@ public class TestMain {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+         */
     }
 
     public ObjectInputStream getServerIn() {
@@ -64,26 +75,29 @@ public class TestMain {
         return serverOut;
     }
 
-    private static class RemoteReader implements Runnable {
+    private class RemoteReader implements Runnable {
         @Override
         public void run() {
-            Object heroReceive = null;
+            ArrayList<MyHeroPro> heroListReceive = null;
 
             try {
                 while (true) {
                     do {
                         try {
-                            heroReceive = serverIn.readObject();
+                            heroListReceive = (ArrayList<MyHeroPro>) serverIn.readObject();
                         } catch (ClassNotFoundException e) {
                             System.err.println("None Object received from server.");
                             e.printStackTrace();
                         }
-                    } while (heroReceive == null);
-                    hero = (MyHeroPro) heroReceive;
+                    } while (heroListReceive == null);
+                    consoleUI.updateHeroInfo(heroListReceive);
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
+
+
+
 }
