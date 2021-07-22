@@ -84,7 +84,7 @@ public class ConsoleUI {
     //init for background
     ImageIcon background = new ImageIcon(
             Objects.requireNonNull(
-                    this.getClass().getResource("/source/bg.jpg")));
+                    this.getClass().getResource("/source/bg" + ((int) (Math.random() * 10) % 2 + 1) + ".jpg")));
 
     public ConsoleUI() {
         clientSim = TestMain.testMain;
@@ -119,7 +119,8 @@ public class ConsoleUI {
 
         //set the background
         JLabel label = new JLabel(background);
-        label.setBounds(0, 0, 828, 500);
+        //label.setBounds(0, 0, 828, 500);
+        label.setBounds(0, 0, background.getIconWidth(), background.getIconHeight());
         JPanel imagePanel = (JPanel) frame.getContentPane();
         imagePanel.setOpaque(false);
         frame.getLayeredPane().add(label, Integer.valueOf(Integer.MIN_VALUE));
@@ -757,7 +758,6 @@ public class ConsoleUI {
     public void updateHeroInfo(ArrayList<MyHeroPro> heroList) {
         hero1UnPackage(heroList.get(0));
         hero2UnPackage(heroList.get(1));
-        System.out.println(heroList.get(0).getName() + " and " + heroList.get(1).getName() + "  in  lenth = " + heroList.size());
     }
 
     //clear the field

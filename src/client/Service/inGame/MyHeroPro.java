@@ -56,28 +56,17 @@ public class MyHeroPro implements Serializable, Comparable {
     }
     //到此
 
-
-    public MyHeroPro(String name, int xLoc, int yLoc, int xHead,
-                     int impactAmt, int defendInt, int flashDis,
-                     int hp, int mp) {
+    public MyHeroPro(String name, int impactAmt, int defendInt, int defendAmt, int flashDis,
+                     int hp, int mp, int gameOverFlag, int nowCondition) {
         this.name = name;
-        this.xLoc = xLoc;
-        this.yLoc = yLoc;
-        this.xHead = xHead;
         this.impactAmt = impactAmt;
         this.defendInt = defendInt;
-        this.defendAmt = this.defendInt;
+        this.defendAmt = defendAmt;
         this.flashDis = flashDis;
         this.hp = hp;
         this.mp = mp;
-/*
-        walkImages = new myLinkedList<>();
-        standImages = new myLinkedList<>();
-        attackImages = new myLinkedList<>();
-        skillUImages = new myLinkedList<>();
-        upImages = new myLinkedList<>();
-
- */
+        this.gameOverFlag = gameOverFlag;
+        this.nowCondition = nowCondition;
     }
 
     public String getName() {

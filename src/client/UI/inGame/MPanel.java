@@ -1,11 +1,17 @@
 package client.UI.inGame;
 
+import client.Service.inGame.DataTransfer;
+import client.Service.inGame.MyHeroPro;
+
 import client.Service.inGame.MyLinkedList;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 import java.util.Objects;
 
 import static java.lang.Thread.sleep;
@@ -19,6 +25,13 @@ public class MPanel extends JPanel implements KeyListener {
 
     int hp=400;
     int mp=200;
+    ObjectOutputStream serverOut;
+    ObjectInputStream serverIn;
+    MyHeroPro hero;
+    ArrayList<MyHeroPro> heroList;
+
+    int hp;
+    int mp;
     int xLoc;
     int yLoc;
     int xHead;
@@ -26,10 +39,18 @@ public class MPanel extends JPanel implements KeyListener {
     String name = "春丽";
     String action = "move";
 
-    public MPanel(){
+    public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro hero, ArrayList<MyHeroPro> heroList) {
+        this.serverOut = serverOut;
+        this.serverIn = serverIn;
+        this.hero = hero;
+        this.heroList = heroList;
+
         initRole();
         this.setFocusable(true);
         this.addKeyListener(this);
+    }
+
+    public MPanel() {
 
     }
 
@@ -95,9 +116,9 @@ public class MPanel extends JPanel implements KeyListener {
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode()==KeyEvent.VK_W){
             direction = "U";
-            /*System.out.println(yLoc); 跳跃问题
+            /*System.out.println(yLoc);
             direction = "U";
-            yLoc-=;
+            yLoc-=100;
             repaint();
             System.out.println(yLoc+"跳");
             try {
@@ -106,8 +127,7 @@ public class MPanel extends JPanel implements KeyListener {
                 interruptedException.printStackTrace();
             }
             //repaint();
-            System.out.println(yLoc+"sleep over");
-            repaint();*/
+            System.out.println(yLoc+"sleep over");*/
         }
         if(e.getKeyCode()==KeyEvent.VK_D){
             direction = "R";
