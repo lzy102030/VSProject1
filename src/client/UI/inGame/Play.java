@@ -9,11 +9,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class Play extends JFrame{
-    JPanel jp1 = new JPanel();
-    JPanel jp2 = new JPanel();
-    JLabel jl1 = new JLabel();
-    JLabel jl2 = new JLabel();
-    MyHeroPro hero;
     int x = 0,y = 0;
     //myJPanel myJPanel;
 

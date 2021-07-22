@@ -2,7 +2,7 @@ package client.Service.inGame;
 
 import java.util.LinkedList;
 
-public class myLinkedList<Image> extends LinkedList<Image> {
+public class MyLinkedList<E> extends LinkedList<E> {
     private int pos = 0;
 
     public int getPos(){
