@@ -23,12 +23,10 @@ public class ChooseUI extends JFrame {
     JButton b4 = new JButton();
 
     static ObjectOutputStream serverOut;
-    static ObjectInputStream serverIn;
-    static ArrayList<MyHeroPro> heroList;
     MyHeroPro hero = null;
 
-    public ChooseUI(ObjectOutputStream objectOutputStream) {
-        serverOut = objectOutputStream;
+    public ChooseUI(ObjectOutputStream serverOut) {
+        ChooseUI.serverOut = serverOut;
 
         launchFrame();
         setVisible(true);

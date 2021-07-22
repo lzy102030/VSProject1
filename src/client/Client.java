@@ -2,6 +2,7 @@ package client;
 
 import client.Service.Lobby.ChooseService;
 import client.Service.inGame.MyHeroPro;
+import client.Service.inGame.MyObjectOutputStream;
 import client.UI.inGame.Play;
 
 import javax.swing.*;

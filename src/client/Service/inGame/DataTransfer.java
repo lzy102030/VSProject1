@@ -3,10 +3,10 @@ package client.Service.inGame;
 import java.io.*;
 
 public class DataTransfer {
-    MyObjectOutputStream oos;
+    ObjectOutputStream oos;
 
     public DataTransfer(ObjectOutputStream oos) {
-        this.oos = (MyObjectOutputStream) oos;
+        this.oos =  oos;
     }
 
     public void sendHero(MyHeroPro hero) {

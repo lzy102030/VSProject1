@@ -15,9 +15,6 @@ public class MyHeroPro implements Serializable, Comparable {
     myLinkedList<Image> attackImages;
     myLinkedList<Image> skillUImages;
     myLinkedList<Image> upImages;
-
-
-
  */
     private int impactAmt;
     private int defendInt;
