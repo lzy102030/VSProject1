@@ -24,7 +24,7 @@ public class ChooseService {
         Thread thread = new Thread(new RemoteReader());
         thread.start();
 
-        chooseUI = new ChooseUI();
+        chooseUI = new ChooseUI(serverOut);
     }
 
     private class RemoteReader implements Runnable {

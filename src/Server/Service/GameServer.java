@@ -31,6 +31,8 @@ public class GameServer extends Thread {
 
         System.out.println("Server started...");
 
+        heroList = new ArrayList<>();
+
         try {
             serverSocket = new ServerSocket(port);
             clientSockets = new ArrayList<>();
@@ -39,7 +41,6 @@ public class GameServer extends Thread {
                 //wait for accept new client
                 Socket s = serverSocket.accept();
                 clientSockets.add(s);
-                heroList = new ArrayList<>();
                 //Once you have a client connection, start the thread and wait for the next connection
                 new GameServer(s).start();
             }
@@ -60,6 +61,16 @@ public class GameServer extends Thread {
             in = new ObjectInputStream(s.getInputStream());
             out = new ObjectOutputStream(s.getOutputStream());
 
+            //[TODO][DEBUG]
+            if (clientID > 2 && sendCount < 2) {
+                try {
+                    sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                sendCondition(heroList);
+            }
+
             while (true) {
                 try {
                     if ((hero = (MyHeroPro) in.readObject()) == null) break;
@@ -68,7 +79,11 @@ public class GameServer extends Thread {
                     e.printStackTrace();
                 }
 
-                hero.setUserID(clientID);
+                //[Tips]服务端判定时间 avg: 2 ms  (max: 4 ms    min: 1 ms)
+
+                if (clientID <= 2) {
+                    hero.setUserID(clientID);
+                }
 
                 if (heroList.size() < 2) {
                     if (clientID == 1) {
@@ -130,9 +145,7 @@ public class GameServer extends Thread {
 
     //更新英雄list，保证同时仅存在一个userID的同一个英雄对象
     private synchronized void updateHeroList(MyHeroPro heroPro) {
-        if (heroList.contains(heroPro)) {
-            heroList.remove(heroPro);
-        }
+        heroList.remove(heroPro);
         heroList.add(heroPro);
         Collections.sort(heroList);
     }

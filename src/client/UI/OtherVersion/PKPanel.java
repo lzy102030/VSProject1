@@ -1,7 +1,6 @@
-package client.UI.inGame;
+package client.UI.OtherVersion;
 
 import client.Service.inGame.MyHeroPro;
-
 import client.Service.inGame.MyLinkedList;
 
 import javax.swing.*;
@@ -13,9 +12,8 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Objects;
 
-import static java.lang.Thread.sleep;
 
-public class MPanel extends JPanel implements KeyListener {
+public class PKPanel extends JPanel implements KeyListener {
 
     ImageIcon roleStand = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\source\\role1\\stand\\春丽_0-08.png");
     ImageIcon backGround = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\背景.jpg");
@@ -35,7 +33,7 @@ public class MPanel extends JPanel implements KeyListener {
     String name = "春丽";
     String action = "move";
 
-    public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro hero, ArrayList<MyHeroPro> heroList) {
+    public PKPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro hero, ArrayList<MyHeroPro> heroList) {
         this.serverOut = serverOut;
         this.serverIn = serverIn;
         //this.hero = hero;
@@ -46,7 +44,7 @@ public class MPanel extends JPanel implements KeyListener {
         this.addKeyListener(this);
     }
 
-    public MPanel() {
+    public PKPanel() {
 
     }
 
@@ -107,6 +105,11 @@ public class MPanel extends JPanel implements KeyListener {
         yLoc = 300;
     }
 
+    public void drawAct(String action) {
+        //Thread thread = new Thread(new );
+
+    }
+
     @Override
     public void keyTyped(KeyEvent e) {
 
@@ -159,18 +162,11 @@ public class MPanel extends JPanel implements KeyListener {
 
     }
 
+
     //调用图片
     private ImageIcon getImage(String name, int nub) {
         ImageIcon turn = new ImageIcon(Objects.requireNonNull(
                 this.getClass().getResource("/client/Source/role1/walk/" + name + action + nub + ".jpg")));
-        /*try {
-            turn = new ImageIcon(ImageIO.read(new File(
-                    "/client/Source/" + name+nub+ ".gif")));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Image image = turn.getImage();*/
-
         return turn;
     }
 }
