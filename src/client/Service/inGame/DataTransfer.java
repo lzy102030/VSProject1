@@ -1,13 +1,12 @@
 package client.Service.inGame;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 public class DataTransfer {
-    ObjectOutputStream oos;
+    MyObjectOutputStream oos;
 
     public DataTransfer(ObjectOutputStream oos) {
-        this.oos = oos;
+        this.oos = (MyObjectOutputStream) oos;
     }
 
     public void sendHero(MyHeroPro hero) {

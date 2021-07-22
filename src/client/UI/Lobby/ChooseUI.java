@@ -1,5 +1,6 @@
 package client.UI.Lobby;
 
+import client.Client;
 import client.Service.inGame.DataTransfer;
 import client.Service.inGame.MyHeroPro;
 import client.UI.inGame.Play;
@@ -13,7 +14,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Choose extends JFrame {
+public class ChooseUI extends JFrame {
     JPanel jp1 = new JPanel();
     JLabel title = new JLabel();
     JButton b1 = new JButton();
@@ -21,56 +22,14 @@ public class Choose extends JFrame {
     JButton b3 = new JButton();
     JButton b4 = new JButton();
 
-    Socket connection;
     static ObjectOutputStream serverOut;
     static ObjectInputStream serverIn;
     static ArrayList<MyHeroPro> heroList;
-    static String host = "127.0.0.1";
-    static int port = 2000;
+    MyHeroPro hero = null;
 
-    public Choose(Socket connection) {
-        this.connection = connection;
-
-        //get the IO streams
-        try {
-            serverOut = new ObjectOutputStream(connection.getOutputStream());
-            serverIn = new ObjectInputStream(connection.getInputStream());
-        } catch (IOException e) {
-            System.err.println("[ERROR]Cannot get transfer stream from the server.");
-            e.printStackTrace();
-        }
-
-        //remote thread start for checking new contents
-        Thread thread = new Thread(new Choose.RemoteReader());
-        thread.start();
-
+    public ChooseUI() {
         launchFrame();
         setVisible(true);
-    }
-
-    private class RemoteReader implements Runnable {
-        @Override
-        public void run() {
-            Object heroListReceive = null;
-            try {
-                while (true) {
-                    //当接收到herolist 代表双方均完成选人
-                    do {
-                        try {
-                            heroListReceive = serverIn.readObject();
-                        } catch (ClassNotFoundException e) {
-                            System.err.println("None Object received from server.");
-                            e.printStackTrace();
-                        }
-                    } while (heroListReceive == null);
-                    heroList = (ArrayList<MyHeroPro>) heroListReceive;
-                    callForGame();
-                    break;
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
     }
 
     private void launchFrame() {
@@ -116,8 +75,8 @@ public class Choose extends JFrame {
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new DataTransfer(serverOut).sendHero(
-                        new MyHeroPro("草薙京", 10, 50, 50, 5, 100, 0, -1, 0));
+                hero = new MyHeroPro("草薙京", 10, 50, 50, 5, 100, 0, -1, 0);
+                new DataTransfer(serverOut).sendHero(hero);
                 waitForGame();
             }
         });
@@ -125,8 +84,8 @@ public class Choose extends JFrame {
         b2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new DataTransfer(serverOut).sendHero(
-                        new MyHeroPro("不知火舞", 10, 50, 50, 5, 100, 0, -1, 0));
+                hero = new MyHeroPro("不知火舞", 10, 50, 50, 5, 100, 0, -1, 0);
+                new DataTransfer(serverOut).sendHero(hero);
                 waitForGame();
             }
         });
@@ -134,8 +93,8 @@ public class Choose extends JFrame {
         b3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new DataTransfer(serverOut).sendHero(
-                        new MyHeroPro("春丽", 10, 50, 50, 5, 100, 0, -1, 0));
+                hero = new MyHeroPro("春丽", 10, 50, 50, 5, 100, 0, -1, 0);
+                new DataTransfer(serverOut).sendHero(hero);
                 waitForGame();
             }
         });
@@ -143,8 +102,8 @@ public class Choose extends JFrame {
         b4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new DataTransfer(serverOut).sendHero(
-                        new MyHeroPro("八神庵", 10, 50, 50, 5, 100, 0, -1, 0));
+                hero = new MyHeroPro("八神庵", 10, 50, 50, 5, 100, 0, -1, 0);
+                new DataTransfer(serverOut).sendHero(hero);
                 waitForGame();
             }
         });
@@ -155,7 +114,7 @@ public class Choose extends JFrame {
         setVisible(false);
         Container pane = this.getContentPane();
         pane.removeAll();
-        setSize(400,200);
+        setSize(400, 200);
         pane.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
         c.fill = GridBagConstraints.HORIZONTAL;
@@ -173,8 +132,8 @@ public class Choose extends JFrame {
         setVisible(true);
     }
 
-    private void callForGame() {
+    public void callForGame() {
         dispose();
-        new Play(serverOut);
+        Client.callForGame(hero);
     }
 }

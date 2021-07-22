@@ -1,23 +1,33 @@
 package client.UI.inGame;
 
 import client.Service.inGame.MyHeroPro;
-import client.Service.inGame.role1;
 
 import javax.swing.*;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 
-public class Play extends JFrame{
+public class Play extends JFrame {
     JPanel jp1 = new JPanel();
     JPanel jp2 = new JPanel();
     JLabel jl1 = new JLabel();
     JLabel jl2 = new JLabel();
     MyHeroPro hero;
+    ArrayList<MyHeroPro> heroList;
     ObjectOutputStream serverOut;
-    int x = 0,y = 0;
+    ObjectInputStream serverIn;
+    int x = 0, y = 0;
     //myJPanel myJPanel;
 
-    public Play() {
+    public Play(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro hero, ArrayList<MyHeroPro> heroList) {
+        this.serverOut = serverOut;
+        this.serverIn = serverIn;
+        this.hero = hero;
+        this.heroList = heroList;
 
+        setResizable(false);
+        launchFrame();
+        setVisible(true);
     }
 
     public Play(ObjectOutputStream serverOut) {
@@ -38,11 +48,11 @@ public class Play extends JFrame{
          */
     }
 
-    public void launchFrame(){
+    public void launchFrame() {
         //hero = new role1("chunli",1,1,1,1,1,1,1,1);
         //myJPanel = new myJPanel(hero);
         this.setSize(900, 500);
-        this.add(new MPanel(serverOut));
+        this.add(new MPanel(serverOut, serverIn, hero, heroList));
 
         /*this.add(jp1);
         jp1.add(jl1);

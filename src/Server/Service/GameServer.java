@@ -1,6 +1,7 @@
 package Server.Service;
 
 import client.Service.inGame.MyHeroPro;
+import client.Service.inGame.MyObjectOutputStream;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -144,29 +145,13 @@ public class GameServer extends Thread {
         //use arraylist for the clients stored
         for (Socket clientSocket : clientSockets) {
             try {
-                if (sendCount < 0) {
-                    out = new ObjectOutputStream(
-                            clientSocket.getOutputStream());
-                    out.writeObject(heroList);
-                } else {
-                    out = new MyObjectOutputStream(
-                            clientSocket.getOutputStream());
-                    out.writeObject(heroList);
-                }
+                out = new MyObjectOutputStream(
+                        clientSocket.getOutputStream());
+                out.writeObject(heroList);
             } catch (IOException e) {
                 e.printStackTrace();
             }
             sendCount++;
-        }
-    }
-
-    class MyObjectOutputStream extends ObjectOutputStream {
-
-        public MyObjectOutputStream(OutputStream out) throws IOException {
-            super(out);
-        }
-
-        public void writeStreamHeader() {
         }
     }
 }
