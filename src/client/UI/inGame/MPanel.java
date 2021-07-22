@@ -1,13 +1,20 @@
 package client.UI.inGame;
 
+import client.Service.inGame.DataTransfer;
+import client.Service.inGame.MyHeroPro;
+import client.UI.Lobby.Choose;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.ObjectOutputStream;
+import java.nio.file.attribute.PosixFileAttributes;
 
 import static java.lang.Thread.sleep;
 
 public class MPanel extends JPanel implements KeyListener {
+    ObjectOutputStream serverOut;
 
     ImageIcon roleStand = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\source\\role1\\stand\\春丽_0-08.png");
     ImageIcon backGround = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\背景.jpg");
@@ -20,10 +27,16 @@ public class MPanel extends JPanel implements KeyListener {
     int xHead;
     String direction = "R";
 
-    public MPanel(){
+    public MPanel(ObjectOutputStream serverOut) {
+        this.serverOut = serverOut;
+
         initRole();
         this.setFocusable(true);
         this.addKeyListener(this);
+    }
+
+    public MPanel(){
+
 
     }
 
@@ -56,6 +69,7 @@ public class MPanel extends JPanel implements KeyListener {
     public void initRole(){
         xLoc = 50;
         yLoc = 300;
+
     }
 
     @Override
@@ -82,12 +96,14 @@ public class MPanel extends JPanel implements KeyListener {
         }
         if(e.getKeyCode()==KeyEvent.VK_D){
             direction = "R";
+            xHead = 1;
         }
         if(e.getKeyCode()==KeyEvent.VK_S){
             direction = "D";
         }
         if(e.getKeyCode()==KeyEvent.VK_A){
             direction = "L";
+            xHead = 0;
         }
         //攻击
         if(e.getKeyCode()==KeyEvent.VK_J){
@@ -102,6 +118,7 @@ public class MPanel extends JPanel implements KeyListener {
 
         }
         repaint();
+        new DataTransfer(serverOut).sendHero(new MyHeroPro("123"));
 
     }
 

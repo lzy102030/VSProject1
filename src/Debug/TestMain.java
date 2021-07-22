@@ -51,20 +51,6 @@ public class TestMain {
         //remote thread start for checking new contents
         Thread thread = new Thread(new RemoteReader());
         thread.start();
-
-        /*
-        //basic test
-        MyHeroPro hero1 = new MyHeroPro("test1");
-        MyHeroPro hero2 = new MyHeroPro("test2");
-
-        try {
-            serverOut.writeObject(hero1);
-            serverOut.writeObject(hero2);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-         */
     }
 
     public ObjectInputStream getServerIn() {
@@ -97,7 +83,4 @@ public class TestMain {
             }
         }
     }
-
-
-
 }

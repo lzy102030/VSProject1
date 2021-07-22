@@ -15,6 +15,8 @@ public class GameServer extends Thread {
     Socket s;
     static int count = 1, port = 2000;
     int clientID, sendCount = 0;
+    int x1Loc = 50, y1Loc = 300, x1Head = 1;
+    int x2Loc = 700, y2Loc = 300, x2Head = 0;
     ObjectOutputStream out;
 
     //constructor
@@ -50,7 +52,7 @@ public class GameServer extends Thread {
 
     public void run() {
         ObjectInputStream in;
-        Object hero = null;
+        MyHeroPro hero = null;
 
         //get the input stream from client
         try {
@@ -59,16 +61,28 @@ public class GameServer extends Thread {
 
             while (true) {
                 try {
-                    if ((hero = in.readObject()) == null) break;
+                    if ((hero = (MyHeroPro) in.readObject()) == null) break;
                 } catch (ClassNotFoundException e) {
                     System.err.println("[ERROR]None Object from socket has been received!");
                     e.printStackTrace();
                 }
 
-                System.out.println("Client #" + clientID + " transferred " + ((MyHeroPro) hero).getName());
+                hero.setUserID(clientID);
 
-                updateHeroList((MyHeroPro) hero);
+                if (heroList.size() < 2) {
+                    if (clientID == 1) {
+                        hero.setLoc(x1Loc, y1Loc, x1Head);
+                    } else if (clientID == 2) {
+                        hero.setLoc(x2Loc, y2Loc, x2Head);
+                    }
+                }
+
+                updateHeroList(hero);
+
+                //[DEBUG Output]
+                System.out.println("Client #" + clientID + " transferred " + hero.getName());
                 System.out.println("Now Hero number:" + heroList.size());
+                //[End]
 
                 //动作act判定是否生效
                 if (heroList.size() == 2) {
@@ -152,8 +166,7 @@ public class GameServer extends Thread {
             super(out);
         }
 
-        public void writeStreamHeader() throws IOException {
-            return;
+        public void writeStreamHeader() {
         }
     }
 }

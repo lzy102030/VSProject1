@@ -1,6 +1,8 @@
 package client.UI.Lobby;
 
+import client.Service.inGame.DataTransfer;
 import client.Service.inGame.MyHeroPro;
+import client.UI.inGame.Play;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,119 +10,91 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.Objects;
-
-import static java.lang.Thread.sleep;
 
 public class Choose extends JFrame {
     JPanel jp1 = new JPanel();
-    JPanel jp2 = new JPanel();
-    JPanel jp3 = new JPanel();
-    JPanel jp4 = new JPanel();
     JLabel title = new JLabel();
     JButton b1 = new JButton();
     JButton b2 = new JButton();
     JButton b3 = new JButton();
     JButton b4 = new JButton();
 
-    static Socket connection;
+    Socket connection;
     static ObjectOutputStream serverOut;
     static ObjectInputStream serverIn;
-    static MyHeroPro hero;
+    static ArrayList<MyHeroPro> heroList;
     static String host = "127.0.0.1";
     static int port = 2000;
 
-    public static void main(String[] args) {
-        Choose choose = new Choose();
-        choose.launchFrame();
-        choose.setVisible(true);
+    public Choose(Socket connection) {
+        this.connection = connection;
 
-        //网络部分
-        //get connect to the server
-        /*boolean connectFlag = false;
-        while (!connectFlag) {
-            try {
-                connection = new Socket(host, port);
-                connectFlag = true;
-            } catch (IOException e) {
-                //while connect failed, 10 sec for retry
-                System.err.println("[ERROR]Cannot connect to the server. 10 seconds to retry.");
-                connectFlag = false;
-                try {
-                    sleep(10000);
-                } catch (InterruptedException e1) {
-                    e1.printStackTrace();
-                }
-            }
+        //get the IO streams
+        try {
+            serverOut = new ObjectOutputStream(connection.getOutputStream());
+            serverIn = new ObjectInputStream(connection.getInputStream());
+        } catch (IOException e) {
+            System.err.println("[ERROR]Cannot get transfer stream from the server.");
+            e.printStackTrace();
         }
 
         //remote thread start for checking new contents
         Thread thread = new Thread(new Choose.RemoteReader());
         thread.start();
 
-        //get the IO streams
-        try {
-            serverIn = new ObjectInputStream(connection.getInputStream());
-            serverOut = new ObjectOutputStream(connection.getOutputStream());
-        } catch (IOException e) {
-            System.err.println("[ERROR]Cannot get transfer stream from the server.");
-            e.printStackTrace();
-        }
+        launchFrame();
+        setVisible(true);
     }
 
-    private static class RemoteReader implements Runnable {
+    private class RemoteReader implements Runnable {
         @Override
         public void run() {
-            Object heroReceive = null;
+            Object heroListReceive = null;
             try {
                 while (true) {
-                    //1号玩家英雄信息
+                    //当接收到herolist 代表双方均完成选人
                     do {
                         try {
-                            heroReceive = serverIn.readObject();
+                            heroListReceive = serverIn.readObject();
                         } catch (ClassNotFoundException e) {
                             System.err.println("None Object received from server.");
                             e.printStackTrace();
                         }
-                    } while (heroReceive == null);
-                    hero = (MyHeroPro) heroReceive;
-
-                    //[TODO]接下来显示等处理
-
-                    //2号玩家英雄信息
-                    do {
-                        try {
-                            heroReceive = serverIn.readObject();
-                        } catch (ClassNotFoundException e) {
-                            System.err.println("None Object received from server.");
-                            e.printStackTrace();
-                        }
-                    } while (heroReceive == null);
-                    hero = (MyHeroPro) heroReceive;
-
-                    //[TODO]接下来显示等处理
+                    } while (heroListReceive == null);
+                    heroList = (ArrayList<MyHeroPro>) heroListReceive;
+                    callForGame();
+                    break;
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }*/
+        }
     }
 
-    public void launchFrame() {
+    private void launchFrame() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(1100,750);
-        this.add(title,BorderLayout.NORTH);
-        this.add(jp1,BorderLayout.SOUTH);
-        /*this.add(jp2);
+        this.setSize(1100, 750);
+        this.setResizable(false);
+        this.add(title, BorderLayout.NORTH);
+        this.add(jp1, BorderLayout.SOUTH);
+        /*
+        this.add(jp2);
         this.add(jp3);
-        this.add(jp4);*/
+        this.add(jp4);
+        */
 
-        jp1.setSize(1000,600);
+        jp1.setSize(1000, 600);
 
-        ImageIcon icon1 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\草薙京.jpg");
-        ImageIcon icon2 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\不知火舞.jpg");
-        ImageIcon icon3 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\春丽.jpg");
-        ImageIcon icon4 = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\八神庵.jpg");
+        ImageIcon icon1 = new ImageIcon(Objects.requireNonNull(
+                this.getClass().getResource("/client/Source/草薙京.jpg")));
+        ImageIcon icon2 = new ImageIcon(Objects.requireNonNull(
+                this.getClass().getResource("/client/Source/不知火舞.jpg")));
+        ImageIcon icon3 = new ImageIcon(Objects.requireNonNull(
+                this.getClass().getResource("/client/Source/春丽.jpg")));
+        ImageIcon icon4 = new ImageIcon(Objects.requireNonNull(
+                this.getClass().getResource("/client/Source/八神庵.jpg")));
         icon1.setImage(icon1.getImage().getScaledInstance(200, 600, Image.SCALE_DEFAULT));
         icon2.setImage(icon2.getImage().getScaledInstance(200, 600, Image.SCALE_DEFAULT));
         icon3.setImage(icon3.getImage().getScaledInstance(200, 600, Image.SCALE_DEFAULT));
@@ -136,36 +110,71 @@ public class Choose extends JFrame {
 
         title.setFont(new Font("楷体", Font.BOLD, 40));
         title.setHorizontalAlignment(SwingConstants.CENTER);
-        title.setSize(1000,100);
+        title.setSize(1000, 100);
         title.setText("请选择英雄");
 
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                new DataTransfer(serverOut).sendHero(
+                        new MyHeroPro("草薙京", 10, 50, 50, 5, 100, 0, -1, 0));
+                waitForGame();
             }
         });
 
         b2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                new DataTransfer(serverOut).sendHero(
+                        new MyHeroPro("不知火舞", 10, 50, 50, 5, 100, 0, -1, 0));
+                waitForGame();
             }
         });
 
         b3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                new DataTransfer(serverOut).sendHero(
+                        new MyHeroPro("春丽", 10, 50, 50, 5, 100, 0, -1, 0));
+                waitForGame();
             }
         });
 
         b4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                new DataTransfer(serverOut).sendHero(
+                        new MyHeroPro("八神庵", 10, 50, 50, 5, 100, 0, -1, 0));
+                waitForGame();
             }
         });
 
+    }
+
+    private void waitForGame() {
+        setVisible(false);
+        Container pane = this.getContentPane();
+        pane.removeAll();
+        setSize(400,200);
+        pane.setLayout(new GridBagLayout());
+        GridBagConstraints c = new GridBagConstraints();
+        c.fill = GridBagConstraints.HORIZONTAL;
+
+        JLabel title = new JLabel("等待进入游戏", JLabel.CENTER);
+        title.setFont(new Font("黑体", Font.BOLD, 30));
+        title.setForeground(Color.BLACK);
+        c.gridx = 0;
+        c.gridy = 0;
+        c.gridwidth = 4;
+        c.gridheight = 2;
+        c.insets = new Insets(10, 10, 10, 10);
+        pane.add(title, c);
+
+        setVisible(true);
+    }
+
+    private void callForGame() {
+        dispose();
+        new Play(serverOut);
     }
 }
