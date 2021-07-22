@@ -30,8 +30,6 @@ public class MPanel extends JPanel implements KeyListener {
     MyHeroPro hero;
     ArrayList<MyHeroPro> heroList;
 
-    int hp;
-    int mp;
     int xLoc;
     int yLoc;
     int xHead;
