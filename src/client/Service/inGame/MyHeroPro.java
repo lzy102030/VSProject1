@@ -30,7 +30,7 @@ public class MyHeroPro implements Serializable, Comparable {
     private int userID = -1;  //-1未选中，选中后更改为对应的用户id
     private int gameOverFlag = -1; //-1未结束，0平手，1胜利，2失败
 
-    private int nowCondition; //0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击, 14脸防御，15 16 17受击, 20无敌
+    private int nowCondition; //0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击,12技能， 14脸防御，15 16 17受击, 20无敌
 
     //[DEBUG]debug用构造器 以下两个都是
     public MyHeroPro(String name) {

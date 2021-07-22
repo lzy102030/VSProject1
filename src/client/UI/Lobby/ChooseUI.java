@@ -27,7 +27,9 @@ public class ChooseUI extends JFrame {
     static ArrayList<MyHeroPro> heroList;
     MyHeroPro hero = null;
 
-    public ChooseUI() {
+    public ChooseUI(ObjectOutputStream objectOutputStream) {
+        serverOut = objectOutputStream;
+
         launchFrame();
         setVisible(true);
     }

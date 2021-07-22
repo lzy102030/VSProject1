@@ -7,6 +7,8 @@ import client.Service.inGame.MyLinkedList;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.ObjectInputStream;
@@ -16,8 +18,7 @@ import java.util.Objects;
 
 import static java.lang.Thread.sleep;
 
-public class MPanel extends JPanel implements KeyListener {
-
+public class MPanel extends JPanel implements KeyListener{
     ImageIcon roleStand = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\source\\role1\\stand\\春丽_0-08.png");
     ImageIcon backGround = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\背景.jpg");
     Image back = backGround.getImage();
@@ -29,10 +30,12 @@ public class MPanel extends JPanel implements KeyListener {
     ObjectInputStream serverIn;
     MyHeroPro hero;
     ArrayList<MyHeroPro> heroList;
+    BattleThread thread;
 
     int xLoc;
     int yLoc;
     int xHead;
+    int act;
     String direction = "R";
     String name = "春丽";
     String action = "move";
@@ -46,6 +49,8 @@ public class MPanel extends JPanel implements KeyListener {
         initRole();
         this.setFocusable(true);
         this.addKeyListener(this);
+        thread = new BattleThread(this);
+        thread.start();
     }
 
     public MPanel() {
@@ -54,18 +59,23 @@ public class MPanel extends JPanel implements KeyListener {
 
     public void paintComponent(Graphics g) {
         //把照片读入list
-        /*for(int i = 1;i<12;i++){
+        for(int i = 0;i<4;i++){
             images.add(new ImageIcon(Objects.requireNonNull(
-                    this.getClass().getResource("/client/Source/role1/walk/" + name + action + i + ".png"))));
-        }*/
+                    this.getClass().getResource("/client/Source/role1/" + name + action + i + ".jpg"))));
+        }
         super.paintComponent(g);
-        //this.setBackground(Color.WHITE);
+        //Image image = roleStand.getImage();
+
         g.drawImage(back,0,0,this.getWidth(),this.getHeight(),this);
         g.setColor(Color.red);
         g.fillRect(0,0,hp,20);//血条
         g.setColor(Color.blue);
         g.fillRect(0,21,mp,20);//怒气条
 
+        if(direction!=null){
+            direction = null;
+        }
+        roleStand.paintIcon(this, g, xLoc, yLoc);
         if(direction == "R"&&xLoc<=790) {
             roleStand.paintIcon(this, g, xLoc+=50, yLoc);
             xHead = 1;
@@ -84,7 +94,7 @@ public class MPanel extends JPanel implements KeyListener {
             xHead = 0;
         }else if(direction == "D"&&yLoc<=250) {
             roleStand.paintIcon(this, g, xLoc, yLoc+=100);
-        }else if(direction == "U"&&yLoc>=250) {//250
+        }else if(direction == "U"&&yLoc>=250) {
             roleStand.paintIcon(this, g, xLoc, yLoc-=100);
         }else if(direction == "R"&&xLoc>=790){
             roleStand.paintIcon(this, g, xLoc, yLoc);
@@ -114,6 +124,7 @@ public class MPanel extends JPanel implements KeyListener {
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode()==KeyEvent.VK_W){
             direction = "U";
+            //System.out.println(111);
             /*System.out.println(yLoc);
             direction = "U";
             yLoc-=100;
@@ -136,17 +147,21 @@ public class MPanel extends JPanel implements KeyListener {
         if(e.getKeyCode()==KeyEvent.VK_A){
             direction = "L";
         }
-        //攻击
+        //拳攻击
         if(e.getKeyCode()==KeyEvent.VK_J){
-
+            act = 10;
+        }
+        //脚攻击
+        if(e.getKeyCode()==KeyEvent.VK_U){
+            act = 11;
         }
         //防御
         if(e.getKeyCode()==KeyEvent.VK_K){
-
+            act = 14;
         }
         //技能
         if(e.getKeyCode()==KeyEvent.VK_A){
-
+            act = 12;
         }
         repaint();
 
@@ -157,9 +172,9 @@ public class MPanel extends JPanel implements KeyListener {
 
     }
     //调用图片
-    private ImageIcon getImage(String name,int nub){
-        ImageIcon turn = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/Source/role1/walk/" + name + action + nub + ".jpg")));
+    private ImageIcon getImage(String name,int numb){
+        ImageIcon turn = new ImageIcon();
+        turn = images.get(numb);
         /*try {
             turn = new ImageIcon(ImageIO.read(new File(
                     "/client/Source/" + name+nub+ ".gif")));
@@ -170,4 +185,5 @@ public class MPanel extends JPanel implements KeyListener {
 
         return turn;
     }
+
 }
