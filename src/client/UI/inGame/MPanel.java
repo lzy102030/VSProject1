@@ -107,15 +107,32 @@ public class MPanel extends JPanel implements KeyListener{
             roleStand.paintIcon(this, g, xLoc, yLoc);
             direction = null;
         }else if(act == 10){
-            /*switch (numb) {
+            switch (numb) {
                 case 0 -> actionTurn = getImage("春丽", "attack", numb);
                 case 1 -> actionTurn = getImage("春丽", "attack", numb);
                 case 2 -> actionTurn = getImage("春丽", "attack", numb);
                 case 3 -> actionTurn = getImage("春丽", "attack", numb);
             }
-            System.out.println(123);
             actionTurn.paintIcon(this,g,xLoc,yLoc);
-            act = 0;*/
+            act = 0;
+        }else if(act == 11){
+            switch (numb) {
+                case 0 -> actionTurn = getImage("春丽", "leg", numb);
+                case 1 -> actionTurn = getImage("春丽", "leg", numb);
+                case 2 -> actionTurn = getImage("春丽", "leg", numb);
+                case 3 -> actionTurn = getImage("春丽", "leg", numb);
+            }
+            actionTurn.paintIcon(this,g,xLoc,yLoc);
+            act = 0;
+        }else if(act == 14){
+            switch (numb) {
+                case 0 -> actionTurn = getImage("春丽", "defend", numb);
+                case 1 -> actionTurn = getImage("春丽", "defend", numb);
+                case 2 -> actionTurn = getImage("春丽", "defend", numb);
+                case 3 -> actionTurn = getImage("春丽", "defend", numb);
+            }
+            actionTurn.paintIcon(this,g,xLoc,yLoc);
+            act = 0;
         }else if(direction == null) {
             roleStand.paintIcon(this, g, xLoc, yLoc);
         }
@@ -135,19 +152,6 @@ public class MPanel extends JPanel implements KeyListener{
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode()==KeyEvent.VK_W){
             direction = "U";
-            /*System.out.println(111);
-            System.out.println(yLoc);
-            direction = "U";
-            yLoc-=100;
-            repaint();
-            System.out.println(yLoc+"跳");
-            try {
-                sleep(1000);
-            } catch (InterruptedException interruptedException) {
-                interruptedException.printStackTrace();
-            }
-            //repaint();
-            System.out.println(yLoc+"sleep over");*/
         }
         if(e.getKeyCode()==KeyEvent.VK_D){
             direction = "R";
@@ -158,17 +162,8 @@ public class MPanel extends JPanel implements KeyListener{
         if(e.getKeyCode()==KeyEvent.VK_A){
             direction = "L";
         }
-        //拳攻击
-        /*if(e.getKeyCode()==KeyEvent.VK_J){
-            System.out.println(132);
-            act = 10;
-        }*/
-        //脚攻击
-        if(e.getKeyCode()==KeyEvent.VK_U){
-            act = 11;
-        }
         //防御
-        if(e.getKeyCode()==KeyEvent.VK_K){
+        if(e.getKeyCode()==KeyEvent.VK_U){
             act = 14;
         }
         //技能
@@ -183,8 +178,15 @@ public class MPanel extends JPanel implements KeyListener{
     public void keyReleased(KeyEvent e) {
         //拳攻击
         if(e.getKeyCode()==KeyEvent.VK_J){
-            System.out.println(132);
             act = 10;
+        }
+        //脚攻击
+        if(e.getKeyCode()==KeyEvent.VK_K){
+            act = 11;
+        }
+        //防御
+        if(e.getKeyCode()==KeyEvent.VK_U){
+            act = 14;
         }
     }
     //调用图片
