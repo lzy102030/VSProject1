@@ -166,7 +166,7 @@ public class PKPanel extends JPanel implements KeyListener {
     //调用图片
     private ImageIcon getImage(String name, int nub) {
         ImageIcon turn = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/Source/role1/walk/" + name + action + nub + ".jpg")));
+                this.getClass().getResource("/client/source/role1/walk/" + name + action + nub + ".jpg")));
         return turn;
     }
 }

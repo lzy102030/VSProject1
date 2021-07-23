@@ -9,6 +9,7 @@ public class BattleThread extends Thread {
 
     public void run() {
         while (true) {
+
             myPanel.repaint();
             try {
                 Thread.sleep(100);
