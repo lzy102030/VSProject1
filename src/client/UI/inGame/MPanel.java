@@ -19,8 +19,10 @@ import java.util.Objects;
 import static java.lang.Thread.sleep;
 
 public class MPanel extends JPanel implements KeyListener{
-    ImageIcon roleStand = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\source\\role1\\stand\\春丽_0-08.png");
-    ImageIcon backGround = new ImageIcon("E:\\work\\JavaTerm\\VSProject\\src\\client\\Source\\背景.jpg");
+    ImageIcon roleStand = new ImageIcon(Objects.requireNonNull(
+            this.getClass().getResource("/client/Source/role1/春丽stand0.png")));
+    ImageIcon backGround = new ImageIcon(Objects.requireNonNull(
+            this.getClass().getResource("/client/Source/背景.jpg")));
     Image back = backGround.getImage();
     ImageIcon actionTurn = new ImageIcon();
 
@@ -170,7 +172,6 @@ public class MPanel extends JPanel implements KeyListener{
         if(e.getKeyCode()==KeyEvent.VK_A){
             act = 12;
         }
-        //repaint();
 
     }
 
