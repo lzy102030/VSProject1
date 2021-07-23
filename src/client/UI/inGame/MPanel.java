@@ -68,7 +68,11 @@ public class MPanel extends JPanel implements KeyListener {
         thread.start();
     }
 
-    public MPanel() {
+    public void setPlayNetwork(PlayNetwork playNetwork) {
+        this.playNetwork = playNetwork;
+    }
+
+    public void updateHeroInfo(ArrayList<MyHeroPro> heroList) {
 
     }
 

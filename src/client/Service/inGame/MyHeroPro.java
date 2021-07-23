@@ -11,8 +11,6 @@ public class MyHeroPro implements Serializable, Comparable {
     private int xHead;  //0左 1右
 
     private int impactAmt;
-    private int defendInt;
-    private int defendAmt;
     private int flashDis;
 
     private int hp;
@@ -36,8 +34,6 @@ public class MyHeroPro implements Serializable, Comparable {
         this.yLoc = yLoc;
         this.xHead = xHead;
         this.impactAmt = impactAmt;
-        this.defendInt = defendInt;
-        this.defendAmt = defendAmt;
         this.flashDis = flashDis;
         this.hp = hp;
         this.mp = mp;
@@ -47,12 +43,10 @@ public class MyHeroPro implements Serializable, Comparable {
     }
     //到此
 
-    public MyHeroPro(String name, int impactAmt, int defendInt, int defendAmt, int flashDis,
+    public MyHeroPro(String name, int impactAmt, int flashDis,
                      int hp, int mp, int gameOverFlag, int nowCondition) {
         this.name = name;
         this.impactAmt = impactAmt;
-        this.defendInt = defendInt;
-        this.defendAmt = defendAmt;
         this.flashDis = flashDis;
         this.hp = hp;
         this.mp = mp;
@@ -80,10 +74,6 @@ public class MyHeroPro implements Serializable, Comparable {
         return impactAmt;
     }
 
-    public int getDefendAmt() {
-        return defendAmt;
-    }
-
     public int getFlashDis() {
         return flashDis;
     }
@@ -94,10 +84,6 @@ public class MyHeroPro implements Serializable, Comparable {
 
     public int getMp() {
         return mp;
-    }
-
-    public int getDefendInt() {
-        return defendInt;
     }
 
     public int getUserID() {
@@ -125,10 +111,6 @@ public class MyHeroPro implements Serializable, Comparable {
 
     public void setMp(int mp) {
         this.mp = mp;
-    }
-
-    public void setDefendAmt(int defendAmt) {
-        this.defendAmt = defendAmt;
     }
 
     public void setNowCondition(int condition) {
