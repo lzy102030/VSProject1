@@ -11,7 +11,7 @@ public class BattleThread extends Thread {
         while (true) {
             myPanel.repaint();
             try {
-                Thread.sleep(50);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

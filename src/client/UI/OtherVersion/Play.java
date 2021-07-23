@@ -45,7 +45,7 @@ public class Play extends Frame {
 
     @Override
     public void paint(Graphics g) {
-        g.drawImage();
+        //g.drawImage();
     }
 
     public void launchFrame() {
