@@ -124,7 +124,7 @@ public class MPanel extends JPanel implements KeyListener {
         //paint background
         g.drawImage(back, 0, 0, this.getWidth(), this.getHeight(), this);
         //刷新计时
-        time += 100;
+        time += 50;
         numb = time / 200 % 4;
 
         //paint role2
@@ -279,6 +279,10 @@ public class MPanel extends JPanel implements KeyListener {
         }
     }
 
+    public void heroActLast() {
+
+    }
+
     public void initRole() {
         xLoc1 = 50;
         yLoc1 = 300;
@@ -286,6 +290,8 @@ public class MPanel extends JPanel implements KeyListener {
 
     public void sendHero() {
         myHero.setLoc(xLoc1, yLoc1, xHead1);
+        myHero.setNowCondition(act1);
+
         new DataTransfer(serverOut).sendHero(myHero);
     }
 

@@ -2,7 +2,7 @@ package client.UI.inGame;
 
 public class BattleThread extends Thread {
     MPanel myPanel;
-    int frameFlushTime = 100;
+    int frameFlushTime = 50;
 
     public BattleThread(MPanel myPanel) {
         this.myPanel = myPanel;
@@ -22,9 +22,9 @@ public class BattleThread extends Thread {
                 usedTime = endTime - startTime;
                 e.printStackTrace();
             }
-            
+
             myPanel.repaint();
-            
+
             try {
                 Thread.sleep(frameFlushTime - usedTime);
             } catch (InterruptedException e) {

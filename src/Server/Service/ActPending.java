@@ -19,6 +19,7 @@ public class ActPending {
 
     public void setActPending(MyHeroPro o1, MyHeroPro o2) {
         if (o1 == null | o2 == null) {
+            //[todo] [debug]
             JOptionPane.showMessageDialog(null,
                     "[ERROR]Logical Fatal in List Sorting.");
         } else {

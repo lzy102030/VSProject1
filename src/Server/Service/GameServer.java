@@ -6,7 +6,10 @@ import client.Service.inGame.MyObjectOutputStream;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.logging.*;
+import java.util.logging.Formatter;
 
 public class GameServer extends Thread {
     static ServerSocket serverSocket = null;
@@ -20,6 +23,8 @@ public class GameServer extends Thread {
     int x2Loc = 700, y2Loc = 300, x2Head = 0;
     ObjectOutputStream out;
 
+    static Logger logger;
+
     //constructor
     private GameServer(Socket clientSok) {
         clientID = count++;
@@ -28,10 +33,11 @@ public class GameServer extends Thread {
     }
 
     public static void main(String[] args) {
-
         System.out.println("Server started...");
 
         heroList = new ArrayList<>();
+
+        enableLog();
 
         try {
             serverSocket = new ServerSocket(port);
@@ -48,6 +54,33 @@ public class GameServer extends Thread {
             System.out.println("Server closed：" + e);
             //serverSocket.close();
             System.exit(1);
+        }
+    }
+
+    private static void enableLog() {
+        logger = Logger.getLogger("");
+
+        try {
+            FileHandler fileHandler = new FileHandler("D:/logs/1.txt");
+            fileHandler.setLevel(Level.INFO);
+            fileHandler.setFormatter(new Formatter() {//定义一个匿名类
+                @Override
+                public String format(LogRecord record) {
+                    Date date = new Date();
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                    String datef = sdf.format(date);
+
+                    return "[" + record.getLevel() + "]" + "[" + datef + "]"
+                            + "[" + this.getClass().getName() + "] " + record.getMessage() + "\n";
+                }
+            });
+            logger.addHandler(fileHandler);
+
+            ConsoleHandler consoleHandler = new ConsoleHandler();
+            consoleHandler.setLevel(Level.OFF);
+            logger.addHandler(consoleHandler);
+        } catch (SecurityException | IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -92,8 +125,7 @@ public class GameServer extends Thread {
                 updateHeroList(hero);
 
                 //[DEBUG Output]
-                System.out.println("Client #" + clientID + " transferred " + hero.getName());
-                System.out.println("Now Hero number:" + heroList.size());
+                logger.info("Client #" + clientID + " transferred " + hero.getName());
                 //[End]
 
                 //动作act判定是否生效
@@ -148,7 +180,16 @@ public class GameServer extends Thread {
 
     //send message for every client
     private synchronized void sendCondition(ArrayList<MyHeroPro> heroList) {
-        System.out.println(heroList);
+        int i = 1;
+        for (MyHeroPro hero : heroList) {
+            logger.info("User #" + i++ +
+                    " x-Loc=" + hero.getxLoc() +
+                    " y-Loc=" + hero.getyLoc() +
+                    " xHead=" + hero.getxHead() +
+                    "  Act=" + hero.getNowCondition() +
+                    " HP=" + hero.getHp() +
+                    " MP=" + hero.getMp());
+        }
         ObjectOutputStream out;
 
         //use arraylist for the clients stored
