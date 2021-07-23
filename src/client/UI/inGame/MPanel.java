@@ -1,24 +1,15 @@
 package client.UI.inGame;
 
-import client.Service.inGame.DataTransfer;
 import client.Service.inGame.MyHeroPro;
-
-import client.Service.inGame.MyLinkedList;
+import client.Service.inGame.PlayNetwork;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.ArrayList;
-import java.util.Objects;
+import java.awt.event.*;
+import java.io.*;
+import java.util.*;
 
-import static java.lang.Thread.sleep;
-
-public class MPanel extends JPanel implements KeyListener{
+public class MPanel extends JPanel implements KeyListener {
     ImageIcon roleStand = new ImageIcon(Objects.requireNonNull(
             this.getClass().getResource("/client/Source/role1/春丽stand0.png")));
     ImageIcon backGround = new ImageIcon(Objects.requireNonNull(
@@ -26,25 +17,30 @@ public class MPanel extends JPanel implements KeyListener{
     Image back = backGround.getImage();
     ImageIcon actionTurn = new ImageIcon();
 
-    int hp=400;
-    int mp=200;
     ObjectOutputStream serverOut;
     ObjectInputStream serverIn;
     MyHeroPro hero;
     ArrayList<MyHeroPro> heroList;
     BattleThread thread;
+    PlayNetwork playNetwork;
 
+    int hp = 400;
+    int mp = 200;
     int xLoc;
     int yLoc;
     int xHead;
     int act;//图序
+    int userID1;
     String direction = null;
-    String name = "春丽";//人物名称
-    String action;//人物动作
+    String name = "春丽";
+    String action;
     int numb;
     int time;
 
-    public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro hero, ArrayList<MyHeroPro> heroList) {
+    public MPanel(ObjectOutputStream serverOut,
+                  ObjectInputStream serverIn,
+                  MyHeroPro hero,
+                  ArrayList<MyHeroPro> heroList) {
         this.serverOut = serverOut;
         this.serverIn = serverIn;
         this.hero = hero;
@@ -57,22 +53,26 @@ public class MPanel extends JPanel implements KeyListener{
         thread.start();
     }
 
-    public MPanel() {
+    public void setPlayNetwork(PlayNetwork playNetwork) {
+        this.playNetwork = playNetwork;
+    }
+
+    public void updateHeroInfo(ArrayList<MyHeroPro> heroList) {
 
     }
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        g.drawImage(back,0,0,this.getWidth(),this.getHeight(),this);
+        g.drawImage(back, 0, 0, this.getWidth(), this.getHeight(), this);
         g.setColor(Color.red);
-        g.fillRect(0,0,hp,20);//血条
+        g.fillRect(0, 0, hp, 20);//血条
         g.setColor(Color.blue);
-        g.fillRect(0,21,mp,20);//怒气条
+        g.fillRect(0, 21, mp, 20);//怒气条
         time += 100;
-        numb = time/200%4;
+        numb = time / 200 % 4;
 
-        if(direction == "R"&&xLoc<=790) {
+        if (direction == "R" && xLoc <= 790) {
             //getImage("春丽","move", 1).paintIcon(this, g, xLoc+=50, yLoc);
             xHead = 1;
             //移动图片选择
@@ -82,65 +82,65 @@ public class MPanel extends JPanel implements KeyListener{
                 case 2 -> actionTurn = getImage("春丽", "move", numb);
                 case 3 -> actionTurn = getImage("春丽", "move", numb);
             }
-            actionTurn.paintIcon(this,g,xLoc+=50,yLoc);
+            actionTurn.paintIcon(this, g, xLoc += 50, yLoc);
             direction = null;
-        }else if(direction == "L"&&xLoc>=30) {
-            roleStand.paintIcon(this, g, xLoc-=50, yLoc);
+        } else if (direction == "L" && xLoc >= 30) {
+            roleStand.paintIcon(this, g, xLoc -= 50, yLoc);
             xHead = 0;
             direction = null;
-        }else if(direction == "D"&&yLoc<=250) {
-            roleStand.paintIcon(this, g, xLoc, yLoc+=100);
+        } else if (direction == "D" && yLoc <= 250) {
+            roleStand.paintIcon(this, g, xLoc, yLoc += 100);
             direction = null;
-        }else if(direction == "U"&&yLoc>=250) {
-            roleStand.paintIcon(this, g, xLoc, yLoc-=100);
+        } else if (direction == "U" && yLoc >= 250) {
+            roleStand.paintIcon(this, g, xLoc, yLoc -= 100);
             direction = null;
-        }else if(direction == "R"&&xLoc>=790){
+        } else if (direction == "R" && xLoc >= 790) {
             roleStand.paintIcon(this, g, xLoc, yLoc);
             xHead = 1;
             direction = null;
-        }else if(direction == "L"&&xLoc<=30){
+        } else if (direction == "L" && xLoc <= 30) {
             roleStand.paintIcon(this, g, xLoc, yLoc);
             xHead = 0;
             direction = null;
-        }else if(direction == "D"&&yLoc>=250){
+        } else if (direction == "D" && yLoc >= 250) {
             roleStand.paintIcon(this, g, xLoc, yLoc);
             direction = null;
-        }else if(direction == "U"&&yLoc<=250){
+        } else if (direction == "U" && yLoc <= 250) {
             roleStand.paintIcon(this, g, xLoc, yLoc);
             direction = null;
-        }else if(act == 10){
+        } else if (act == 10) {
             switch (numb) {
                 case 0 -> actionTurn = getImage("春丽", "attack", numb);
                 case 1 -> actionTurn = getImage("春丽", "attack", numb);
                 case 2 -> actionTurn = getImage("春丽", "attack", numb);
                 case 3 -> actionTurn = getImage("春丽", "attack", numb);
             }
-            actionTurn.paintIcon(this,g,xLoc,yLoc);
+            actionTurn.paintIcon(this, g, xLoc, yLoc);
             act = 0;
-        }else if(act == 11){
+        } else if (act == 11) {
             switch (numb) {
                 case 0 -> actionTurn = getImage("春丽", "leg", numb);
                 case 1 -> actionTurn = getImage("春丽", "leg", numb);
                 case 2 -> actionTurn = getImage("春丽", "leg", numb);
                 case 3 -> actionTurn = getImage("春丽", "leg", numb);
             }
-            actionTurn.paintIcon(this,g,xLoc,yLoc);
+            actionTurn.paintIcon(this, g, xLoc, yLoc);
             act = 0;
-        }else if(act == 14){
+        } else if (act == 14) {
             switch (numb) {
                 case 0 -> actionTurn = getImage("春丽", "defend", numb);
                 case 1 -> actionTurn = getImage("春丽", "defend", numb);
                 case 2 -> actionTurn = getImage("春丽", "defend", numb);
                 case 3 -> actionTurn = getImage("春丽", "defend", numb);
             }
-            actionTurn.paintIcon(this,g,xLoc,yLoc);
+            actionTurn.paintIcon(this, g, xLoc, yLoc);
             act = 0;
-        }else if(direction == null) {
+        } else if (direction == null) {
             roleStand.paintIcon(this, g, xLoc, yLoc);
         }
     }
 
-    public void initRole(){
+    public void initRole() {
         xLoc = 50;
         yLoc = 300;
     }
@@ -152,24 +152,24 @@ public class MPanel extends JPanel implements KeyListener{
 
     @Override
     public void keyPressed(KeyEvent e) {
-        if(e.getKeyCode()==KeyEvent.VK_W){
+        if (e.getKeyCode() == KeyEvent.VK_W) {
             direction = "U";
         }
-        if(e.getKeyCode()==KeyEvent.VK_D){
+        if (e.getKeyCode() == KeyEvent.VK_D) {
             direction = "R";
         }
-        if(e.getKeyCode()==KeyEvent.VK_S){
+        if (e.getKeyCode() == KeyEvent.VK_S) {
             direction = "D";
         }
-        if(e.getKeyCode()==KeyEvent.VK_A){
+        if (e.getKeyCode() == KeyEvent.VK_A) {
             direction = "L";
         }
         //防御
-        if(e.getKeyCode()==KeyEvent.VK_U){
+        if (e.getKeyCode() == KeyEvent.VK_U) {
             act = 14;
         }
         //技能
-        if(e.getKeyCode()==KeyEvent.VK_A){
+        if (e.getKeyCode() == KeyEvent.VK_A) {
             act = 12;
         }
 
@@ -178,24 +178,23 @@ public class MPanel extends JPanel implements KeyListener{
     @Override
     public void keyReleased(KeyEvent e) {
         //拳攻击
-        if(e.getKeyCode()==KeyEvent.VK_J){
+        if (e.getKeyCode() == KeyEvent.VK_J) {
             act = 10;
         }
         //脚攻击
-        if(e.getKeyCode()==KeyEvent.VK_K){
+        if (e.getKeyCode() == KeyEvent.VK_K) {
             act = 11;
         }
         //防御
-        if(e.getKeyCode()==KeyEvent.VK_U){
+        if (e.getKeyCode() == KeyEvent.VK_U) {
             act = 14;
         }
     }
+
     //调用图片
-    private ImageIcon getImage(String name,String action,int numb){
+    private ImageIcon getImage(String name, String action, int numb) {
         ImageIcon imageIcon = new ImageIcon(Objects.requireNonNull(
                 this.getClass().getResource("/client/Source/role1/" + name + action + numb + ".png")));
         return imageIcon;
     }
-
-
 }
