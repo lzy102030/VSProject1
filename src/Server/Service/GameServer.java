@@ -81,10 +81,6 @@ public class GameServer extends Thread {
 
                 //[Tips]服务端判定时间 avg: 2 ms  (max: 4 ms    min: 1 ms)
 
-                if (clientID <= 2) {
-                    hero.setUserID(clientID);
-                }
-
                 if (heroList.size() < 2) {
                     if (clientID == 1) {
                         hero.setLoc(x1Loc, y1Loc, x1Head);

@@ -12,8 +12,8 @@ public class PlayNetwork {
     ObjectOutputStream serverOut;
     ObjectInputStream serverIn;
     ArrayList<MyHeroPro> heroList;
-    MPanel mPanel = null;
-    MyHeroPro hero = null;
+    MPanel mPanel;
+    MyHeroPro hero;
 
     public PlayNetwork(MyHeroPro hero, int xLoc, int yLoc, int xHead, int condition) {
         this.hero = hero;
@@ -53,7 +53,6 @@ public class PlayNetwork {
                     } while (heroListReceive == null);
                     heroList = (ArrayList<MyHeroPro>) heroListReceive;
                     mPanel.updateHeroInfo(heroList);
-                    break;
                 }
             } catch (IOException e) {
                 e.printStackTrace();

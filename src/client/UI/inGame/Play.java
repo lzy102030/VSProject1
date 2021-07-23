@@ -2,7 +2,6 @@ package client.UI.inGame;
 
 import client.Service.inGame.MyHeroPro;
 import client.Service.inGame.PlayNetwork;
-import client.Service.inGame.role1;
 
 import javax.swing.*;
 import java.io.ObjectInputStream;
@@ -24,7 +23,10 @@ public class Play extends JFrame {
         this.hero = hero;
         this.heroList = heroList;
 
+        mPanel = new MPanel(serverOut, serverIn, hero, heroList);
         playNetwork = new PlayNetwork(serverOut, serverIn);
+        playNetwork.setmPanel(mPanel);
+        mPanel.setPlayNetwork(playNetwork);
         setResizable(false);
         launchFrame();
         setVisible(true);
@@ -51,9 +53,6 @@ public class Play extends JFrame {
     }
 
     public void launchFrame() {
-        mPanel = new MPanel(serverOut, serverIn, hero, heroList);
-        playNetwork.setmPanel(mPanel);
-        mPanel.setPlayNetwork(playNetwork);
         this.setSize(900, 500);
         this.add(mPanel);
     }

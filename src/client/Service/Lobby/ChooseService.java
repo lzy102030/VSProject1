@@ -43,7 +43,7 @@ public class ChooseService {
                         }
                     } while (heroListReceive == null);
                     heroList = (ArrayList<MyHeroPro>) heroListReceive;
-                    chooseUI.callForGame();
+                    chooseUI.callForGame(heroList);
                     break;
                 }
             } catch (IOException e) {

@@ -125,7 +125,7 @@ public class ConsoleUI {
         imagePanel.setOpaque(false);
         frame.getLayeredPane().add(label, Integer.valueOf(Integer.MIN_VALUE));
 
-        new preLoadData();
+        //new preLoadData();
 
         //Display the window.
         frame.setVisible(true);
@@ -587,8 +587,6 @@ public class ConsoleUI {
                 tFieldYLoc1.getText().equals("") |
                 tFieldXHead1.getText().equals("") |
                 tFieldImpactAmt1.getText().equals("") |
-                tFieldDefendInt1.getText().equals("") |
-                tFieldDefendAmt1.getText().equals("") |
                 tFieldFlashDis1.getText().equals("") |
                 tFieldHp1.getText().equals("") |
                 tFieldMp1.getText().equals("") |
@@ -602,8 +600,8 @@ public class ConsoleUI {
                     Integer.parseInt(tFieldYLoc1.getText()),
                     Integer.parseInt(tFieldXHead1.getText()),
                     Integer.parseInt(tFieldImpactAmt1.getText()),
-                    Integer.parseInt(tFieldDefendInt1.getText()),
-                    Integer.parseInt(tFieldDefendAmt1.getText()),
+                    0,
+                    0,
                     Integer.parseInt(tFieldFlashDis1.getText()),
                     Integer.parseInt(tFieldHp1.getText()),
                     Integer.parseInt(tFieldMp1.getText()),
@@ -620,8 +618,6 @@ public class ConsoleUI {
                 tFieldYLoc2.getText().equals("") |
                 tFieldXHead2.getText().equals("") |
                 tFieldImpactAmt2.getText().equals("") |
-                tFieldDefendInt2.getText().equals("") |
-                tFieldDefendAmt2.getText().equals("") |
                 tFieldFlashDis2.getText().equals("") |
                 tFieldHp2.getText().equals("") |
                 tFieldMp2.getText().equals("") |
@@ -635,8 +631,8 @@ public class ConsoleUI {
                     Integer.parseInt(tFieldYLoc2.getText()),
                     Integer.parseInt(tFieldXHead2.getText()),
                     Integer.parseInt(tFieldImpactAmt2.getText()),
-                    Integer.parseInt(tFieldDefendInt2.getText()),
-                    Integer.parseInt(tFieldDefendAmt2.getText()),
+                    0,
+                    0,
                     Integer.parseInt(tFieldFlashDis2.getText()),
                     Integer.parseInt(tFieldHp2.getText()),
                     Integer.parseInt(tFieldMp2.getText()),
@@ -652,8 +648,6 @@ public class ConsoleUI {
         tFieldYLoc1.setText(String.valueOf(hero.getyLoc()));
         tFieldXHead1.setText(String.valueOf(hero.getxHead()));
         tFieldImpactAmt1.setText(String.valueOf(hero.getImpactAmt()));
-        tFieldDefendInt1.setText(String.valueOf(hero.getDefendInt()));
-        tFieldDefendAmt1.setText(String.valueOf(hero.getDefendAmt()));
         tFieldFlashDis1.setText(String.valueOf(hero.getFlashDis()));
         tFieldHp1.setText(String.valueOf(hero.getHp()));
         tFieldMp1.setText(String.valueOf(hero.getMp()));
@@ -668,8 +662,6 @@ public class ConsoleUI {
         tFieldYLoc2.setText(String.valueOf(hero.getyLoc()));
         tFieldXHead2.setText(String.valueOf(hero.getxHead()));
         tFieldImpactAmt2.setText(String.valueOf(hero.getImpactAmt()));
-        tFieldDefendInt2.setText(String.valueOf(hero.getDefendInt()));
-        tFieldDefendAmt2.setText(String.valueOf(hero.getDefendAmt()));
         tFieldFlashDis2.setText(String.valueOf(hero.getFlashDis()));
         tFieldHp2.setText(String.valueOf(hero.getHp()));
         tFieldMp2.setText(String.valueOf(hero.getMp()));

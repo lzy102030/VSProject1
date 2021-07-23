@@ -68,7 +68,7 @@ public class Client {
         }
     }
 
-    public static void callForGame(MyHeroPro hero) {
+    public static void callForGame(MyHeroPro hero, ArrayList<MyHeroPro> heroList) {
         new Play(serverOut, serverIn, hero, heroList);
     }
 }

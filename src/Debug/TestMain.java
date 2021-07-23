@@ -16,8 +16,9 @@ public class TestMain {
     static ConsoleUI consoleUI;
 
     public static void main(String[] args) {
-        testMain = new TestMain();
         consoleUI = new ConsoleUI();
+        testMain = new TestMain();
+
     }
 
     public TestMain() {

@@ -9,6 +9,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class ChooseUI extends JFrame {
@@ -21,12 +22,19 @@ public class ChooseUI extends JFrame {
 
     static ObjectOutputStream serverOut;
     MyHeroPro hero = null;
+    int userID;
 
     public ChooseUI(ObjectOutputStream serverOut) {
         ChooseUI.serverOut = serverOut;
 
+        createUserID();
+
         launchFrame();
         setVisible(true);
+    }
+
+    private void createUserID() {
+        userID = (int) (Math.toIntExact(System.currentTimeMillis() % 10000) + Math.random());
     }
 
     private void launchFrame() {
@@ -72,7 +80,7 @@ public class ChooseUI extends JFrame {
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                hero = new MyHeroPro("草薙京", 10, 50, 50, 5, 100, 0, -1, 0);
+                hero = new MyHeroPro("草薙京", 10, 5, 100, 0, -1, 0, userID);
                 new DataTransfer(serverOut).sendHero(hero);
                 waitForGame();
             }
@@ -81,7 +89,7 @@ public class ChooseUI extends JFrame {
         b2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                hero = new MyHeroPro("不知火舞", 10, 50, 50, 5, 100, 0, -1, 0);
+                hero = new MyHeroPro("不知火舞", 10, 5, 100, 0, -1, 0, userID);
                 new DataTransfer(serverOut).sendHero(hero);
                 waitForGame();
             }
@@ -90,7 +98,7 @@ public class ChooseUI extends JFrame {
         b3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                hero = new MyHeroPro("春丽", 10, 50, 50, 5, 100, 0, -1, 0);
+                hero = new MyHeroPro("春丽", 10, 5, 100, 0, -1, 0, userID);
                 new DataTransfer(serverOut).sendHero(hero);
                 waitForGame();
             }
@@ -99,7 +107,7 @@ public class ChooseUI extends JFrame {
         b4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                hero = new MyHeroPro("八神庵", 10, 50, 50, 5, 100, 0, -1, 0);
+                hero = new MyHeroPro("八神庵", 10, 5, 100, 0, -1, 0, userID);
                 new DataTransfer(serverOut).sendHero(hero);
                 waitForGame();
             }
@@ -129,8 +137,8 @@ public class ChooseUI extends JFrame {
         setVisible(true);
     }
 
-    public void callForGame() {
+    public void callForGame(ArrayList<MyHeroPro> heroList) {
         dispose();
-        Client.callForGame(hero);
+        Client.callForGame(hero, heroList);
     }
 }
