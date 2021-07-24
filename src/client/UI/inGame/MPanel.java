@@ -16,15 +16,10 @@ import java.util.Objects;
 import static java.lang.Thread.sleep;
 
 public class MPanel extends JPanel implements KeyListener {
-    ImageIcon roleStand1 = new ImageIcon(Objects.requireNonNull(
-            this.getClass().getResource("/client/source/春丽stand0.png")));
-    ImageIcon roleStand2 = new ImageIcon(Objects.requireNonNull(
-            this.getClass().getResource("/client/source/草薙京stand0.png")));
     ImageIcon backGround = new ImageIcon(Objects.requireNonNull(
             this.getClass().getResource("/client/source/背景.jpg")));
     Image back = backGround.getImage();
     ImageIcon actionTurn = new ImageIcon();
-    Image role = roleStand2.getImage();
 
     ObjectOutputStream serverOut;
     ObjectInputStream serverIn;
@@ -32,7 +27,7 @@ public class MPanel extends JPanel implements KeyListener {
     ArrayList<MyHeroPro> heroList;
     BattleThread thread;
     PlayNetwork playNetwork;
-
+    //刷新计时
     int numb;
     int time;
 
@@ -43,10 +38,9 @@ public class MPanel extends JPanel implements KeyListener {
     int yLoc1;
     int yLevel1;
     int xHead1;
-    int act1;//图序
-    String direction1 = null;
-    String name1 = "春丽";//人物名称
-    String action1;//人物动作  0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击,12技能， 14脸防御，15 16 17受击, 20无敌
+    int act1;//人物状态
+    String name1 = null;//人物名称
+    String action1;//人物动作  0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击,12技能，14防御，15 16 17受击, 20无敌
 
     //role2
     int hp2 = 400;
@@ -55,9 +49,8 @@ public class MPanel extends JPanel implements KeyListener {
     int yLoc2 = 300;
     int yLevel2;
     int xHead2;
-    int act2;//图序
-    String direction2 = null;
-    String name2 = "草薙京";//人物名称
+    int act2;//人物状态
+    String name2 = null;//人物名称
     String action2; //人物动作  0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击,12技能， 14脸防御，15 16 17受击, 20无敌
 
     //unify move amount settings
@@ -121,6 +114,9 @@ public class MPanel extends JPanel implements KeyListener {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
+        ImageIcon roleStand1 = getImage(name1, "stand", 0);
+        ImageIcon roleStand2 = getImage(name2, "stand", 0);
+
         //paint background
         g.drawImage(back, 0, 0, this.getWidth(), this.getHeight(), this);
         //刷新计时
@@ -132,74 +128,79 @@ public class MPanel extends JPanel implements KeyListener {
         g.fillRect(450, 0, hp2, 20);//血条
         g.setColor(Color.blue);
         g.fillRect(450, 21, mp2, 20);//怒气条
-        g.drawImage(role, xLoc2, yLoc2, roleStand2.getIconWidth(), roleStand2.getIconHeight(), this);
-        if (direction2 == "R" && xLoc2 <= 790) {
+        //g.drawImage(role, xLoc2, yLoc2, roleStand2.getIconWidth(), roleStand2.getIconHeight(), this);//背景
+
+        if (act2 == 1 && xHead2 == 1) {
             xHead2 = 1;
-            //移动图片选择
             action2 = "move";
-            switch (numb) {
-                case 0 -> actionTurn = getImage(name2, action2, numb);
-                case 1 -> actionTurn = getImage(name2, action2, numb);
-                case 2 -> actionTurn = getImage(name2, action2, numb);
-                case 3 -> actionTurn = getImage(name2, action2, numb);
-            }
+            actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            direction2 = null;
-        } else if (direction2 == "L" && xLoc2 >= 30) {
-            roleStand2.paintIcon(this, g, xLoc2, yLoc2);
+            act2 = 0;
+        } else if (act2 == 1 && xHead2 == 0) {
+            action2 = "moveL";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             xHead1 = 0;
-            direction1 = null;
-        } else if (direction2 == "D" && yLoc2 <= 250) {
-            roleStand2.paintIcon(this, g, xLoc2, yLoc2);
-            direction2 = null;
-        } else if (direction2 == "U" && yLoc2 >= 250) {
-            roleStand2.paintIcon(this, g, xLoc2, yLoc2);
-            direction2 = null;
-        } else if (direction2 == "R" && xLoc2 >= 790) {
-            roleStand2.paintIcon(this, g, xLoc2, yLoc2);
-            xHead2 = 1;
-            direction2 = null;
-        } else if (direction2 == "L" && xLoc2 <= 30) {
-            roleStand2.paintIcon(this, g, xLoc2, yLoc2);
-            xHead2 = 0;
-            direction1 = null;
-        } else if (direction2 == "D" && yLoc2 >= 250) {
-            roleStand2.paintIcon(this, g, xLoc2, yLoc2);
-            direction2 = null;
-        } else if (direction2 == "U" && yLoc2 <= 250) {
-            roleStand2.paintIcon(this, g, xLoc2, yLoc2);
-            direction2 = null;
-        } else if (act2 == 10) {
+            act2 = 0;
+        } else if (act2 == 3) {
+            action2 = "down";
+            //actionTurn = getImage(name2, action2, numb);
+            //actionTurn.paintIcon(this, g, xLoc2, yLoc2);
+            roleStand2.paintIcon(this, g, xLoc2, yLoc2);//down图片缺失，暂时使用rolestand2
+            act2 = 0;
+        } else if (act2 == 2) {
+            action2 = "up";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
+            act2 = 0;
+        } else if (act2 == 10 && xHead2 == 1) {
             action2 = "attack";
-            switch (numb) {
-                case 0 -> actionTurn = getImage(name2, action2, numb);
-                case 1 -> actionTurn = getImage(name2, action2, numb);
-                case 2 -> actionTurn = getImage(name2, action2, numb);
-                case 3 -> actionTurn = getImage(name2, action2, numb);
-            }
+            actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
-        } else if (act2 == 11) {
-            switch (numb) {
-                case 0 -> actionTurn = getImage(name2, "leg", numb);
-                case 1 -> actionTurn = getImage(name2, "leg", numb);
-                case 2 -> actionTurn = getImage(name2, "leg", numb);
-                case 3 -> actionTurn = getImage(name2, "leg", numb);
-            }
+        } else if (act2 == 10 && xHead2 == 0) {
+            action2 = "attackL";
+            actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
-        } else if (act2 == 14) {
+        } else if (act2 == 11 && xHead2 == 1) {
+            action2 = "leg";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
+            act2 = 0;
+        } else if (act2 == 11 && xHead2 == 2) {
+            action2 = "legL";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
+            act2 = 0;
+        } else if (act2 == 14 && xHead2 == 1) {
             action2 = "defend";
-            switch (numb) {
-                case 0 -> actionTurn = getImage(name2, action2, numb);
-                case 1 -> actionTurn = getImage(name2, action2, numb);
-                case 2 -> actionTurn = getImage(name2, action2, numb);
-                case 3 -> actionTurn = getImage(name2, action2, numb);
-            }
+            actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
-        } else if (direction2 == null) {
-            roleStand2.paintIcon(this, g, xLoc2, yLoc2);
+        } else if (act2 == 14 && xHead2 == 0) {
+            action2 = "defendL";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
+            act2 = 0;
+        } else if (act2 == 12 && xHead2 == 1) {
+            action2 = "skill";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            act2 = 0;
+        } else if (act2 == 12 && xHead2 == 0) {
+            action2 = "skill";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            act2 = 0;
+        } else if (act2 == 0 && xHead2 == 1) {
+            action2 = "stand";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+        } else if (act2 == 0 && xHead2 == 0) {
+            action2 = "stand";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         }
 
         //paint role1
@@ -208,74 +209,77 @@ public class MPanel extends JPanel implements KeyListener {
         g.setColor(Color.blue);
         g.fillRect(0, 21, mp1, 20);//怒气条
 
-        if (direction1 == "R" && xLoc1 <= 790) {
-            //getImage("春丽","move", 1).paintIcon(this, g, xLoc+=50, yLoc);
+        if (act1 == 1 && xHead1 == 1) {
             xHead1 = 1;
-            //移动图片选择
             action1 = "move";
-            switch (numb) {
-                case 0 -> actionTurn = getImage(name1, action1, numb);
-                case 1 -> actionTurn = getImage(name1, action1, numb);
-                case 2 -> actionTurn = getImage(name1, action1, numb);
-                case 3 -> actionTurn = getImage(name1, action1, numb);
-            }
+            actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            direction1 = null;
-        } else if (direction1 == "L" && xLoc1 >= 30) {
-            roleStand1.paintIcon(this, g, xLoc1, yLoc1);
+            act1 = 0;
+        } else if (act1 == 1 && xHead1 == 0) {
             xHead1 = 0;
-            direction1 = null;
-        } else if (direction1 == "D" && yLoc1 <= 250) {
+            action1 = "moveL";
+            actionTurn = getImage(name1, action1, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            act1 = 0;
+        } else if (act1 == 3) {
+            action1 = "down";
+            //actionTurn = getImage(name1, action1, numb);
+            //actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             roleStand1.paintIcon(this, g, xLoc1, yLoc1);
-            direction1 = null;
-        } else if (direction1 == "U" && yLoc1 >= 250) {
-            roleStand1.paintIcon(this, g, xLoc1, yLoc1);
-            direction1 = null;
-        } else if (direction1 == "R" && xLoc1 >= 790) {
-            roleStand1.paintIcon(this, g, xLoc1, yLoc1);
-            xHead1 = 1;
-            direction1 = null;
-        } else if (direction1 == "L" && xLoc1 <= 30) {
-            roleStand1.paintIcon(this, g, xLoc1, yLoc1);
-            xHead1 = 0;
-            direction1 = null;
-        } else if (direction1 == "D" && yLoc1 >= 250) {
-            roleStand1.paintIcon(this, g, xLoc1, yLoc1);
-            direction1 = null;
-        } else if (direction1 == "U" && yLoc1 <= 250) {
-            roleStand1.paintIcon(this, g, xLoc1, yLoc1);
-            direction1 = null;
-        } else if (act1 == 10) {
+            act1 = 0;
+        } else if (act1 == 2) {
+            action1 = "up";
+            actionTurn = getImage(name1, action1, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            act1 = 0;
+        } else if (act1 == 10 && xHead1 == 1) {
             action1 = "attack";
-            switch (numb) {
-                case 0 -> actionTurn = getImage(name1, action1, numb);
-                case 1 -> actionTurn = getImage(name1, action1, numb);
-                case 2 -> actionTurn = getImage(name1, action1, numb);
-                case 3 -> actionTurn = getImage(name1, action1, numb);
-            }
+            actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
-        } else if (act1 == 11) {
-            switch (numb) {
-                case 0 -> actionTurn = getImage(name1, "leg", numb);
-                case 1 -> actionTurn = getImage(name1, "leg", numb);
-                case 2 -> actionTurn = getImage(name1, "leg", numb);
-                case 3 -> actionTurn = getImage(name1, "leg", numb);
-            }
+        } else if (act1 == 10 && xHead1 == 0) {
+            action1 = "attackL";
+            actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
-        } else if (act1 == 14) {
+        } else if (act1 == 11 && xHead1 == 1) {
+            action1 = "leg";
+            actionTurn = getImage(name1, "leg", numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            act1 = 0;
+        } else if (act1 == 11 && xHead1 == 0) {
+            action1 = "legL";
+            actionTurn = getImage(name1, "leg", numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            act1 = 0;
+        } else if (act1 == 14 && xHead1 == 1) {
             action1 = "defend";
-            switch (numb) {
-                case 0 -> actionTurn = getImage(name1, action1, numb);
-                case 1 -> actionTurn = getImage(name1, action1, numb);
-                case 2 -> actionTurn = getImage(name1, action1, numb);
-                case 3 -> actionTurn = getImage(name1, action1, numb);
-            }
+            actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
-        } else if (direction1 == null) {
-            roleStand1.paintIcon(this, g, xLoc1, yLoc1);
+        } else if (act1 == 14 && xHead1 == 0) {
+            action1 = "defend";
+            actionTurn = getImage(name1, action1, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            act1 = 0;
+        } else if (act1 == 12 && xHead1 == 1) {
+            action1 = "skill";
+            actionTurn = getImage(name1, action1, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            act1 = 0;
+        } else if (act1 == 12 && xHead1 == 0) {
+            action1 = "skill";
+            actionTurn = getImage(name1, action1, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            act1 = 0;
+        } else if (act1 == 0 && xHead1 == 1) {
+            action1 = "stand";
+            actionTurn = getImage(name1, action1, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+        } else if (act1 == 0 && xHead1 == 0) {
+            action1 = "stand";
+            actionTurn = getImage(name1, action1, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         }
     }
 
@@ -304,38 +308,34 @@ public class MPanel extends JPanel implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_W) {
-            direction1 = "U";
+            act1 = 2;
             if (yLevel1 < yMaxLevel) {
                 yLoc1 -= yMove;
                 yLevel1++;
             }
-            act1 = 2;
         }
         if (e.getKeyCode() == KeyEvent.VK_D) {
-            direction1 = "R";
+            act1 = 1;
+            xHead1 = 1;
             int xTemp = xLoc1 + xMove;
             if (xTemp <= xMaxLoc) {
                 xLoc1 = xTemp;
             }
-            act1 = 1;
-            xHead1 = 1;
         }
         if (e.getKeyCode() == KeyEvent.VK_S) {
-            direction1 = "D";
+            act1 = 3;
             if (yLevel1 > yMinLevel) {
                 yLoc1 += yMove;
                 yLevel1--;
             }
-            act1 = 3;
         }
         if (e.getKeyCode() == KeyEvent.VK_A) {
-            direction1 = "L";
+            act1 = 1;
+            xHead1 = 0;
             int xTemp = xLoc1 - xMove;
             if (xTemp >= xMinLoc) {
                 xLoc1 = xTemp;
             }
-            act1 = 1;
-            xHead1 = 0;
         }
         //防御
         if (e.getKeyCode() == KeyEvent.VK_U) {
