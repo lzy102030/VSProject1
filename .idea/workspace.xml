@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="fix test">
-      <change afterPath="$PROJECT_DIR$/src/Client/Service/InGame/MyHeroPro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Service/ActPending.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Service/GameServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Service/WinnerPending.java" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="人物图片更新">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1vWtjwAlXlqC1FSnsqtouvvR5Ul" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -88,21 +85,99 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work\JavaTerm\VSProject\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Play">
+    <configuration name="Choose" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.UI.Lobby.Choose" />
       <module name="VSProject" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.UI.Lobby.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.Client" />
+      <module name="VSProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server.Service.GameServer" />
+      <module name="VSProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Server.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Play (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.UI.OtherVersion.Play" />
+      <module name="VSProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.UI.OtherVersion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Play" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.UI.inGame.Play" />
+      <module name="VSProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.UI.inGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Choose" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.GameServer" />
+      <item itemvalue="Application.Play (1)" />
+      <item itemvalue="Application.Play" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Play" />
+        <item itemvalue="Application.Play (1)" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.GameServer" />
+        <item itemvalue="Application.Choose" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -127,7 +202,126 @@
       <option name="project" value="LOCAL" />
       <updated>1626692632454</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ui 对战 choose">
+      <created>1626753255083</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626753255083</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ui 对战 choose">
+      <created>1626754815683</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626754815683</updated>
+    </task>
+    <task id="LOCAL-00005" summary="图片">
+      <created>1626755041944</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626755041944</updated>
+    </task>
+    <task id="LOCAL-00006" summary="角色动作">
+      <created>1626755555817</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626755555817</updated>
+    </task>
+    <task id="LOCAL-00007" summary="角色移动">
+      <created>1626782357194</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626782357194</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Graphics g的使用">
+      <created>1626840010788</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1626840010788</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Graphics g的使用优化">
+      <created>1626853832073</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626853832073</updated>
+    </task>
+    <task id="LOCAL-00010" summary="图片">
+      <created>1626854112878</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626854112878</updated>
+    </task>
+    <task id="LOCAL-00011" summary="7.21">
+      <created>1626873268465</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626873268465</updated>
+    </task>
+    <task id="LOCAL-00012" summary="人物动作">
+      <created>1626937947527</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626937947527</updated>
+    </task>
+    <task id="LOCAL-00013" summary="人物动作">
+      <created>1626938255274</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1626938255274</updated>
+    </task>
+    <task id="LOCAL-00014" summary="人物动作">
+      <created>1626963672145</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1626963672145</updated>
+    </task>
+    <task id="LOCAL-00015" summary="人物动作连贯">
+      <created>1627005875681</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1627005875681</updated>
+    </task>
+    <task id="LOCAL-00016" summary="人物动作连贯Plus">
+      <created>1627007027958</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1627007027958</updated>
+    </task>
+    <task id="LOCAL-00017" summary="人物动作连贯Plus">
+      <created>1627008139448</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1627008139448</updated>
+    </task>
+    <task id="LOCAL-00018" summary="添加角色2，人物图片更新">
+      <created>1627011801114</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1627011801114</updated>
+    </task>
+    <task id="LOCAL-00019" summary="人物图片更新">
+      <created>1627028286811</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1627028286811</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,9 +367,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="123master" />
     <MESSAGE value="fix test" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix test" />
+    <MESSAGE value="ui 对战 choose" />
+    <MESSAGE value="角色动作" />
+    <MESSAGE value="角色移动" />
+    <MESSAGE value="Graphics g的使用" />
+    <MESSAGE value="Graphics g的使用优化" />
+    <MESSAGE value="图片" />
+    <MESSAGE value="7.21" />
+    <MESSAGE value="人物动作" />
+    <MESSAGE value="人物动作连贯" />
+    <MESSAGE value="人物动作连贯Plus" />
+    <MESSAGE value="添加角色2，人物图片更新" />
+    <MESSAGE value="人物图片更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="人物图片更新" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
