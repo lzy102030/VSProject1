@@ -1,6 +1,6 @@
-xLoc2 = conHero.getxLoc();
-        yLoc2 = conHero.getyLoc();
-        xHead2 = conHero.getxHead();
-        hp2 = conHero.getHp();
-        mp2 = conHero.getMp();
-        act2 = conHero.getNowCondition();
+ hero.getxLoc() + 
+                "  y-Loc=" + hero.getyLoc() + 
+                "  xHead=" + hero.getxHead() +
+                "  Act=" + hero.getNowCondition() + 
+                "  HP=" + hero.getHp() + 
+                "  MP=" + hero.getMp());
