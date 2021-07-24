@@ -16,38 +16,6 @@ import java.util.Objects;
 public class ConsoleUI {
     //init
     JFrame frame = new JFrame("Server Debug Console");
-    private JButton send1Button,
-            send2Button,
-            storeButton,
-            clearButton;
-    private JLabel title,
-            captureLine,
-            labelName1,
-            labelXLoc1,
-            labelYLoc1,
-            labelXHead1,
-            labelImpactAmt1,
-            labelDefendInt1,
-            labelDefendAmt1,
-            labelFlashDis1,
-            labelHp1,
-            labelMp1,
-            labeluserID1,
-            labelGameFlag1,
-            labelNowCondt1,
-            labelName2,
-            labelXLoc2,
-            labelYLoc2,
-            labelXHead2,
-            labelImpactAmt2,
-            labelDefendInt2,
-            labelDefendAmt2,
-            labelFlashDis2,
-            labelHp2,
-            labelMp2,
-            labeluserID2,
-            labelGameFlag2,
-            labelNowCondt2;
     static JTextField tFieldName1,
             tFieldXLoc1,
             tFieldYLoc1,
@@ -146,7 +114,7 @@ public class ConsoleUI {
 
         //set all the contents by gridBagsLayout
         //set title
-        title = new JLabel("Server Debug Console", JLabel.CENTER);
+        JLabel title = new JLabel("Server Debug Console", JLabel.CENTER);
         title.setFont(new Font("Consolas", Font.BOLD, 30));
         title.setForeground(Color.WHITE);
         c.gridx = 0;
@@ -157,7 +125,7 @@ public class ConsoleUI {
         pane.add(title, c);
 
         //set info label
-        labelName1 = new JLabel("Name");
+        JLabel labelName1 = new JLabel("Name");
         labelName1.setForeground(Color.WHITE);
         labelName1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 0;
@@ -168,7 +136,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelName1, c);
 
-        labelXLoc1 = new JLabel("X-Loc");
+        JLabel labelXLoc1 = new JLabel("X-Loc");
         labelXLoc1.setForeground(Color.WHITE);
         labelXLoc1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 2;
@@ -176,7 +144,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelXLoc1, c);
 
-        labelYLoc1 = new JLabel("Y-Loc");
+        JLabel labelYLoc1 = new JLabel("Y-Loc");
         labelYLoc1.setForeground(Color.WHITE);
         labelYLoc1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 4;
@@ -184,7 +152,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelYLoc1, c);
 
-        labelXHead1 = new JLabel("X-Head");
+        JLabel labelXHead1 = new JLabel("X-Head");
         labelXHead1.setForeground(Color.WHITE);
         labelXHead1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 6;
@@ -192,7 +160,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelXHead1, c);
 
-        labelImpactAmt1 = new JLabel("Impact-Amt");
+        JLabel labelImpactAmt1 = new JLabel("Impact-Amt");
         labelImpactAmt1.setForeground(Color.WHITE);
         labelImpactAmt1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 0;
@@ -200,7 +168,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelImpactAmt1, c);
 
-        labelDefendInt1 = new JLabel("Defend-Int");
+        JLabel labelDefendInt1 = new JLabel("Defend-Int");
         labelDefendInt1.setForeground(Color.WHITE);
         labelDefendInt1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 2;
@@ -208,7 +176,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelDefendInt1, c);
 
-        labelDefendAmt1 = new JLabel("Defend-Amt");
+        JLabel labelDefendAmt1 = new JLabel("Defend-Amt");
         labelDefendAmt1.setForeground(Color.WHITE);
         labelDefendAmt1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 4;
@@ -216,7 +184,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelDefendAmt1, c);
 
-        labelFlashDis1 = new JLabel("Flash-Dis");
+        JLabel labelFlashDis1 = new JLabel("Flash-Dis");
         labelFlashDis1.setForeground(Color.WHITE);
         labelFlashDis1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 6;
@@ -224,7 +192,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelFlashDis1, c);
 
-        labelHp1 = new JLabel("HP");
+        JLabel labelHp1 = new JLabel("HP");
         labelHp1.setForeground(Color.WHITE);
         labelHp1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 0;
@@ -232,7 +200,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelHp1, c);
 
-        labelMp1 = new JLabel("MP");
+        JLabel labelMp1 = new JLabel("MP");
         labelMp1.setForeground(Color.WHITE);
         labelMp1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 2;
@@ -240,7 +208,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelMp1, c);
 
-        labeluserID1 = new JLabel("User-ID");
+        JLabel labeluserID1 = new JLabel("User-ID");
         labeluserID1.setForeground(Color.WHITE);
         labeluserID1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 4;
@@ -248,7 +216,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labeluserID1, c);
 
-        labelGameFlag1 = new JLabel("Game-Flag");
+        JLabel labelGameFlag1 = new JLabel("Game-Flag");
         labelGameFlag1.setForeground(Color.WHITE);
         labelGameFlag1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 6;
@@ -256,7 +224,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelGameFlag1, c);
 
-        labelNowCondt1 = new JLabel("NowCondt");
+        JLabel labelNowCondt1 = new JLabel("NowCondt");
         labelNowCondt1.setForeground(Color.BLACK);
         labelNowCondt1.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 0;
@@ -344,7 +312,7 @@ public class ConsoleUI {
         pane.add(tFieldNowCondt1, c);
 
         //set buttons
-        send1Button = new JButton("Send#1");
+        JButton send1Button = new JButton("Send#1");
         c.gridx = 4;
         c.gridy = 5;
         c.insets = new Insets(5, 5, 5, 5);
@@ -353,7 +321,7 @@ public class ConsoleUI {
         //c.ipadx = 140;
         pane.add(send1Button, c);
 
-        clearButton = new JButton("Clear");
+        JButton clearButton = new JButton("Clear");
         c.gridx = 6;
         c.gridy = 5;
         c.insets = new Insets(5, 5, 5, 5);
@@ -363,7 +331,7 @@ public class ConsoleUI {
         pane.add(clearButton, c);
 
         //set capture line
-        captureLine = new JLabel("--------------------   用 户 分 界   -------------------", JLabel.CENTER);
+        JLabel captureLine = new JLabel("--------------------   用 户 分 界   -------------------", JLabel.CENTER);
         captureLine.setFont(new Font("黑体", Font.BOLD, 15));
         captureLine.setForeground(Color.WHITE);
         c.gridx = 0;
@@ -372,7 +340,7 @@ public class ConsoleUI {
         c.insets = new Insets(0, 5, 10, 5);
         pane.add(captureLine, c);
 
-        labelName2 = new JLabel("Name");
+        JLabel labelName2 = new JLabel("Name");
         labelName2.setForeground(Color.WHITE);
         labelName2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 0;
@@ -383,7 +351,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelName2, c);
 
-        labelXLoc2 = new JLabel("X-Loc");
+        JLabel labelXLoc2 = new JLabel("X-Loc");
         labelXLoc2.setForeground(Color.WHITE);
         labelXLoc2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 2;
@@ -391,7 +359,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelXLoc2, c);
 
-        labelYLoc2 = new JLabel("Y-Loc");
+        JLabel labelYLoc2 = new JLabel("Y-Loc");
         labelYLoc2.setForeground(Color.WHITE);
         labelYLoc2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 4;
@@ -399,7 +367,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelYLoc2, c);
 
-        labelXHead2 = new JLabel("X-Head");
+        JLabel labelXHead2 = new JLabel("X-Head");
         labelXHead2.setForeground(Color.WHITE);
         labelXHead2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 6;
@@ -407,7 +375,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelXHead2, c);
 
-        labelImpactAmt2 = new JLabel("Impact-Amt");
+        JLabel labelImpactAmt2 = new JLabel("Impact-Amt");
         labelImpactAmt2.setForeground(Color.WHITE);
         labelImpactAmt2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 0;
@@ -415,7 +383,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelImpactAmt2, c);
 
-        labelDefendInt2 = new JLabel("Defend-Int");
+        JLabel labelDefendInt2 = new JLabel("Defend-Int");
         labelDefendInt2.setForeground(Color.WHITE);
         labelDefendInt2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 2;
@@ -423,7 +391,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelDefendInt2, c);
 
-        labelDefendAmt2 = new JLabel("Defend-Amt");
+        JLabel labelDefendAmt2 = new JLabel("Defend-Amt");
         labelDefendAmt2.setForeground(Color.WHITE);
         labelDefendAmt2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 4;
@@ -431,7 +399,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelDefendAmt2, c);
 
-        labelFlashDis2 = new JLabel("Flash-Dis");
+        JLabel labelFlashDis2 = new JLabel("Flash-Dis");
         labelFlashDis2.setForeground(Color.WHITE);
         labelFlashDis2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 6;
@@ -439,7 +407,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelFlashDis2, c);
 
-        labelHp2 = new JLabel("HP");
+        JLabel labelHp2 = new JLabel("HP");
         labelHp2.setForeground(Color.WHITE);
         labelHp2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 0;
@@ -447,7 +415,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelHp2, c);
 
-        labelMp2 = new JLabel("MP");
+        JLabel labelMp2 = new JLabel("MP");
         labelMp2.setForeground(Color.WHITE);
         labelMp2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 2;
@@ -455,7 +423,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelMp2, c);
 
-        labeluserID2 = new JLabel("User-ID");
+        JLabel labeluserID2 = new JLabel("User-ID");
         labeluserID2.setForeground(Color.WHITE);
         labeluserID2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 4;
@@ -463,7 +431,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labeluserID2, c);
 
-        labelGameFlag2 = new JLabel("Game-Flag");
+        JLabel labelGameFlag2 = new JLabel("Game-Flag");
         labelGameFlag2.setForeground(Color.WHITE);
         labelGameFlag2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 6;
@@ -471,7 +439,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(labelGameFlag2, c);
 
-        labelNowCondt2 = new JLabel("NowCondt");
+        JLabel labelNowCondt2 = new JLabel("NowCondt");
         labelNowCondt2.setForeground(Color.WHITE);
         labelNowCondt2.setFont(new Font("Arial", Font.BOLD, 12));
         c.gridx = 0;
@@ -558,7 +526,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(tFieldNowCondt2, c);
 
-        send2Button = new JButton("Send#2");
+        JButton send2Button = new JButton("Send#2");
         c.gridx = 4;
         c.gridy = 5 + 5;
         c.gridwidth = 2;
@@ -566,7 +534,7 @@ public class ConsoleUI {
         c.insets = new Insets(5, 5, 5, 5);
         pane.add(send2Button, c);
 
-        storeButton = new JButton("Store");
+        JButton storeButton = new JButton("Store");
         c.gridx = 6;
         c.gridy = 5 + 5;
         c.insets = new Insets(5, 5, 5, 5);
@@ -648,7 +616,6 @@ public class ConsoleUI {
         tFieldYLoc1.setText(String.valueOf(hero.getyLoc()));
         tFieldXHead1.setText(String.valueOf(hero.getxHead()));
         tFieldImpactAmt1.setText(String.valueOf(hero.getImpactAmt()));
-        tFieldFlashDis1.setText(String.valueOf(hero.getFlashDis()));
         tFieldHp1.setText(String.valueOf(hero.getHp()));
         tFieldMp1.setText(String.valueOf(hero.getMp()));
         tFielduserID1.setText(String.valueOf(hero.getUserID()));
@@ -662,7 +629,6 @@ public class ConsoleUI {
         tFieldYLoc2.setText(String.valueOf(hero.getyLoc()));
         tFieldXHead2.setText(String.valueOf(hero.getxHead()));
         tFieldImpactAmt2.setText(String.valueOf(hero.getImpactAmt()));
-        tFieldFlashDis2.setText(String.valueOf(hero.getFlashDis()));
         tFieldHp2.setText(String.valueOf(hero.getHp()));
         tFieldMp2.setText(String.valueOf(hero.getMp()));
         tFielduserID2.setText(String.valueOf(hero.getUserID()));

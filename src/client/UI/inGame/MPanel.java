@@ -13,8 +13,6 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Objects;
 
-import static java.lang.Thread.sleep;
-
 public class MPanel extends JPanel implements KeyListener {
     ImageIcon roleStand1 = new ImageIcon(Objects.requireNonNull(
             this.getClass().getResource("/client/source/春丽stand0.png")));
@@ -65,6 +63,8 @@ public class MPanel extends JPanel implements KeyListener {
     int yMaxLevel = 1, yMinLevel = 0;
     int xMaxLoc = 790, xMinLoc = 30;
 
+    boolean firstTransfer = true;
+
 
     public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro myHero, ArrayList<MyHeroPro> heroList) {
         this.serverOut = serverOut;
@@ -72,12 +72,12 @@ public class MPanel extends JPanel implements KeyListener {
         this.myHero = myHero;
         this.heroList = heroList;
 
-        initRole();
+        thread = new BattleThread(this);
+        thread.start();
         updateHeroInfo(heroList);
         this.setFocusable(true);
         this.addKeyListener(this);
-        thread = new BattleThread(this);
-        thread.start();
+
     }
 
     public void setPlayNetwork(PlayNetwork playNetwork) {
@@ -93,14 +93,18 @@ public class MPanel extends JPanel implements KeyListener {
             conHero = heroList.get(0);
         }
 
-        xLoc1 = myHero.getxLoc();
-        yLoc1 = myHero.getyLoc();
-        xHead1 = myHero.getxHead();
+        if (firstTransfer) {
+            xLoc1 = myHero.getxLoc();
+            yLoc1 = myHero.getyLoc();
+            xHead1 = myHero.getxHead();
+            yLevel1 = yLoc1 - 250 < 0 ? 1 : 0;
+            firstTransfer = false;
+        }
+
         hp1 = myHero.getHp();
         mp1 = myHero.getMp();
         act1 = myHero.getNowCondition();
         name1 = myHero.getName();
-        yLevel1 = yLoc1 - 250 < 0 ? 1 : 0;
 
         xLoc2 = conHero.getxLoc();
         yLoc2 = conHero.getyLoc();
@@ -110,12 +114,6 @@ public class MPanel extends JPanel implements KeyListener {
         act2 = conHero.getNowCondition();
         name2 = conHero.getName();
         yLevel2 = yLoc2 - 250 < 0 ? 1 : 0;
-
-        System.out.println("User #1 x-Loc=" + xLoc1 + "  y-Loc=" + yLoc1 + "  xHead=" + xHead1 +
-                "  Act=" + act1 + "  HP=" + hp1 + "  MP=" + mp1);
-        System.out.println("User #2 x-Loc=" + xLoc2 + "  y-Loc=" + yLoc2 + "  xHead=" + xHead2 +
-                "  Act=" + act2 + "  HP=" + hp2 + "  MP=" + mp2);
-        System.out.println("---------");
     }
 
     public void paintComponent(Graphics g) {
@@ -137,12 +135,9 @@ public class MPanel extends JPanel implements KeyListener {
             xHead2 = 1;
             //移动图片选择
             action2 = "move";
-            switch (numb) {
-                case 0 -> actionTurn = getImage(name2, action2, numb);
-                case 1 -> actionTurn = getImage(name2, action2, numb);
-                case 2 -> actionTurn = getImage(name2, action2, numb);
-                case 3 -> actionTurn = getImage(name2, action2, numb);
-            }
+
+            actionTurn = getImage(name2, action2, numb);
+
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             direction2 = null;
         } else if (direction2 == "L" && xLoc2 >= 30) {
@@ -358,6 +353,7 @@ public class MPanel extends JPanel implements KeyListener {
             act1 = 14;
         }
         //技能
+        //[TODO]此处需要判断是否为满mp
         if (e.getKeyCode() == KeyEvent.VK_L) {
             act1 = 12;
         }

@@ -1,0 +1,16 @@
+[INFO][2021-07-24 10:11:54][Server]Server started.
+[INFO][2021-07-24 10:11:59]Client #1 transferred 春丽#8631
+[INFO][2021-07-24 10:12:04]Client #2 transferred 春丽#4052
+[INFO][2021-07-24 10:12:04][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-24 10:12:05][Server]User #2 x-Loc=50 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[WARNING][2021-07-24 10:12:06][Server]client 1 Exception ! 
+[WARNING][2021-07-24 10:12:07][Server]client 2 Exception ! 
+[INFO][2021-07-24 10:12:56][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-24 10:12:56][Server]User #2 x-Loc=50 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-24 10:12:56]Client #3 transferred 春丽#3535
+[WARNING][2021-07-24 10:12:58][Server]client 3 Exception ! 
+[INFO][2021-07-24 10:13:01][Server]User #1 x-Loc=0 y-Loc=0 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-24 10:13:01][Server]User #2 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-24 10:13:01][Server]User #3 x-Loc=50 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-24 10:13:01]Client #4 transferred 春丽#8788
+[WARNING][2021-07-24 10:13:03][Server]client 4 Exception ! 

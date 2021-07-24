@@ -77,40 +77,28 @@ public class ChooseUI extends JFrame {
         title.setSize(1000, 100);
         title.setText("请选择英雄");
 
-        b1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                hero = new MyHeroPro("草薙京", 10, 5, 100, 0, -1, 0, userID);
-                new DataTransfer(serverOut).sendHero(hero);
-                waitForGame();
-            }
+        b1.addActionListener(e -> {
+            hero = new MyHeroPro("草薙京", 10, 5, 100, 0, -1, 0, userID);
+            new DataTransfer(serverOut).sendHero(hero);
+            waitForGame();
         });
 
-        b2.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                hero = new MyHeroPro("不知火舞", 10, 5, 100, 0, -1, 0, userID);
-                new DataTransfer(serverOut).sendHero(hero);
-                waitForGame();
-            }
+        b2.addActionListener(e -> {
+            hero = new MyHeroPro("不知火舞", 10, 5, 100, 0, -1, 0, userID);
+            new DataTransfer(serverOut).sendHero(hero);
+            waitForGame();
         });
 
-        b3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                hero = new MyHeroPro("春丽", 10, 5, 100, 0, -1, 0, userID);
-                new DataTransfer(serverOut).sendHero(hero);
-                waitForGame();
-            }
+        b3.addActionListener(e -> {
+            hero = new MyHeroPro("春丽", 10, 5, 100, 0, -1, 0, userID);
+            new DataTransfer(serverOut).sendHero(hero);
+            waitForGame();
         });
 
-        b4.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                hero = new MyHeroPro("八神庵", 10, 5, 100, 0, -1, 0, userID);
-                new DataTransfer(serverOut).sendHero(hero);
-                waitForGame();
-            }
+        b4.addActionListener(e -> {
+            hero = new MyHeroPro("八神庵", 10, 5, 100, 0, -1, 0, userID);
+            new DataTransfer(serverOut).sendHero(hero);
+            waitForGame();
         });
 
     }

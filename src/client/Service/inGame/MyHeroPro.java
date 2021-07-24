@@ -1,9 +1,8 @@
 package client.Service.inGame;
 
-import java.awt.*;
 import java.io.Serializable;
 
-public class MyHeroPro implements Serializable, Comparable {
+public class MyHeroPro implements Serializable, Comparable<MyHeroPro> {
     private String name;
 
     private int xLoc;
@@ -11,7 +10,6 @@ public class MyHeroPro implements Serializable, Comparable {
     private int xHead;  //0左 1右
 
     private int impactAmt;
-    private int flashDis;
 
     private int hp;
     private int mp;
@@ -34,7 +32,6 @@ public class MyHeroPro implements Serializable, Comparable {
         this.yLoc = yLoc;
         this.xHead = xHead;
         this.impactAmt = impactAmt;
-        this.flashDis = flashDis;
         this.hp = hp;
         this.mp = mp;
         this.userID = userID;
@@ -47,7 +44,6 @@ public class MyHeroPro implements Serializable, Comparable {
                      int hp, int mp, int gameOverFlag, int nowCondition, int userID) {
         this.name = name;
         this.impactAmt = impactAmt;
-        this.flashDis = flashDis;
         this.hp = hp;
         this.mp = mp;
         this.gameOverFlag = gameOverFlag;
@@ -75,10 +71,6 @@ public class MyHeroPro implements Serializable, Comparable {
         return impactAmt;
     }
 
-    public int getFlashDis() {
-        return flashDis;
-    }
-
     public int getHp() {
         return hp;
     }
@@ -99,7 +91,6 @@ public class MyHeroPro implements Serializable, Comparable {
         return gameOverFlag;
     }
 
-
     public void setLoc(int xLoc, int yLoc, int xHead) {
         this.xLoc = xLoc;
         this.yLoc = yLoc;
@@ -118,22 +109,8 @@ public class MyHeroPro implements Serializable, Comparable {
         this.nowCondition = condition;
     }
 
-    public void setUserID(int userID) {
-        this.userID = userID;
-    }
-
     public void setGameOverFlag(int flag) {
         this.gameOverFlag = flag;
-    }
-
-    @Override
-    public int compareTo(Object o) {
-        MyHeroPro heroPro = (MyHeroPro) o;
-        if (this.userID > heroPro.userID) {
-            return 1;
-        } else {
-            return -1;
-        }
     }
 
     @Override
@@ -144,10 +121,15 @@ public class MyHeroPro implements Serializable, Comparable {
 
         MyHeroPro heroPro = (MyHeroPro) obj;
 
-        if (heroPro.userID == this.userID) {
-            return true;
+        return heroPro.userID == this.userID;
+    }
+
+    @Override
+    public int compareTo(MyHeroPro o) {
+        if (this.userID > o.userID) {
+            return 1;
         } else {
-            return false;
+            return -1;
         }
     }
 }

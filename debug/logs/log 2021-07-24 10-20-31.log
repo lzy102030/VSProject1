@@ -1,0 +1,7 @@
+[INFO][2021-07-24 10:20:31][Server]Server started.
+[INFO][2021-07-24 10:20:36][Server]Client #1 transferred 春丽#5018
+[INFO][2021-07-24 10:20:40][Server]Client #2 transferred 春丽#160
+[INFO][2021-07-24 10:20:41][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-24 10:20:41][Server]User #2 x-Loc=50 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[WARNING][2021-07-24 10:20:42][Server]client 1 Exception ! 
+[WARNING][2021-07-24 10:20:43][Server]client 2 Exception ! 

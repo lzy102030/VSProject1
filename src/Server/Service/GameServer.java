@@ -1,174 +1,62 @@
 package Server.Service;
 
+import Debug.LogSystem;
 import client.Service.inGame.MyHeroPro;
 import client.Service.inGame.MyObjectOutputStream;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.logging.*;
-import java.util.logging.Formatter;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.logging.Logger;
 
-public class GameServer extends Thread {
+public class GameServer {
     static ServerSocket serverSocket = null;
     static List<Socket> clientSockets = null;
     static ArrayList<MyHeroPro> heroList = null;
     static ActPending actPending = ActPending.getActPendingInstance();
     Socket s;
     static int count = 1, port = 2000;
-    int clientID, sendCount = 0;
+    int sendCount = 0;
     int x1Loc = 50, y1Loc = 300, x1Head = 1;
     int x2Loc = 700, y2Loc = 300, x2Head = 0;
     ObjectOutputStream out;
-
     static Logger logger;
 
     //constructor
-    private GameServer(Socket clientSok) {
-        clientID = count++;
-        System.out.println("Client #" + clientID + " is connected.");
-        s = clientSok;
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Server started...");
-
-        heroList = new ArrayList<>();
-
-        enableLog();
+    private GameServer() {
+        ExecutorService executorService = Executors.newCachedThreadPool();
 
         try {
             serverSocket = new ServerSocket(port);
             clientSockets = new ArrayList<>();
+            heroList = new ArrayList<>();
             //Socket s = serverSocket.accept();
             while (true) {
                 //wait for accept new client
+
                 Socket s = serverSocket.accept();
                 clientSockets.add(s);
                 //Once you have a client connection, start the thread and wait for the next connection
-                new GameServer(s).start();
+                executorService.execute(new SingleSever(s, count++));
             }
         } catch (IOException e) {
             System.out.println("Server closed：" + e);
             //serverSocket.close();
             System.exit(1);
         }
+
     }
 
-    private static void enableLog() {
-        logger = Logger.getLogger("");
+    public static void main(String[] args) {
+        logger = LogSystem.getLogger();
 
-        try {
-            FileHandler fileHandler = new FileHandler("D:/logs/1.txt");
-            fileHandler.setLevel(Level.INFO);
-            fileHandler.setFormatter(new Formatter() {//定义一个匿名类
-                @Override
-                public String format(LogRecord record) {
-                    Date date = new Date();
-                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-                    String datef = sdf.format(date);
+        System.out.println("Server started...");
+        logger.info("[Server]Server started.");
 
-                    return "[" + record.getLevel() + "]" + "[" + datef + "]"
-                            + "[" + this.getClass().getName() + "] " + record.getMessage() + "\n";
-                }
-            });
-            logger.addHandler(fileHandler);
-
-            ConsoleHandler consoleHandler = new ConsoleHandler();
-            consoleHandler.setLevel(Level.OFF);
-            logger.addHandler(consoleHandler);
-        } catch (SecurityException | IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    public void run() {
-        ObjectInputStream in;
-        MyHeroPro hero = null;
-
-        //get the input stream from client
-        try {
-            in = new ObjectInputStream(s.getInputStream());
-            out = new ObjectOutputStream(s.getOutputStream());
-
-            //[TODO][DEBUG]
-            if (clientID > 2 && sendCount < 2) {
-                try {
-                    sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                sendCondition(heroList);
-            }
-
-            while (true) {
-                try {
-                    if ((hero = (MyHeroPro) in.readObject()) == null) break;
-                } catch (ClassNotFoundException e) {
-                    System.err.println("[ERROR]None Object from socket has been received!");
-                    e.printStackTrace();
-                }
-
-                //[Tips]服务端判定时间 avg: 2 ms  (max: 4 ms    min: 1 ms)
-
-                if (heroList.size() < 2) {
-                    if (clientID == 1) {
-                        hero.setLoc(x1Loc, y1Loc, x1Head);
-                    } else if (clientID == 2) {
-                        hero.setLoc(x2Loc, y2Loc, x2Head);
-                    }
-                }
-
-                updateHeroList(hero);
-
-                //[DEBUG Output]
-                logger.info("Client #" + clientID + " transferred " + hero.getName());
-                //[End]
-
-                //动作act判定是否生效
-                if (heroList.size() == 2) {
-                    actPending.setActPending(heroList.get(0), heroList.get(1));
-
-                    actPending.actPend();
-
-                    //胜负判定
-                    //若为一方胜利则退出循环
-                    int winPendFlag = new WinnerPending(
-                            heroList.get(0).getHp(),
-                            heroList.get(1).getHp()).winPending();
-                    if (winPendFlag != -1) {
-                        //修改获胜方标记
-                        if (winPendFlag == 1) {
-                            heroList.get(0).setGameOverFlag(1);
-                            heroList.get(1).setGameOverFlag(2);
-                        } else if (winPendFlag == 2) {
-                            heroList.get(0).setGameOverFlag(2);
-                            heroList.get(1).setGameOverFlag(1);
-                        } else if (winPendFlag == 0) {
-                            heroList.get(0).setGameOverFlag(0);
-                            heroList.get(1).setGameOverFlag(0);
-                        }
-                    }
-
-                    //send message to every client
-                    sendCondition(heroList);
-
-                    //结束游戏network
-                    if (winPendFlag != -1) {
-                        break;
-                    }
-                }
-            }
-
-            System.out.println("BYE, client " + clientID + " ! ");
-            in.close();
-            s.close();
-        } catch (IOException e) {
-            System.out.println("client " + clientID + " Exception ! ");
-        }
+        new GameServer();
     }
 
     //更新英雄list，保证同时仅存在一个userID的同一个英雄对象
@@ -182,7 +70,7 @@ public class GameServer extends Thread {
     private synchronized void sendCondition(ArrayList<MyHeroPro> heroList) {
         int i = 1;
         for (MyHeroPro hero : heroList) {
-            logger.info("User #" + i++ +
+            logger.info("[Server]User #" + i++ +
                     " x-Loc=" + hero.getxLoc() +
                     " y-Loc=" + hero.getyLoc() +
                     " xHead=" + hero.getxHead() +
@@ -202,6 +90,104 @@ public class GameServer extends Thread {
                 e.printStackTrace();
             }
             sendCount++;
+        }
+    }
+
+    private class SingleSever implements Runnable {
+        int clientID;
+        public SingleSever(Socket clientSok, int clientID) {
+            System.out.println("Client #" + clientID + " is connected.");
+            s = clientSok;
+            this.clientID = clientID;
+        }
+
+        @Override
+        public void run() {
+            ObjectInputStream in;
+            MyHeroPro hero = null;
+
+            //get the input stream from client
+            try {
+                in = new ObjectInputStream(s.getInputStream());
+                out = new ObjectOutputStream(s.getOutputStream());
+
+                //[TODO]Release需删除
+                if (count > 3 && sendCount < 2) {
+                    try {
+                        Thread.sleep(3000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    sendCondition(heroList);
+                }
+
+                while (true) {
+                    try {
+                        if ((hero = (MyHeroPro) in.readObject()) == null) break;
+                    } catch (ClassNotFoundException e) {
+                        System.err.println("[ERROR]None Object from socket has been received!");
+                        e.printStackTrace();
+                    }
+
+                    //[Tips]服务端判定时间 avg: 2 ms  (max: 4 ms    min: 1 ms)
+
+                    if (heroList.size() < 2) {
+                        if (clientID == 1) {
+                            hero.setLoc(x1Loc, y1Loc, x1Head);
+                        } else if (clientID == 2) {
+                            hero.setLoc(x2Loc, y2Loc, x2Head);
+                        }
+                    }
+
+                    updateHeroList(hero);
+
+                    //[DEBUG Output]
+                    logger.info("[Server]client #" + clientID + " transferred " + hero.getName() + " #" + hero.getUserID());
+                    //[End]
+
+                    //动作act判定是否生效
+                    if (heroList.size() == 2) {
+                        actPending.setActPending(heroList.get(0), heroList.get(1));
+
+                        actPending.actPend();
+
+                        //胜负判定
+                        //若为一方胜利则退出循环
+                        int winPendFlag = new WinnerPending(
+                                heroList.get(0).getHp(),
+                                heroList.get(1).getHp()).winPending();
+                        if (winPendFlag != -1) {
+                            //修改获胜方标记
+                            if (winPendFlag == 1) {
+                                heroList.get(0).setGameOverFlag(1);
+                                heroList.get(1).setGameOverFlag(2);
+                            } else if (winPendFlag == 2) {
+                                heroList.get(0).setGameOverFlag(2);
+                                heroList.get(1).setGameOverFlag(1);
+                            } else if (winPendFlag == 0) {
+                                heroList.get(0).setGameOverFlag(0);
+                                heroList.get(1).setGameOverFlag(0);
+                            }
+                        }
+
+                        //send message to every client
+                        sendCondition(heroList);
+
+                        //结束游戏network
+                        if (winPendFlag != -1) {
+                            break;
+                        }
+                    }
+                }
+
+                System.out.println("BYE, client " + clientID + " ! ");
+                logger.info("[Server]BYE, client " + clientID + " ! ");
+                in.close();
+                s.close();
+            } catch (IOException e) {
+                System.out.println("client " + clientID + " Exception ! ");
+                logger.warning("[Server]client " + clientID + " Exception ! ");
+            }
         }
     }
 }

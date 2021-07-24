@@ -1,13 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="fix test">
-      <change afterPath="$PROJECT_DIR$/src/Client/Service/InGame/MyHeroPro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Service/ActPending.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Service/GameServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Service/WinnerPending.java" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="新增log系统 修复动作不上传的bug">
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-56-01.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-56-01.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-58-29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-58-29.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-58-59.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-58-59.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-59-49.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-59-49.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-00-30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-00-30.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-06-37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-06-37.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-07-03.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-07-03.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-09-55.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-09-55.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-10-08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-10-08.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-10-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-10-23.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-11-54.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-11-54.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-12-56.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-13-01.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-13-50.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-13-50.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-20-31.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-20-31.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-20-41.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-20-41.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-22-27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-22-27.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-22-37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-22-37.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-24-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-24-23.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-24-34.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-24-34.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-25-31.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-25-36.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-27-51.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-27-51.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-27-56.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-27-56.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-29-07.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-29-07.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-29-12.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-29-12.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-40.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-40.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-50.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-50.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-50.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-50.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-43-41.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-43-41.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-06.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-16.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-16.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-16.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-37.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-54.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-54.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-54.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-54.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-16.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-27.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-27.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-27.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-05.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-19.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-19.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-19.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-55-57.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-55-57.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-56-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-56-06.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-56-06.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-56-06.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-59-59.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-59-59.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-59-59.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-59-59.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-17.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-27.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-27.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-27.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-06-32.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-06-32.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-07-33.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-07-33.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-13-45.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-13-45.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-16-12.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-16-12.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-17-07.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-17-07.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-29-30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-29-30.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-35-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-35-22.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-36-46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-36-46.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-41-54.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-41-54.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-48-14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-48-14.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-49-55.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-49-55.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-57-01.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-57-01.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-59-08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-59-08.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/Service/database/MySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/Service/database/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VSProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VSProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Debug/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Debug/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Debug/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Debug/LogSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Service/ActPending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Service/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Service/Lobby/ChooseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Service/Lobby/ChooseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Service/inGame/MyHeroPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Service/inGame/MyHeroPro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/Lobby/ChooseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/UI/Lobby/ChooseUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/PKPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/Play.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/攻击/攻击9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/站立/站立9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/跑动/跑动9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source/1/防御/防御9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/攻击/攻击9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/跑动/跑动9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/OtherVersion/source1/防御/防御9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/inGame/BattleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/UI/inGame/BattleThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/inGame/MPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/UI/inGame/MPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/inGame/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testLog.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +297,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Server/Service/WinnerPending.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Server/Service/GameServer.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Debug/TestMain.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Debug/ConsoleUI.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Debug/forms.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/client/UI/inGame/Play.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Server/Service/ActPending.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/client/Service/inGame/MyHeroPro.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1vWtjwAlXlqC1FSnsqtouvvR5Ul" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -88,21 +380,115 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../下载/mysql-connector-java-8.0.26/mysql-connector-java-8.0.26/mysql-connector-java-8.0.26.jar" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.breadcrumbs" />
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\Others\VSProject\src\source" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\Others\VSProject\src" />
+      <recent name="D:\Java\Others\VSProject\src\Server\Service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Debug" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.MySQL">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="VSProject" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server.Service.GameServer" />
+      <module name="VSProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Server.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Log" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Debug.Log" />
+      <module name="VSProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Debug.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.Service.database.MySQL" />
+      <module name="VSProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.Service.database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Debug.TestMain" />
+      <module name="VSProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Debug.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="应用程序.Client" />
+      <item itemvalue="应用程序.GameServer" />
+      <item itemvalue="应用程序.TestMain" />
+      <item itemvalue="应用程序.Log" />
+      <item itemvalue="应用程序.MySQL" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.MySQL" />
+        <item itemvalue="应用程序.Client" />
+        <item itemvalue="应用程序.GameServer" />
+        <item itemvalue="应用程序.Log" />
+        <item itemvalue="应用程序.TestMain" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -127,7 +513,105 @@
       <option name="project" value="LOCAL" />
       <updated>1626692632454</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="服务端和英雄属性">
+      <created>1626706989415</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626706989415</updated>
+    </task>
+    <task id="LOCAL-00004" summary="服务端及英雄属性完善">
+      <created>1626749039275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626749039275</updated>
+    </task>
+    <task id="LOCAL-00005" summary="客户端网络部分完成">
+      <created>1626755139489</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626755139490</updated>
+    </task>
+    <task id="LOCAL-00006" summary="完成后端debug-console 客户端网络完善">
+      <created>1626771233932</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626771233932</updated>
+    </task>
+    <task id="LOCAL-00007" summary="去厕所了 待会继续">
+      <created>1626790863463</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626790863463</updated>
+    </task>
+    <task id="LOCAL-00008" summary="测试控制台完善 后端流完善 数据序列化完善">
+      <created>1626840041063</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1626840041063</updated>
+    </task>
+    <task id="LOCAL-00009" summary="对战逻辑重构 服务器分发优化 基础类注释">
+      <created>1626853234269</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626853234269</updated>
+    </task>
+    <task id="LOCAL-00010" summary="后端流重构 客户端前后端衔接 测试console优化">
+      <created>1626926326993</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626926326993</updated>
+    </task>
+    <task id="LOCAL-00011" summary="前后端衔接优化 目录优化">
+      <created>1626937325142</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626937325142</updated>
+    </task>
+    <task id="LOCAL-00012" summary="新UI尝试&#10;Debug-Console优化&#10;前后端交互重构">
+      <created>1626963611968</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626963611968</updated>
+    </task>
+    <task id="LOCAL-00013" summary="新UI资源pre-load">
+      <created>1627006116588</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1627006116588</updated>
+    </task>
+    <task id="LOCAL-00014" summary="绝对路径废弃">
+      <created>1627011958516</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1627011958516</updated>
+    </task>
+    <task id="LOCAL-00015" summary="前后端衔接 后端流优化">
+      <created>1627028378560</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1627028378560</updated>
+    </task>
+    <task id="LOCAL-00016" summary="新增log系统 修复动作不上传的bug">
+      <created>1627051771348</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1627051771349</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,12 +654,93 @@
         <entry key="926891c9-5982-45df-ac85-294fa95c65bd" value="TOOL_WINDOW" />
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="123master" />
     <MESSAGE value="fix test" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix test" />
+    <MESSAGE value="服务端和英雄属性" />
+    <MESSAGE value="服务端及英雄属性完善" />
+    <MESSAGE value="客户端网络部分完成" />
+    <MESSAGE value="完成后端debug-console 客户端网络完善" />
+    <MESSAGE value="去厕所了 待会继续" />
+    <MESSAGE value="测试控制台完善 后端流完善 数据序列化完善" />
+    <MESSAGE value="对战逻辑重构 服务器分发优化 基础类注释" />
+    <MESSAGE value="后端流重构 客户端前后端衔接 测试console优化" />
+    <MESSAGE value="前后端衔接优化 目录优化" />
+    <MESSAGE value="新UI尝试&#10;Debug-Console优化&#10;前后端交互重构" />
+    <MESSAGE value="新UI资源pre-load" />
+    <MESSAGE value="绝对路径废弃" />
+    <MESSAGE value="前后端衔接 后端流优化" />
+    <MESSAGE value="新增log系统 修复动作不上传的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增log系统 修复动作不上传的bug" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.StreamCorruptedException" package="java.io" />
+          <option name="timeStamp" value="21" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="24" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalMonitorStateException" package="java.lang" />
+          <option name="timeStamp" value="25" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="26" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.InvalidClassException" package="java.io" />
+          <option name="timeStamp" value="27" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/client/UI/inGame/MPanel.java</url>
+          <line>274</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="tFieldName1" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/VSProject$Play.ic" NAME="Play 覆盖结果" MODIFIED="1627005371894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>client.UI.OtherVersion.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/VSProject$Client.ic" NAME="Client 覆盖结果" MODIFIED="1627032869925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>client.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/VSProject$Play__1_.ic" NAME="Play (1) 覆盖结果" MODIFIED="1627010282505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>client.UI.inGame.*</FILTER>
+    </SUITE>
   </component>
 </project>
