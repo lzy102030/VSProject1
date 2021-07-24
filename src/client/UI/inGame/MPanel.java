@@ -142,13 +142,24 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             xHead1 = 0;
             act2 = 0;
-        } else if (act2 == 3) {
+        } else if (act2 == 3 && xHead2 == 1) {
             action2 = "down";
             //actionTurn = getImage(name2, action2, numb);
             //actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             roleStand2.paintIcon(this, g, xLoc2, yLoc2);//down图片缺失，暂时使用rolestand2
             act2 = 0;
-        } else if (act2 == 2) {
+        } else if (act2 == 3 && xHead2 == 0) {
+            action2 = "down";
+            //actionTurn = getImage(name2, action2, numb);
+            //actionTurn.paintIcon(this, g, xLoc2, yLoc2);
+            roleStand2.paintIcon(this, g, xLoc2, yLoc2);//down图片缺失，暂时使用rolestand2
+            act2 = 0;
+        } else if (act2 == 2 && xHead2 == 1) {
+            action2 = "up";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
+            act2 = 0;
+        } else if (act2 == 2 && xHead2 == 0) {
             action2 = "up";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
@@ -189,7 +200,7 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act2 = 0;
         } else if (act2 == 12 && xHead2 == 0) {
-            action2 = "skill";
+            action2 = "skillL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act2 = 0;
@@ -198,7 +209,7 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         } else if (act2 == 0 && xHead2 == 0) {
-            action2 = "stand";
+            action2 = "standL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         }
@@ -221,13 +232,24 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
-        } else if (act1 == 3) {
+        } else if (act1 == 3 && xHead1 == 1) {
             action1 = "down";
             //actionTurn = getImage(name1, action1, numb);
             //actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             roleStand1.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
-        } else if (act1 == 2) {
+        } else if (act1 == 3 && xHead1 == 0) {
+            action1 = "down";
+            //actionTurn = getImage(name1, action1, numb);
+            //actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            roleStand1.paintIcon(this, g, xLoc1, yLoc1);
+            act1 = 0;
+        } else if (act1 == 2 && xHead1 == 1) {
+            action1 = "up";
+            actionTurn = getImage(name1, action1, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            act1 = 0;
+        } else if (act1 == 2 && xHead1 == 0) {
             action1 = "up";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
@@ -258,7 +280,7 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
         } else if (act1 == 14 && xHead1 == 0) {
-            action1 = "defend";
+            action1 = "defendL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
@@ -268,7 +290,7 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
         } else if (act1 == 12 && xHead1 == 0) {
-            action1 = "skill";
+            action1 = "skillL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
@@ -277,7 +299,7 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         } else if (act1 == 0 && xHead1 == 0) {
-            action1 = "stand";
+            action1 = "standL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         }
