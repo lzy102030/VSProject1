@@ -144,15 +144,13 @@ public class MPanel extends JPanel implements KeyListener {
             act2 = 0;
         } else if (act2 == 3 && xHead2 == 1) {
             action2 = "down";
-            //actionTurn = getImage(name2, action2, numb);
-            //actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            roleStand2.paintIcon(this, g, xLoc2, yLoc2);//down图片缺失，暂时使用rolestand2
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
         } else if (act2 == 3 && xHead2 == 0) {
-            action2 = "down";
-            //actionTurn = getImage(name2, action2, numb);
-            //actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            roleStand2.paintIcon(this, g, xLoc2, yLoc2);//down图片缺失，暂时使用rolestand2
+            action2 = "downL";
+            actionTurn = getImage(name2, action2, numb);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
         } else if (act2 == 2 && xHead2 == 1) {
             action2 = "up";
@@ -160,7 +158,7 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
         } else if (act2 == 2 && xHead2 == 0) {
-            action2 = "up";
+            action2 = "upL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
@@ -234,15 +232,13 @@ public class MPanel extends JPanel implements KeyListener {
             act1 = 0;
         } else if (act1 == 3 && xHead1 == 1) {
             action1 = "down";
-            //actionTurn = getImage(name1, action1, numb);
-            //actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            roleStand1.paintIcon(this, g, xLoc1, yLoc1);
+            actionTurn = getImage(name1, action1, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
         } else if (act1 == 3 && xHead1 == 0) {
-            action1 = "down";
-            //actionTurn = getImage(name1, action1, numb);
-            //actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            roleStand1.paintIcon(this, g, xLoc1, yLoc1);
+            action1 = "downL";
+            actionTurn = getImage(name1, action1, numb);
+            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
         } else if (act1 == 2 && xHead1 == 1) {
             action1 = "up";
@@ -250,7 +246,7 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
         } else if (act1 == 2 && xHead1 == 0) {
-            action1 = "up";
+            action1 = "upL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
