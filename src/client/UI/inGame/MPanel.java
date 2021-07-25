@@ -19,7 +19,10 @@ import java.util.Objects;
 public class MPanel extends JPanel implements KeyListener {
     ImageIcon backGround = new ImageIcon(Objects.requireNonNull(
             this.getClass().getResource("/client/source/背景.jpg")));
+    ImageIcon vs = new ImageIcon(Objects.requireNonNull(
+            this.getClass().getResource("/client/source/vs.png")));
     Image back = backGround.getImage();
+    Image pk = vs.getImage();
     ImageIcon actionTurn = new ImageIcon();
 
     ObjectOutputStream serverOut;
@@ -115,11 +118,9 @@ public class MPanel extends JPanel implements KeyListener {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        ImageIcon roleStand1 = getImage(name1, "stand", 0);
-        ImageIcon roleStand2 = getImage(name2, "stand", 0);
-
-        //paint background
+        //paint background and vs
         g.drawImage(back, 0, 0, this.getWidth(), this.getHeight(), this);
+        g.drawImage(pk,420,0,80,80,this);
         //刷新计时
         time += 50;
         numb = time / 200 % 4;
