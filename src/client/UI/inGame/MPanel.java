@@ -4,10 +4,13 @@ import client.Service.inGame.DataTransfer;
 import client.Service.inGame.MyHeroPro;
 import client.Service.inGame.PlayNetwork;
 
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
@@ -383,7 +386,20 @@ public class MPanel extends JPanel implements KeyListener {
     //调用图片
     private ImageIcon getImage(String name, String action, int numb) {
         ImageIcon imageIcon = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/source/" + name + action + numb + ".png")));
+                this.getClass().getResource("/client/source/" + name + "/" + action + numb + ".png")));
         return imageIcon;
+    }
+
+    //播放音乐
+    private void playBGM() {
+        try {
+            Clip bgm = AudioSystem.getClip();
+            InputStream is = this.getClass().getClassLoader().getResourceAsStream("source/bgm.wav");//""中写音乐文件名.wav
+            AudioInputStream ais = AudioSystem.getAudioInputStream(is);
+            bgm.open(ais);
+            bgm.loop(Clip.LOOP_CONTINUOUSLY);
+        } catch (LineUnavailableException | UnsupportedAudioFileException | IOException e) {
+            e.printStackTrace();
+        }
     }
 }
