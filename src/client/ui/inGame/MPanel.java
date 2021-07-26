@@ -107,7 +107,7 @@ public class MPanel extends JPanel implements KeyListener {
             yLoc1 = myHero.getyLoc();
             xHead1 = myHero.getxHead();
             name1 = myHero.getName();
-            yLevel1 = yLoc1 - 250 < 0 ? 1 : 2;
+            yLevel1 = yLoc1 - 250 < 0 ? 1 : 0;
             firstTransfer = false;
         }
 
@@ -148,73 +148,62 @@ public class MPanel extends JPanel implements KeyListener {
             action2 = "move";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
+            
         } else if (act2 == 1 && xHead2 == 0) {
             action2 = "moveL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             xHead1 = 0;
-            act2 = 0;
+            
         } else if (act2 == 3 && xHead2 == 1) {
             action2 = "down";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
+            
         } else if (act2 == 3 && xHead2 == 0) {
             action2 = "downL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if (act2 == 2 && xHead2 == 1) {
             action2 = "up";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if (act2 == 2 && xHead2 == 0) {
             action2 = "upL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if (act2 == 10 && xHead2 == 1) {
             action2 = "attack";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if (act2 == 10 && xHead2 == 0) {
             action2 = "attackL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if (act2 == 11 && xHead2 == 1) {
             action2 = "leg";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if (act2 == 11 && xHead2 == 0) {
             action2 = "legL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if (act2 == 14 && xHead2 == 1) {
             action2 = "defend";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if (act2 == 14 && xHead2 == 0) {
             action2 = "defendL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if (act2 == 12 && xHead2 == 1) {
             action2 = "skill";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if (act2 == 12 && xHead2 == 0) {
             action2 = "skillL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            act2 = 0;
         } else if ((act2 == 0 || act2 == 15 || act2 == 16 || act2 == 17) && xHead2 == 1) {
             action2 = "stand";
             actionTurn = getImage(name2, action2, numb);
@@ -237,73 +226,59 @@ public class MPanel extends JPanel implements KeyListener {
             action1 = "move";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 1 && xHead1 == 0) {
             xHead1 = 0;
             action1 = "moveL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 3 && xHead1 == 1) {
             action1 = "down";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 3 && xHead1 == 0) {
             action1 = "downL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 2 && xHead1 == 1) {
             action1 = "up";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 2 && xHead1 == 0) {
             action1 = "upL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 10 && xHead1 == 1) {
             action1 = "attack";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 10 && xHead1 == 0) {
             action1 = "attackL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 11 && xHead1 == 1) {
             action1 = "leg";
             actionTurn = getImage(name1, "leg", numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 11 && xHead1 == 0) {
             action1 = "legL";
             actionTurn = getImage(name1, "leg", numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 14 && xHead1 == 1) {
             action1 = "defend";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 14 && xHead1 == 0) {
             action1 = "defendL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 12 && xHead1 == 1) {
             action1 = "skill";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if (act1 == 12 && xHead1 == 0) {
             action1 = "skillL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-            act1 = 0;
         } else if ((act1 == 0 || act1 == 15 || act1 == 16 || act1 == 17) && xHead1 == 1) {
             action1 = "stand";
             actionTurn = getImage(name1, action1, numb);
@@ -320,6 +295,7 @@ public class MPanel extends JPanel implements KeyListener {
         yLoc1 = yLoc1 + yChange;
         xHead1 = xHeadChange != -1 ? xHeadChange : xHead1;
         act1 = actChange != -1 ? actChange : act1;
+        yLevel1 = yLoc1 - 250 < 0 ? 1 : 0;
 
         myHero.setLoc(xLoc1, yLoc1, xHead1);
         myHero.setNowCondition(act1);

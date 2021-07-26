@@ -9,6 +9,7 @@ import java.util.logging.*;
 public class LogSystem {
     private static Logger logger;
     private static LogSystem logSystem = new LogSystem();
+    String time = getTime(1);
 
     private LogSystem() {
         logger = Logger.getLogger("Log");
@@ -21,7 +22,7 @@ public class LogSystem {
             File file = new File("debug/logs");
             file.mkdirs();
             String path = file.getAbsolutePath().replace("\\", "/");
-            FileHandler fileHandler = new FileHandler(path + "/log " + getTime(1) + ".log");
+            FileHandler fileHandler = new FileHandler(path + "/log " + time + ".log");
             fileHandler.setLevel(Level.ALL);
             fileHandler.setFormatter(new Formatter() {//定义一个匿名类
                 @Override
