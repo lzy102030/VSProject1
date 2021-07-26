@@ -49,3 +49,13 @@ VALUES
 select
   *
 from `hero_info`;
+
+alter user 'root'@'localhost' identified by 'QylLzy2021VsP';
+
+INSERT INTO `user`
+(`host`, `user`)
+VALUES
+('%', 'root')
+;
+
+UPDATE  user   SET  host = REPLACE(host, 'localhost', '%');
