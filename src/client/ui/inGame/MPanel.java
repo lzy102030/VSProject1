@@ -120,16 +120,16 @@ public class MPanel extends JPanel implements KeyListener {
 
         //paint background and vs
         g.drawImage(back, 0, 0, this.getWidth(), this.getHeight(), this);
-        g.drawImage(pk,420,0,80,80,this);
+        g.drawImage(pk,410,0,80,80,this);
         //刷新计时
         time += 50;
         numb = time / 200 % 4;
 
         //paint role2
         g.setColor(Color.red);
-        g.fillRect(450, 0, hp2, 20);//血条
+        g.fillRect(500, 0, hp2, 20);//血条
         g.setColor(Color.blue);
-        g.fillRect(450, 21, mp2, 20);//怒气条
+        g.fillRect(500, 21, mp2, 20);//怒气条
         //g.drawImage(role, xLoc2, yLoc2, roleStand2.getIconWidth(), roleStand2.getIconHeight(), this);//背景
 
         if (act2 == 1 && xHead2 == 1) {
