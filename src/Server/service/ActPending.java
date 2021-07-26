@@ -1,4 +1,4 @@
-package Server.Service;
+package server.service;
 
 import debug.LogSystem;
 import client.service.inGame.MyHeroPro;
@@ -115,24 +115,49 @@ public class ActPending {
 
     //攻击成立信息修正
     private void attackInfoModify(int player, int oPkCondition, int ImpactAmtTimes) {                 //攻击有效方 受击方状态
-        if (player == 1) {   //玩家1攻击有效
+        int realImpactAmt;
 
-            int realImpactAmt = o1.getImpactAmt() * ImpactAmtTimes;
+        if (player == 1) {   //玩家1攻击有效
+            realImpactAmt = o1.getImpactAmt() * ImpactAmtTimes;
+
             o2.setHp(o2.getHp() - realImpactAmt);                                 //玩家2受到1攻击
             o2.setMp(o2.getMp() + mpAmt);                                         //玩家2少量增长mp
-            o2.setNowCondition(attackReactCond(oPkCondition));//玩家2进入受击状态
-            o1.setMp(o1.getMp() + mpAmt * 3);                         //玩家1大量增长mp
-            logger.info("[Client]User #1 Attack User #2. Got Damage " + realImpactAmt +
-                    " [User #1 HP is " + o1.getHp() + "/ User #2 HP is " + o2.getHp() + ']');
+            o2.setNowCondition(attackReactCond(oPkCondition));                    //玩家2进入受击状态
+            o1.setMp(o1.getMp() + mpAmt * 3);                                     //玩家1大量增长mp
+
+            if (ImpactAmtTimes != 1) {
+                o1.setMp(0);
+            }
+
         } else {    //玩家2攻击有效
-            int realImpactAmt = o2.getImpactAmt() * ImpactAmtTimes;
+            realImpactAmt = o2.getImpactAmt() * ImpactAmtTimes;
+
             o1.setHp(o1.getHp() - realImpactAmt);                                 //玩家1受到攻击
             o1.setMp(o1.getMp() + mpAmt);                                         //玩家1少量增长mp
             o1.setNowCondition(attackReactCond(oPkCondition));                    //玩家1进入受击状态
             o2.setMp(o2.getMp() + mpAmt * 3);                                     //玩家2大量增长mp
-            logger.info("[Client]User #2 Attack User #1. Got Damage " + realImpactAmt +
-                    " User #1 now HP is " + o1.getHp() + " User #2 now HP is" + o2.getHp());
+
+            if (ImpactAmtTimes != 1) {
+                o2.setMp(0);
+            }
         }
+
+        if (o1.getMp() > 15) {
+            o1.setMp(15);
+        }
+
+        if (o2.getMp() > 15) {
+            o2.setMp(15);
+        }
+
+        String infoStr = player == 1 ?
+                "Player #1 Attack Player #2. Got Damage " :
+                "Player #2 Attack Player #1. Got Damage ";
+
+        logger.info("[Server]" + infoStr + realImpactAmt + "pts.\n" +
+                "        Now Player #1 HP is " + o1.getHp() + "   MP is " + o1.getMp() + "\n" +
+                "            Player #2 HP is " + o2.getHp() + "   MP is " + o2.getMp());
+
     }
 
     //受击状态判定

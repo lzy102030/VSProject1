@@ -17,11 +17,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Objects;
-import java.util.logging.Logger;
 
 public class MPanel extends JPanel implements KeyListener {
-    Logger logger = LogSystem.getLogger();
-
     ImageIcon backGround = new ImageIcon(Objects.requireNonNull(
             this.getClass().getResource("/client/source/背景.jpg")));
     ImageIcon vs = new ImageIcon(Objects.requireNonNull(
@@ -123,9 +120,6 @@ public class MPanel extends JPanel implements KeyListener {
     }
 
     public void paintComponent(Graphics g) {
-        logger.info("[Client]xLoc1=" + xLoc1 + " yLoc1=" + yLoc1);
-        logger.info("[Client]xLoc2=" + xLoc2 + " yLoc2=" + yLoc2);
-
         super.paintComponent(g);
 
         //paint background and vs
@@ -321,10 +315,13 @@ public class MPanel extends JPanel implements KeyListener {
     }
 
     public void sendHero(int xChange, int yChange, int xHeadChange, int actChange) {
-        myHero.setLoc(xLoc1 + xChange,
-                yLoc1 + yChange,
-                xHeadChange != -1 ? xHeadChange : xHead1);
-        myHero.setNowCondition(actChange != -1 ? actChange : act1);
+        xLoc1 = xLoc1 + xChange;
+        yLoc1 = yLoc1 + yChange;
+        xHead1 = xHeadChange != -1 ? xHeadChange : xHead1;
+        act1 = actChange != -1 ? actChange : act1;
+
+        myHero.setLoc(xLoc1, yLoc1, xHead1);
+        myHero.setNowCondition(act1);
 
         new DataTransfer(serverOut).sendHero(myHero);
     }
@@ -342,38 +339,30 @@ public class MPanel extends JPanel implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_W) {
-            act1 = 2;
             if (yLevel1 < yMaxLevel) {
-                yLoc1 -= yMove;
-                yLevel1++;
+                changeHeroCondition("W");
             }
         }
         if (e.getKeyCode() == KeyEvent.VK_D) {
-            act1 = 1;
-            xHead1 = 1;
             int xTemp = xLoc1 + xMove;
             if (xTemp <= xMaxLoc) {
-                xLoc1 = xTemp;
+                changeHeroCondition("D");
             }
         }
         if (e.getKeyCode() == KeyEvent.VK_S) {
-            act1 = 3;
             if (yLevel1 > yMinLevel) {
-                yLoc1 += yMove;
-                yLevel1--;
+                changeHeroCondition("S");
             }
         }
         if (e.getKeyCode() == KeyEvent.VK_A) {
-            act1 = 1;
-            xHead1 = 0;
             int xTemp = xLoc1 - xMove;
             if (xTemp >= xMinLoc) {
-                xLoc1 = xTemp;
+                changeHeroCondition("A");
             }
         }
         //防御
         if (e.getKeyCode() == KeyEvent.VK_U) {
-            act1 = 14;
+            changeHeroCondition("U");
         }
     }
 
@@ -381,21 +370,20 @@ public class MPanel extends JPanel implements KeyListener {
     public void keyReleased(KeyEvent e) {
         //拳攻击
         if (e.getKeyCode() == KeyEvent.VK_J) {
-            act1 = 10;
+            changeHeroCondition("J");
         }
         //脚攻击
         if (e.getKeyCode() == KeyEvent.VK_K) {
-            act1 = 11;
+            changeHeroCondition("K");
         }
         //防御
         if (e.getKeyCode() == KeyEvent.VK_U) {
-            act1 = 14;
+            changeHeroCondition("U");
         }
         //技能
-        //[TODO]此处需要判断是否为满mp
         if (e.getKeyCode() == KeyEvent.VK_L) {
-            if (mp1 == 4) {
-                act1 = 12;
+            if (mp1 == 15) {
+                changeHeroCondition("L");
             }
         }
     }

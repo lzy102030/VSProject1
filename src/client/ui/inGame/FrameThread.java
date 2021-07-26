@@ -10,19 +10,10 @@ public class FrameThread extends Thread {
 
     public void run() {
         while (true) {
-            //[TODO]
-            myPanel.sendHero();
-
-            try {
-                sleep(processWaitTime);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
             myPanel.repaint();
 
             try {
-                Thread.sleep(frameFlushTime - processWaitTime);
+                Thread.sleep(frameFlushTime);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
