@@ -47,7 +47,6 @@ public class GameServer {
             //serverSocket.close();
             System.exit(1);
         }
-
     }
 
     public static void main(String[] args) {
@@ -146,6 +145,7 @@ public class GameServer {
                         int winPendFlag = new WinnerPending(
                                 heroList.get(0).getHp(),
                                 heroList.get(1).getHp()).winPending();
+
                         if (winPendFlag != -1) {
                             //修改获胜方标记
                             if (winPendFlag == 1) {

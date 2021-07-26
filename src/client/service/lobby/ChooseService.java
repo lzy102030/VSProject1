@@ -41,7 +41,6 @@ public class ChooseService {
                     }
                 } while (heroListReceive == null);
                 heroList = (ArrayList<MyHeroPro>) heroListReceive;
-                System.out.println(heroList.size());
                 chooseUI.callForGame(heroList);
 
             } catch (IOException e) {

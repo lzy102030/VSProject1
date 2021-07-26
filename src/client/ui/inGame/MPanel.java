@@ -107,7 +107,7 @@ public class MPanel extends JPanel implements KeyListener {
             yLoc1 = myHero.getyLoc();
             xHead1 = myHero.getxHead();
             name1 = myHero.getName();
-            yLevel1 = yLoc1 - 250 < 0 ? 1 : 0;
+            yLevel1 = yLoc1 - 250 < 0 ? 1 : 2;
             firstTransfer = false;
         }
 
@@ -122,7 +122,7 @@ public class MPanel extends JPanel implements KeyListener {
         mp2 = conHero.getMp();
         act2 = conHero.getNowCondition();
         name2 = conHero.getName();
-        yLevel2 = yLoc2 - 250 < 0 ? 1 : 0;
+        yLevel2 = yLoc2 - 250 < 0 ? 1 : 2;
     }
 
     public void paintComponent(Graphics g) {
@@ -315,13 +315,6 @@ public class MPanel extends JPanel implements KeyListener {
         }
     }
 
-    public void sendHero() {
-        myHero.setLoc(xLoc1, yLoc1, xHead1);
-        myHero.setNowCondition(act1);
-
-        new DataTransfer(serverOut).sendHero(myHero);
-    }
-
     public void sendHero(int xChange, int yChange, int xHeadChange, int actChange) {
         xLoc1 = xLoc1 + xChange;
         yLoc1 = yLoc1 + yChange;
@@ -386,11 +379,12 @@ public class MPanel extends JPanel implements KeyListener {
         }
         //防御
         if (e.getKeyCode() == KeyEvent.VK_U) {
-            changeHeroCondition("U");
+            changeHeroCondition(null);
         }
         //技能
         if (e.getKeyCode() == KeyEvent.VK_L) {
             if (mp1 == 15) {
+                myHero.setMp(0);
                 changeHeroCondition("L");
             }
         }

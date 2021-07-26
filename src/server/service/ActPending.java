@@ -114,32 +114,23 @@ public class ActPending {
     }
 
     //攻击成立信息修正
-    private void attackInfoModify(int player, int oPkCondition, int ImpactAmtTimes) {                 //攻击有效方 受击方状态
+    private void attackInfoModify(int player, int oPkCondition, int impactAmtTimes) {                 //攻击有效方 受击方状态
         int realImpactAmt;
 
         if (player == 1) {   //玩家1攻击有效
-            realImpactAmt = o1.getImpactAmt() * ImpactAmtTimes;
+            realImpactAmt = o1.getImpactAmt() * impactAmtTimes;
 
             o2.setHp(o2.getHp() - realImpactAmt);                                 //玩家2受到1攻击
             o2.setMp(o2.getMp() + mpAmt);                                         //玩家2少量增长mp
             o2.setNowCondition(attackReactCond(oPkCondition));                    //玩家2进入受击状态
             o1.setMp(o1.getMp() + mpAmt * 3);                                     //玩家1大量增长mp
-
-            if (ImpactAmtTimes != 1) {
-                o1.setMp(0);
-            }
-
         } else {    //玩家2攻击有效
-            realImpactAmt = o2.getImpactAmt() * ImpactAmtTimes;
+            realImpactAmt = o2.getImpactAmt() * impactAmtTimes;
 
             o1.setHp(o1.getHp() - realImpactAmt);                                 //玩家1受到攻击
             o1.setMp(o1.getMp() + mpAmt);                                         //玩家1少量增长mp
             o1.setNowCondition(attackReactCond(oPkCondition));                    //玩家1进入受击状态
             o2.setMp(o2.getMp() + mpAmt * 3);                                     //玩家2大量增长mp
-
-            if (ImpactAmtTimes != 1) {
-                o2.setMp(0);
-            }
         }
 
         if (o1.getMp() > 15) {

@@ -78,11 +78,12 @@ public class BattleThread {
                             logger.info("Send huge attack");
                         } else {
                             System.err.println("[ERROR]None input found!");
+                            logger.severe("None input found!");
                         }
 
                         try {
                             if (defenceFlag) {
-                                obj.wait(150);
+                                obj.wait();
                                 defenceFlag = false;
                             } else {
                                 obj.wait(50);
@@ -94,7 +95,6 @@ public class BattleThread {
 
                         keyUsed = null;
                     }
-
                 }
             }
         }
@@ -103,6 +103,10 @@ public class BattleThread {
     public void setKeyUsed(String keyUsed) {
         synchronized (obj) {
             //if (canNotifyFlag) {
+            if (defenceFlag && keyUsed == "U") {
+                return;
+                //[todo]解决防御动画不播放的原因 可能错误点：服务器下发数据异常 / 客户端覆盖数据异常  / 发送异常
+            }
             this.keyUsed = keyUsed;
             obj.notifyAll();
         }
