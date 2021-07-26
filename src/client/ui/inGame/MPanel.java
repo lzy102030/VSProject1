@@ -294,17 +294,7 @@ public class MPanel extends JPanel implements KeyListener {
         }
 
         //-1未结束，0平手，1胜利，2失败
-        if (gameOverFlag == 0) {
-            battleThread.interrupt();
-            frameThread.interrupt();
-            over.over();
-            System.exit(0);
-        } else if (gameOverFlag == 1) {
-            battleThread.interrupt();
-            frameThread.interrupt();
-            over.over();
-            System.exit(0);
-        } else if (gameOverFlag == 2) {
+        if (gameOverFlag != -1) {
             battleThread.interrupt();
             frameThread.interrupt();
             over.over();
