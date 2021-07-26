@@ -1,0 +1,145 @@
+[INFO][2021-07-26 11:56:54][Server]Server started.
+[INFO][2021-07-26 11:57:00][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:05][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:05][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:05][Server]User #2 x-Loc=50 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:05][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:05][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:05][Server]User #2 x-Loc=50 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:05][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:05][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:05][Server]User #2 x-Loc=50 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:09][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:09][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:09][Server]User #2 x-Loc=100 y-Loc=300 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:10][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:10][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:10][Server]User #2 x-Loc=100 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:12][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:12][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:12][Server]User #2 x-Loc=150 y-Loc=300 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:13][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:13][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:13][Server]User #2 x-Loc=150 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:17][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:17][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:17][Server]User #2 x-Loc=150 y-Loc=200 xHead=1  Act=2 HP=100 MP=0
+[INFO][2021-07-26 11:57:18][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:18][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:18][Server]User #2 x-Loc=150 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:23][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:23][Server]User #1 x-Loc=750 y-Loc=300 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:23][Server]User #2 x-Loc=150 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:24][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:24][Server]User #1 x-Loc=750 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:24][Server]User #2 x-Loc=150 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:27][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:27][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:27][Server]User #2 x-Loc=150 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:28][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:28][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:28][Server]User #2 x-Loc=150 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:31][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:31][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:31][Server]User #2 x-Loc=200 y-Loc=200 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:32][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:32][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:32][Server]User #2 x-Loc=200 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:35][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:35][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:35][Server]User #2 x-Loc=250 y-Loc=200 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:36][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:36][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:36][Server]User #2 x-Loc=250 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:37][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:37][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:37][Server]User #2 x-Loc=300 y-Loc=200 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:38][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:38][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:38][Server]User #2 x-Loc=300 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:44][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:44][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:44][Server]User #2 x-Loc=350 y-Loc=200 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:45][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:45][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:45][Server]User #2 x-Loc=350 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:49][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:49][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:49][Server]User #2 x-Loc=400 y-Loc=200 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:50][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:50][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:50][Server]User #2 x-Loc=400 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:51][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:51][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:51][Server]User #2 x-Loc=450 y-Loc=200 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:52][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:52][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:52][Server]User #2 x-Loc=450 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:52][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:52][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:52][Server]User #2 x-Loc=400 y-Loc=200 xHead=0  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:53][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:53][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:53][Server]User #2 x-Loc=400 y-Loc=200 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:53][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:53][Server]User #1 x-Loc=700 y-Loc=300 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:53][Server]User #2 x-Loc=450 y-Loc=200 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:54][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:54][Server]User #1 x-Loc=750 y-Loc=300 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:54][Server]User #2 x-Loc=450 y-Loc=200 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:54][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:54][Server]User #1 x-Loc=750 y-Loc=300 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:54][Server]User #2 x-Loc=450 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:54][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:54][Server]User #1 x-Loc=750 y-Loc=300 xHead=1  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:54][Server]User #2 x-Loc=450 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:55][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:55][Server]User #1 x-Loc=750 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:55][Server]User #2 x-Loc=450 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:55][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:55][Server]User #1 x-Loc=750 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:55][Server]User #2 x-Loc=500 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:55][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:55][Server]User #1 x-Loc=750 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:55][Server]User #2 x-Loc=500 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:56][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:56][Server]User #1 x-Loc=750 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:56][Server]User #2 x-Loc=550 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:56][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:56][Server]User #1 x-Loc=750 y-Loc=300 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:56][Server]User #2 x-Loc=550 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:57][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:57][Server]User #1 x-Loc=750 y-Loc=200 xHead=1  Act=2 HP=100 MP=0
+[INFO][2021-07-26 11:57:57][Server]User #2 x-Loc=550 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:57][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:57][Server]User #1 x-Loc=750 y-Loc=200 xHead=1  Act=2 HP=100 MP=0
+[INFO][2021-07-26 11:57:57][Server]User #2 x-Loc=600 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:57][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:57][Server]User #1 x-Loc=750 y-Loc=200 xHead=1  Act=2 HP=100 MP=0
+[INFO][2021-07-26 11:57:57][Server]User #2 x-Loc=550 y-Loc=200 xHead=0  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:58][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:58][Server]User #1 x-Loc=750 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:58][Server]User #2 x-Loc=550 y-Loc=200 xHead=0  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:58][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:58][Server]User #1 x-Loc=750 y-Loc=100 xHead=0  Act=2 HP=100 MP=0
+[INFO][2021-07-26 11:57:58][Server]User #2 x-Loc=550 y-Loc=200 xHead=0  Act=1 HP=100 MP=0
+[INFO][2021-07-26 11:57:58][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:58][Server]User #1 x-Loc=750 y-Loc=100 xHead=0  Act=2 HP=100 MP=0
+[INFO][2021-07-26 11:57:58][Server]User #2 x-Loc=550 y-Loc=200 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:58][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:58][Server]User #1 x-Loc=750 y-Loc=100 xHead=0  Act=2 HP=100 MP=0
+[INFO][2021-07-26 11:57:58][Server]User #2 x-Loc=550 y-Loc=200 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:59][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:59][Server]User #1 x-Loc=750 y-Loc=100 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:59][Server]User #2 x-Loc=550 y-Loc=200 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:59][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:57:59][Server]User #1 x-Loc=750 y-Loc=100 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:59][Server]User #2 x-Loc=550 y-Loc=200 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:59][Server]client #1 transferred chunli #9176
+[INFO][2021-07-26 11:57:59][Server]User #1 x-Loc=750 y-Loc=100 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:57:59][Server]User #2 x-Loc=600 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:58:00][Server]client #2 transferred chunli #4807
+[INFO][2021-07-26 11:58:00][Server]User #1 x-Loc=750 y-Loc=0 xHead=0  Act=0 HP=100 MP=0
+[INFO][2021-07-26 11:58:00][Server]User #2 x-Loc=600 y-Loc=200 xHead=1  Act=0 HP=100 MP=0
+[WARNING][2021-07-26 11:59:11][Server]client 1 Exception ! 
+[WARNING][2021-07-26 11:59:12][Server]client 2 Exception ! 

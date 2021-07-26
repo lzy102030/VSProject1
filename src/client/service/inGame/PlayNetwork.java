@@ -12,15 +12,6 @@ public class PlayNetwork {
     ObjectInputStream serverIn;
     ArrayList<MyHeroPro> heroList;
     MPanel mPanel;
-    MyHeroPro hero;
-
-    public PlayNetwork(MyHeroPro hero, int xLoc, int yLoc, int xHead, int condition) {
-        this.hero = hero;
-
-        prepareData(xLoc, yLoc, xHead, condition);
-
-        new DataTransfer(serverOut).sendHero(this.hero);
-    }
 
     public PlayNetwork(ObjectOutputStream serverOut, ObjectInputStream serverIn) {
         this.serverOut = serverOut;
@@ -57,10 +48,5 @@ public class PlayNetwork {
                 e.printStackTrace();
             }
         }
-    }
-
-    private void prepareData(int xLoc, int yLoc, int xHead, int condition) {
-        hero.setLoc(xLoc, yLoc, xHead);
-        hero.setNowCondition(condition);
     }
 }

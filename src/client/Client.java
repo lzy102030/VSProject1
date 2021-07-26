@@ -1,6 +1,6 @@
 package client;
 
-import client.service.Lobby.ChooseService;
+import client.service.lobby.ChooseService;
 import client.service.inGame.MyHeroPro;
 import client.ui.inGame.Play;
 

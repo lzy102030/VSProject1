@@ -1,4 +1,4 @@
-package Server.Service;
+package server.service;
 
 import debug.LogSystem;
 import client.service.inGame.MyHeroPro;
@@ -40,7 +40,7 @@ public class GameServer {
                 Socket s = serverSocket.accept();
                 clientSockets.add(s);
                 //Once you have a client connection, start the thread and wait for the next connection
-                executorService.execute(new SingleSever(s, count++));
+                executorService.execute(new SingleServer(s, count++));
             }
         } catch (IOException e) {
             System.out.println("Server closed：" + e);
@@ -93,9 +93,9 @@ public class GameServer {
         }
     }
 
-    private class SingleSever implements Runnable {
+    private class SingleServer implements Runnable {
         int clientID;
-        public SingleSever(Socket clientSok, int clientID) {
+        public SingleServer(Socket clientSok, int clientID) {
             System.out.println("Client #" + clientID + " is connected.");
             s = clientSok;
             this.clientID = clientID;
@@ -110,16 +110,6 @@ public class GameServer {
             try {
                 in = new ObjectInputStream(s.getInputStream());
                 out = new ObjectOutputStream(s.getOutputStream());
-
-                //[TODO]Release需删除
-                if (count > 3 && sendCount < 2) {
-                    try {
-                        Thread.sleep(3000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    sendCondition(heroList);
-                }
 
                 while (true) {
                     try {

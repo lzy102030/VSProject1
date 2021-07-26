@@ -1,8 +1,10 @@
 package client.ui.inGame;
 
+import client.service.inGame.BattleThread;
 import client.service.inGame.DataTransfer;
 import client.service.inGame.MyHeroPro;
 import client.service.inGame.PlayNetwork;
+import debug.LogSystem;
 
 import javax.sound.sampled.*;
 import javax.swing.*;
@@ -35,8 +37,10 @@ public class MPanel extends JPanel implements KeyListener {
     ObjectInputStream serverIn;
     MyHeroPro myHero, conHero;
     ArrayList<MyHeroPro> heroList;
-    BattleThread thread;
+    FrameThread frameThread;
+    BattleThread battleThread;
     PlayNetwork playNetwork;
+
     //刷新计时
     int numb;
     int time;
@@ -76,8 +80,9 @@ public class MPanel extends JPanel implements KeyListener {
         this.myHero = myHero;
         this.heroList = heroList;
 
-        thread = new BattleThread(this);
-        thread.start();
+        frameThread = new FrameThread(this);
+        frameThread.start();
+        battleThread = new BattleThread(this);
         updateHeroInfo(heroList);
         this.setFocusable(true);
         this.addKeyListener(this);
@@ -101,6 +106,7 @@ public class MPanel extends JPanel implements KeyListener {
             xLoc1 = myHero.getxLoc();
             yLoc1 = myHero.getyLoc();
             xHead1 = myHero.getxHead();
+            name1 = myHero.getName();
             yLevel1 = yLoc1 - 250 < 0 ? 1 : 0;
             firstTransfer = false;
         }
@@ -108,7 +114,6 @@ public class MPanel extends JPanel implements KeyListener {
         hp1 = myHero.getHp();
         mp1 = myHero.getMp();
         act1 = myHero.getNowCondition();
-        name1 = myHero.getName();
 
         xLoc2 = conHero.getxLoc();
         yLoc2 = conHero.getyLoc();
@@ -310,20 +315,27 @@ public class MPanel extends JPanel implements KeyListener {
         }
     }
 
-    public void heroActLast() {
-
-    }
-
-    public void initRole() {
-        xLoc1 = 50;
-        yLoc1 = 300;
-    }
-
     public void sendHero() {
         myHero.setLoc(xLoc1, yLoc1, xHead1);
         myHero.setNowCondition(act1);
 
         new DataTransfer(serverOut).sendHero(myHero);
+    }
+
+    public void sendHero(int xChange, int yChange, int xHeadChange, int actChange) {
+        xLoc1 = xLoc1 + xChange;
+        yLoc1 = yLoc1 + yChange;
+        xHead1 = xHeadChange != -1 ? xHeadChange : xHead1;
+        act1 = actChange != -1 ? actChange : act1;
+
+        myHero.setLoc(xLoc1, yLoc1, xHead1);
+        myHero.setNowCondition(act1);
+
+        new DataTransfer(serverOut).sendHero(myHero);
+    }
+
+    public void changeHeroCondition(String keyUsed) {
+        battleThread.setKeyUsed(keyUsed);
     }
 
     @Override
@@ -335,38 +347,30 @@ public class MPanel extends JPanel implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_W) {
-            act1 = 2;
             if (yLevel1 < yMaxLevel) {
-                yLoc1 -= yMove;
-                yLevel1++;
+                changeHeroCondition("W");
             }
         }
         if (e.getKeyCode() == KeyEvent.VK_D) {
-            act1 = 1;
-            xHead1 = 1;
             int xTemp = xLoc1 + xMove;
             if (xTemp <= xMaxLoc) {
-                xLoc1 = xTemp;
+                changeHeroCondition("D");
             }
         }
         if (e.getKeyCode() == KeyEvent.VK_S) {
-            act1 = 3;
             if (yLevel1 > yMinLevel) {
-                yLoc1 += yMove;
-                yLevel1--;
+                changeHeroCondition("S");
             }
         }
         if (e.getKeyCode() == KeyEvent.VK_A) {
-            act1 = 1;
-            xHead1 = 0;
             int xTemp = xLoc1 - xMove;
             if (xTemp >= xMinLoc) {
-                xLoc1 = xTemp;
+                changeHeroCondition("A");
             }
         }
         //防御
         if (e.getKeyCode() == KeyEvent.VK_U) {
-            act1 = 14;
+            changeHeroCondition("U");
         }
     }
 
@@ -374,20 +378,20 @@ public class MPanel extends JPanel implements KeyListener {
     public void keyReleased(KeyEvent e) {
         //拳攻击
         if (e.getKeyCode() == KeyEvent.VK_J) {
-            act1 = 10;
+            changeHeroCondition("J");
         }
         //脚攻击
         if (e.getKeyCode() == KeyEvent.VK_K) {
-            act1 = 11;
+            changeHeroCondition("K");
         }
         //防御
         if (e.getKeyCode() == KeyEvent.VK_U) {
-            act1 = 14;
+            changeHeroCondition("U");
         }
         //技能
         if (e.getKeyCode() == KeyEvent.VK_L) {
             if (mp1 == 15) {
-                act1 = 12;
+                changeHeroCondition("L");
             }
         }
     }
