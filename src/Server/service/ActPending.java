@@ -1,4 +1,4 @@
-package server.service;
+package Server.Service;
 
 import debug.LogSystem;
 import client.service.inGame.MyHeroPro;
