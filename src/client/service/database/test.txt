@@ -35,7 +35,27 @@ INSERT INTO `hero_info`
 VALUES
 ('kelisi', 24)
 ;
+INSERT INTO `hero_info`
+(`hero_name`, `hero_impact`)
+VALUES
+('baofengzi', 24)
+;
+INSERT INTO `hero_info`
+(`hero_name`, `hero_impact`)
+VALUES
+('yadianna', 24)
+;
 
 select
   *
 from `hero_info`;
+
+alter user 'root'@'localhost' identified by 'QylLzy2021VsP';
+
+INSERT INTO `user`
+(`host`, `user`)
+VALUES
+('%', 'root')
+;
+
+UPDATE  user   SET  host = REPLACE(host, 'localhost', '%');
