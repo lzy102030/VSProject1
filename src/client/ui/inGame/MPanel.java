@@ -1,8 +1,10 @@
 package client.ui.inGame;
 
+import client.service.inGame.BattleThread;
 import client.service.inGame.DataTransfer;
 import client.service.inGame.MyHeroPro;
 import client.service.inGame.PlayNetwork;
+import debug.LogSystem;
 
 import javax.sound.sampled.*;
 import javax.swing.*;
@@ -15,8 +17,11 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.logging.Logger;
 
 public class MPanel extends JPanel implements KeyListener {
+    Logger logger = LogSystem.getLogger();
+
     ImageIcon backGround = new ImageIcon(Objects.requireNonNull(
             this.getClass().getResource("/client/source/背景.jpg")));
     ImageIcon vs = new ImageIcon(Objects.requireNonNull(
@@ -29,15 +34,17 @@ public class MPanel extends JPanel implements KeyListener {
     ObjectInputStream serverIn;
     MyHeroPro myHero, conHero;
     ArrayList<MyHeroPro> heroList;
-    BattleThread thread;
+    FrameThread frameThread;
+    BattleThread battleThread;
     PlayNetwork playNetwork;
+
     //刷新计时
     int numb;
     int time;
 
     //role1
-    int hp1 = 400;
-    int mp1 = 200;
+    int hp1;
+    int mp1;
     int xLoc1;
     int yLoc1;
     int yLevel1;
@@ -64,19 +71,18 @@ public class MPanel extends JPanel implements KeyListener {
 
     boolean firstTransfer = true;
 
-
     public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro myHero, ArrayList<MyHeroPro> heroList) {
         this.serverOut = serverOut;
         this.serverIn = serverIn;
         this.myHero = myHero;
         this.heroList = heroList;
 
-        thread = new BattleThread(this);
-        thread.start();
+        frameThread = new FrameThread(this);
+        frameThread.start();
+        battleThread = new BattleThread(this);
         updateHeroInfo(heroList);
         this.setFocusable(true);
         this.addKeyListener(this);
-
     }
 
     public void setPlayNetwork(PlayNetwork playNetwork) {
@@ -96,6 +102,7 @@ public class MPanel extends JPanel implements KeyListener {
             xLoc1 = myHero.getxLoc();
             yLoc1 = myHero.getyLoc();
             xHead1 = myHero.getxHead();
+            name1 = myHero.getName();
             yLevel1 = yLoc1 - 250 < 0 ? 1 : 0;
             firstTransfer = false;
         }
@@ -103,7 +110,6 @@ public class MPanel extends JPanel implements KeyListener {
         hp1 = myHero.getHp();
         mp1 = myHero.getMp();
         act1 = myHero.getNowCondition();
-        name1 = myHero.getName();
 
         xLoc2 = conHero.getxLoc();
         yLoc2 = conHero.getyLoc();
@@ -116,11 +122,14 @@ public class MPanel extends JPanel implements KeyListener {
     }
 
     public void paintComponent(Graphics g) {
+        logger.info("[Client]xLoc1=" + xLoc1 + " yLoc1=" + yLoc1);
+        logger.info("[Client]xLoc2=" + xLoc2 + " yLoc2=" + yLoc2);
+
         super.paintComponent(g);
 
         //paint background and vs
         g.drawImage(back, 0, 0, this.getWidth(), this.getHeight(), this);
-        g.drawImage(pk,410,0,80,80,this);
+        g.drawImage(pk, 410, 0, 80, 80, this);
         //刷新计时
         time += 50;
         numb = time / 200 % 4;
@@ -303,20 +312,24 @@ public class MPanel extends JPanel implements KeyListener {
         }
     }
 
-    public void heroActLast() {
-
-    }
-
-    public void initRole() {
-        xLoc1 = 50;
-        yLoc1 = 300;
-    }
-
     public void sendHero() {
         myHero.setLoc(xLoc1, yLoc1, xHead1);
         myHero.setNowCondition(act1);
 
         new DataTransfer(serverOut).sendHero(myHero);
+    }
+
+    public void sendHero(int xChange, int yChange, int xHeadChange, int actChange) {
+        myHero.setLoc(xLoc1 + xChange,
+                yLoc1 + yChange,
+                xHeadChange != -1 ? xHeadChange : xHead1);
+        myHero.setNowCondition(actChange != -1 ? actChange : act1);
+
+        new DataTransfer(serverOut).sendHero(myHero);
+    }
+
+    public void changeHeroCondition(String keyUsed) {
+        battleThread.setKeyUsed(keyUsed);
     }
 
     @Override

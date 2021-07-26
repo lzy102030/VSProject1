@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.util.logging.Logger;
 
 public class ActPending {
-    private int mpAmt = 1;
+    private int mpAmt = 1, actDis = 40;
     private MyHeroPro o1, o2;
     private static ActPending ActPendingInstance = new ActPending();
     private Logger logger = LogSystem.getLogger();
@@ -43,7 +43,6 @@ public class ActPending {
         int o1xHead = o1.getxHead(), o2xHead = o2.getxHead();
 
         //排除判定情况[Start]
-        int actDis = 25;
         if ((o1yLoc != o2yLoc) ||                                     //玩家1和2不在同一y层上
                 (Math.abs(o1xLoc - o2xLoc) > actDis * 2)) {           //玩家1和2的水平距离 超过了判定范围
             return;

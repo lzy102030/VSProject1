@@ -1,10 +1,10 @@
 package client.ui.inGame;
 
-public class BattleThread extends Thread {
+public class FrameThread extends Thread {
     MPanel myPanel;
     int frameFlushTime = 50, processWaitTime = 10;
 
-    public BattleThread(MPanel myPanel) {
+    public FrameThread(MPanel myPanel) {
         this.myPanel = myPanel;
     }
 

@@ -1,4 +1,4 @@
-package client.service.Lobby;
+package client.service.lobby;
 
 import client.service.inGame.MyHeroPro;
 import client.ui.lobby.ChooseUI;
