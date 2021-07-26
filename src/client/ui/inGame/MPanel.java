@@ -21,8 +21,14 @@ public class MPanel extends JPanel implements KeyListener {
             this.getClass().getResource("/client/source/背景.jpg")));
     ImageIcon vs = new ImageIcon(Objects.requireNonNull(
             this.getClass().getResource("/client/source/vs.png")));
+    ImageIcon hpL = new ImageIcon(Objects.requireNonNull(
+            this.getClass().getResource("/client/source/hpL.png")));
+    ImageIcon hp = new ImageIcon(Objects.requireNonNull(
+            this.getClass().getResource("/client/source/hp.png")));
     Image back = backGround.getImage();
     Image pk = vs.getImage();
+    Image Hp = hp.getImage();
+    Image HpL = hpL.getImage();
     ImageIcon actionTurn = new ImageIcon();
 
     ObjectOutputStream serverOut;
@@ -126,9 +132,10 @@ public class MPanel extends JPanel implements KeyListener {
 
         //paint role2
         g.setColor(Color.red);
-        g.fillRect(500, 0, hp2, 20);//血条
+        g.drawImage(HpL, 490, 0, 400, 50, this);
+        g.fillRect(525, 21, hp2, 14);//血条
         g.setColor(Color.blue);
-        g.fillRect(500, 21, mp2, 20);//怒气条
+        g.fillRect(535, 40, mp2 * 10, 17);//怒气条
         //g.drawImage(role, xLoc2, yLoc2, roleStand2.getIconWidth(), roleStand2.getIconHeight(), this);//背景
 
         if (act2 == 1 && xHead2 == 1) {
@@ -203,22 +210,22 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
-        } else if (act2 == 0 && xHead2 == 1) {
+        } else if ((act2 == 0 || act2 == 15 || act2 == 16 || act2 == 17) && xHead2 == 1) {
             action2 = "stand";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-        } else if (act2 == 0 && xHead2 == 0) {
+        } else if ((act2 == 0 || act2 == 15 || act2 == 16 || act2 == 17) && xHead2 == 0) {
             action2 = "standL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
         }
-        System.out.println("x2 = "+ xLoc2+"  y2 = "+yLoc2);
 
         //paint role1
         g.setColor(Color.red);
-        g.fillRect(0, 0, hp1, 20);//血条
+        g.drawImage(Hp, 0, 0, 400, 50, this);
+        g.fillRect(35, 21, hp1, 14);//血条
         g.setColor(Color.blue);
-        g.fillRect(0, 21, mp1, 20);//怒气条
+        g.fillRect(45, 40, mp1 * 10, 17);//怒气条
 
         if (act1 == 1 && xHead1 == 1) {
             xHead1 = 1;
@@ -292,16 +299,15 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
             act1 = 0;
-        } else if (act1 == 0 && xHead1 == 1) {
+        } else if ((act1 == 0 || act1 == 15 || act1 == 16 || act1 == 17) && xHead1 == 1) {
             action1 = "stand";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
-        } else if (act1 == 0 && xHead1 == 0) {
+        } else if ((act1 == 0 || act1 == 15 || act1 == 16 || act1 == 17) && xHead1 == 0) {
             action1 = "standL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         }
-        System.out.println("x1 = "+ xLoc1+"  y1 = "+yLoc1);
     }
 
     public void heroActLast() {
@@ -379,9 +385,8 @@ public class MPanel extends JPanel implements KeyListener {
             act1 = 14;
         }
         //技能
-        //[TODO]此处需要判断是否为满mp
         if (e.getKeyCode() == KeyEvent.VK_L) {
-            if (mp1 == 4) {
+            if (mp1 == 15) {
                 act1 = 12;
             }
         }
