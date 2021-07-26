@@ -1,0 +1,51 @@
+CREATE TABLE `hero_info` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id，主键',
+  `hero_name` varchar(50) COMMENT '学生姓名',
+  `hero_impact` int COMMENT '学生年龄',
+  PRIMARY KEY (`id`)
+);
+
+INSERT INTO `hero_info`
+(`hero_name`, `hero_impact`)
+VALUES
+('caotijing', 25)
+;
+INSERT INTO `hero_info`
+(`hero_name`, `hero_impact`)
+VALUES
+('chunli', 22)
+;
+INSERT INTO `hero_info`
+(`hero_name`, `hero_impact`)
+VALUES
+('buzhihuowu', 27)
+;
+INSERT INTO `hero_info`
+(`hero_name`, `hero_impact`)
+VALUES
+('bashenan', 25)
+;
+INSERT INTO `hero_info`
+(`hero_name`, `hero_impact`)
+VALUES
+('yigenisi', 26)
+;
+INSERT INTO `hero_info`
+(`hero_name`, `hero_impact`)
+VALUES
+('kelisi', 24)
+;
+INSERT INTO `hero_info`
+(`hero_name`, `hero_impact`)
+VALUES
+('baofengzi', 24)
+;
+INSERT INTO `hero_info`
+(`hero_name`, `hero_impact`)
+VALUES
+('yadianna', 24)
+;
+
+select
+  *
+from `hero_info`;
