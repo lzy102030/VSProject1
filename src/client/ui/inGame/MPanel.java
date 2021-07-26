@@ -54,10 +54,10 @@ public class MPanel extends JPanel implements KeyListener {
     String action1;//人物动作  0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击,12技能，14防御，15 16 17受击, 20无敌
 
     //role2
-    int hp2 = 400;
-    int mp2 = 200;
-    int xLoc2 = 600;
-    int yLoc2 = 300;
+    int hp2;
+    int mp2;
+    int xLoc2;
+    int yLoc2;
     int yLevel2;
     int xHead2;
     int act2;//人物状态
@@ -83,6 +83,7 @@ public class MPanel extends JPanel implements KeyListener {
         updateHeroInfo(heroList);
         this.setFocusable(true);
         this.addKeyListener(this);
+        //this.playBGM();
     }
 
     public void setPlayNetwork(PlayNetwork playNetwork) {
@@ -188,7 +189,7 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
-        } else if (act2 == 11 && xHead2 == 2) {
+        } else if (act2 == 11 && xHead2 == 0) {
             action2 = "legL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
@@ -206,21 +207,21 @@ public class MPanel extends JPanel implements KeyListener {
         } else if (act2 == 12 && xHead2 == 1) {
             action2 = "skill";
             actionTurn = getImage(name2, action2, numb);
-            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
         } else if (act2 == 12 && xHead2 == 0) {
             action2 = "skillL";
             actionTurn = getImage(name2, action2, numb);
-            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             act2 = 0;
         } else if (act2 == 0 && xHead2 == 1) {
             action2 = "stand";
             actionTurn = getImage(name2, action2, numb);
-            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
         } else if (act2 == 0 && xHead2 == 0) {
             action2 = "standL";
             actionTurn = getImage(name2, action2, numb);
-            actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+            actionTurn.paintIcon(this, g, xLoc2, yLoc2);
         }
 
         //paint role1
@@ -393,7 +394,9 @@ public class MPanel extends JPanel implements KeyListener {
         //技能
         //[TODO]此处需要判断是否为满mp
         if (e.getKeyCode() == KeyEvent.VK_L) {
-            act1 = 12;
+            if (mp1 == 4) {
+                act1 = 12;
+            }
         }
     }
 
