@@ -1,855 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="角色动作判断更改及照片更新">
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/attack0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/attack1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/attack2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/attack3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/attackL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/attackL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/attackL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/attackL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/defend0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/defend1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/defend2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/defend3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/defendL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/defendL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/defendL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/defendL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/down0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/down1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/down2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/down3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/downL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/downL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/downL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/downL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/leg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/leg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/leg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/leg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/legL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/legL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/legL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/legL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/move0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/move3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/moveL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/moveL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/moveL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/moveL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/stand0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/stand1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/stand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/stand3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/standL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/standL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/standL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/standL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/up0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/up1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/up2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/up3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/upL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/upL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/upL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/baofengzi/upL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/attack0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/attack1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/attack2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/attack3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/attackL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/attackL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/attackL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/attackL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/defend0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/defend1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/defend2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/defend3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/defendL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/defendL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/defendL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/defendL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/down0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/down1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/down2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/down3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/downL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/downL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/downL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/downL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/leg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/leg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/leg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/leg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/legL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/legL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/legL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/legL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/move0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/move3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/moveL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/moveL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/moveL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/moveL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/skill0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/skill1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/skill2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/skill3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/skillL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/skillL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/skillL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/skillL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/stand0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/stand1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/stand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/stand3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/standL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/standL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/standL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/standL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/up0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/up1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/up2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/up3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/upL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/upL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/upL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bashenan/upL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bgm.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/bgm.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/attack0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/attack1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/attack2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/attack3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/attackL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/attackL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/attackL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/attackL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/defend0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/defend1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/defend2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/defend3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/defendL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/defendL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/defendL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/defendL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/down0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/down1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/down2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/down3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/downL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/downL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/downL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/downL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/leg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/leg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/leg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/leg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/legL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/legL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/legL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/legL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/move0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/move3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/moveL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/moveL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/moveL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/moveL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/skill0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/skill1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/skill2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/skill3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/skillL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/skillL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/skillL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/skillL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/stand0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/stand1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/stand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/stand3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/standL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/standL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/standL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/standL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/up0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/up1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/up2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/up3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/upL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/upL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/upL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/buzhihuowu/upL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/attack0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/attack1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/attack2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/attack3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/attackL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/attackL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/attackL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/attackL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/defend0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/defend1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/defend2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/defend3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/defendL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/defendL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/defendL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/defendL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/down0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/down1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/down2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/down3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/downL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/downL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/downL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/downL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/leg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/leg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/leg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/leg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/legL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/legL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/legL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/legL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/move0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/move3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/moveL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/moveL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/moveL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/moveL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/skill0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/skill1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/skill2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/skill3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/skillL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/skillL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/skillL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/skillL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/stand0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/stand1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/stand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/stand3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/standL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/standL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/standL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/standL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/up0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/up1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/up2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/up3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/upL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/upL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/upL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/caotijing/upL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/attack0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/attack1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/attack2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/attack3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/attackL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/attackL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/attackL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/attackL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/defend0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/defend1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/defend2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/defend3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/defendL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/defendL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/defendL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/defendL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/down0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/down1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/down2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/down3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/downL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/downL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/downL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/downL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/leg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/leg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/leg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/leg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/legL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/legL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/legL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/legL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/move0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/move3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/moveL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/moveL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/moveL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/moveL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/skill0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/skill1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/skill2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/skill3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/skillL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/skillL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/skillL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/skillL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/stand0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/stand1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/stand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/stand3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/standL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/standL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/standL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/standL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/up0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/up1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/up2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/up3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/upL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/upL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/upL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/chunli/upL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/attack0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/attack1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/attack2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/attack3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/attackL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/attackL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/attackL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/attackL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/defend0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/defend1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/defend2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/defend3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/defendL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/defendL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/defendL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/defendL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/down0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/down1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/down2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/down3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/downL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/downL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/downL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/downL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/leg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/leg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/leg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/leg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/legL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/legL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/legL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/legL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/move0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/move3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/moveL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/moveL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/moveL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/moveL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/stand0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/stand1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/stand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/stand3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/standL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/standL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/standL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/standL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/up0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/up1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/up2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/up3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/upL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/upL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/upL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/kelisi/upL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/attack0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/attack1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/attack2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/attack3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/attackL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/attackL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/attackL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/attackL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/defend0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/defend1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/defend2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/defend3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/defendL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/defendL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/defendL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/defendL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/down0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/down1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/down2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/down3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/downL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/downL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/downL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/downL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/leg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/leg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/leg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/leg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/legL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/legL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/legL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/legL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/move0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/move3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/moveL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/moveL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/moveL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/moveL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/stand0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/stand1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/stand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/stand3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/standL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/standL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/standL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/standL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/up0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/up1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/up2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/up3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/upL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/upL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/upL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yadianna/upL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/attack0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/attack1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/attack2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/attack3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/attackL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/attackL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/attackL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/attackL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/defend0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/defend1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/defend2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/defend3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/defendL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/defendL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/defendL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/defendL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/down0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/down1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/down2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/down3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/downL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/downL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/downL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/downL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/leg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/leg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/leg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/leg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/legL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/legL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/legL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/legL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/move0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/move3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/moveL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/moveL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/moveL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/moveL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/skill0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/skill1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/skill2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/skill3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/skillL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/skillL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/skillL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/skillL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/stand0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/stand1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/stand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/stand3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/standL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/standL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/standL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/standL3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/up0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/up1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/up2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/up3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/upL0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/upL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/upL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/source/yigenisi/upL3.png" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="新增线程池 新增数据库 完善后端网络流 优化前后端交互">
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-25 22-38-00.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-25 22-38-00.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-25 22-43-14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-25 22-43-14.log.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/UI/inGame/MPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/UI/inGame/MPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/attack0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/attack1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/attack2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/attack3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/attackL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/attackL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/attackL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/attackL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/defend0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/defend1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/defend2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/defend3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/defendL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/defendL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/defendL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/defendL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/down0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/down1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/down2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/down3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/downL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/downL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/downL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/downL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/leg0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/leg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/leg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/leg3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/legL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/legL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/legL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/legL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/move0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/move1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/move2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/move3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/moveL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/moveL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/moveL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/moveL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/stand0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/stand1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/stand2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/stand3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/standL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/standL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/standL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/standL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/up0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/up1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/up2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/up3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/upL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/upL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/upL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/kls/upL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/attack0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/attack1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/attack2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/attack3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/attackL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/attackL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/attackL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/attackL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/defend0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/defend1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/defend2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/defend3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/defendL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/defendL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/defendL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/defendL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/down0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/down1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/down2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/down3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/downL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/downL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/downL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/downL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/leg0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/leg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/leg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/leg3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/legL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/legL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/legL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/legL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/move0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/move1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/move2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/move3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/moveL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/moveL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/moveL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/moveL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/stand0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/stand1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/stand2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/stand3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/standL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/standL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/standL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/standL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/up0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/up1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/up2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/up3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/upL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/upL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/upL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/ygns/upL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞attack0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞attack1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞attack2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞attack3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞attackL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞attackL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞attackL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞attackL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞defend0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞defend1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞defend2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞defend3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞defendL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞defendL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞defendL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞defendL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞down0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞down1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞down2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞down3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞downL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞downL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞downL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞downL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞leg0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞leg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞leg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞leg3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞legL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞legL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞legL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞legL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞move0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞move1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞move2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞move3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞moveL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞moveL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞moveL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞moveL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞skill0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞skill1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞skill2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞skill3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞skillL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞skillL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞skillL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞skillL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞stand0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞stand1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞stand2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞stand3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞standL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞standL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞standL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞standL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞up0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞up1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞up2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞up3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵attack0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵attack1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵attack2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵attack3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵attackL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵attackL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵attackL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵attackL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵defend0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵defend1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵defend2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵defend3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵defendL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵defendL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵defendL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵defendL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵down0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵down1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵down2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵down3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵downL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵downL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵downL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵downL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵leg0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵leg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵leg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵leg3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵legL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵legL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵legL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵legL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵move0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵move1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵move2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵move3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵moveL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵moveL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵moveL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵moveL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵skill0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵skill1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵skill2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵skill3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵skillL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵skillL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵skillL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵skillL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵stand0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵stand1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵stand2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵stand3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵standL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵standL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵standL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵standL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵up0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵up1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵up2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵up3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵upL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵upL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵upL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵upL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽attack0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽attack1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽attack2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽attack3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽attackL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽attackL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽attackL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽attackL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽defend0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽defend1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽defend2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽defend3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽defendL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽defendL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽defendL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽defendL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽down0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽down1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽down2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽down3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽downL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽downL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽downL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽downL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽leg0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽leg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽leg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽leg3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽legL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽legL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽legL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽legL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽move0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽move1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽move2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽move3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽moveL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽moveL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽moveL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽moveL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽stand0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽stand1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽stand2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽stand3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽standL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽standL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽standL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽standL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽up0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽up1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽up2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽up3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽upL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽upL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽upL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/春丽upL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京attack0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京attack1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京attack2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京attack3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京attackL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京attackL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京attackL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京attackL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京defend0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京defend1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京defend2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京defend3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京defendL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京defendL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京defendL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京defendL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京down0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京down1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京down2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京down3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京downL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京downL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京downL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京downL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京leg0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京leg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京leg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京leg3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京legL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京legL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京legL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京legL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京move0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京move1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京move2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京move3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京moveL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京moveL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京moveL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京moveL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京skill0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京skill1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京skill2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京skill3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京skillL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京skillL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京skillL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京skillL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京stand0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京stand1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京stand2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京stand3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京standL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京standL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京standL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京standL3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京up0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京up1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京up2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京up3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京upL0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京upL1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京upL2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京upL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.ser" beforeDir="false" afterPath="$PROJECT_DIR$/data.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-59-49.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-59-49.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-00-30.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-00-30.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Debug/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/debug/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Debug/DrawPic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/debug/DrawPic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Debug/Forms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/debug/Forms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Debug/LogSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/debug/LogSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Debug/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/debug/TestMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Debug/forms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/debug/forms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/service/ActPending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/service/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Service/WinnerPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/service/WinnerPending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Service/Lobby/ChooseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/Lobby/ChooseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Service/database/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/database/MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Service/database/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/database/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Service/inGame/DataTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/DataTransfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Service/inGame/MyHeroPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Service/inGame/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Service/inGame/MyObjectOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/MyObjectOutputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Service/inGame/PlayNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/PlayNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/Lobby/ChooseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/lobby/ChooseUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/inGame/BattleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/BattleThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/inGame/MPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/MPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/UI/inGame/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/Play.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -867,8 +49,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Server/service/WinnerPending.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Server/service/GameServer.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/debug/TestMain.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/debug/ConsoleUI.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/debug/forms.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/client/ui/inGame/Play.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Server/service/ActPending.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1vWtjwAlXlqC1FSnsqtouvvR5Ul" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -942,13 +135,13 @@
       <recent name="E:\work\JavaTerm\VSProject\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Play">
+  <component name="RunManager" selected="应用程序.Choose">
     <configuration name="Choose" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.UI.Lobby.Choose" />
       <module name="VSProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="client.UI.Lobby.*" />
+          <option name="PATTERN" value="client.ui.lobby.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -970,11 +163,11 @@
       </method>
     </configuration>
     <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Server.Service.GameServer" />
+      <option name="MAIN_CLASS_NAME" value="Server.service.GameServer" />
       <module name="VSProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Server.Service.*" />
+          <option name="PATTERN" value="Server.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -996,11 +189,11 @@
       </method>
     </configuration>
     <configuration name="Play" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client.UI.inGame.Play" />
+      <option name="MAIN_CLASS_NAME" value="client.ui.inGame.Play" />
       <module name="VSProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="client.UI.inGame.*" />
+          <option name="PATTERN" value="client.ui.inGame.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1009,21 +202,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Choose" />
-      <item itemvalue="Application.Client" />
-      <item itemvalue="Application.GameServer" />
-      <item itemvalue="Application.Play" />
-      <item itemvalue="Application.Play (1)" />
+      <item itemvalue="应用程序.Choose" />
+      <item itemvalue="应用程序.Client" />
+      <item itemvalue="应用程序.GameServer" />
+      <item itemvalue="应用程序.Play" />
+      <item itemvalue="应用程序.Play (1)" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Play" />
-        <item itemvalue="Application.Play (1)" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.GameServer" />
-        <item itemvalue="Application.Choose" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -1253,5 +437,16 @@
     <MESSAGE value="角色动作判断更改及照片更新" />
     <option name="LAST_COMMIT_MESSAGE" value="角色动作判断更改及照片更新" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/VSProject$Play.ic" NAME="Play 覆盖结果" MODIFIED="1627005371894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>client.UI.OtherVersion.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/VSProject$Client.ic" NAME="Client 覆盖结果" MODIFIED="1627032869925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>client.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/VSProject$Play__1_.ic" NAME="Play (1) 覆盖结果" MODIFIED="1627010282505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>client.UI.inGame.*</FILTER>
+    </SUITE>
   </component>
 </project>
