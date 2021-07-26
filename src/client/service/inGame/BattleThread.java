@@ -22,6 +22,7 @@ public class BattleThread {
     int yMaxLevel = 1, yMinLevel = 0;
     int xMaxLoc = 790, xMinLoc = 30;
     boolean canNotifyFlag = false;
+    boolean defenceFlag = false;
 
     final Object obj = new Object();
 
@@ -44,7 +45,6 @@ public class BattleThread {
 
                         try {
                             canNotifyFlag = true;
-                            obj.notifyAll();
                             obj.wait();
                         } catch (InterruptedException e) {
                             System.err.println("[ERROR]Unexpected sleep out!");
@@ -71,6 +71,7 @@ public class BattleThread {
                             logger.info("Send hard attack");
                         } else if (keyUsed == "U") {
                             mPanel.sendHero(0, 0, -1, 14);
+                            defenceFlag = true;
                             logger.info("Send defence");
                         } else if (keyUsed == "L") {
                             mPanel.sendHero(0, 0, -1, 12);
@@ -80,8 +81,12 @@ public class BattleThread {
                         }
 
                         try {
-                            canNotifyFlag = false;
-                            Thread.sleep(actionTime);
+                            if (defenceFlag) {
+                                obj.wait(150);
+                                defenceFlag = false;
+                            } else {
+                                obj.wait(50);
+                            }
                         } catch (InterruptedException e) {
                             System.err.println("[ERROR]Unexpected sleep out!");
                             e.printStackTrace();
@@ -97,16 +102,11 @@ public class BattleThread {
 
     public void setKeyUsed(String keyUsed) {
         synchronized (obj) {
-            if (canNotifyFlag) {
-                this.keyUsed = keyUsed;
-                obj.notifyAll();
-
-                try {
-                    obj.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+            //if (canNotifyFlag) {
+            this.keyUsed = keyUsed;
+            obj.notifyAll();
         }
+        //  }
     }
 }
+

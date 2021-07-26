@@ -1,222 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="更名绘图线程 新增动作线程与阻塞判断">
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-30-36.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-30-36.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-30-46.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-30-46.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-30-46.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-30-46.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-33-54.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-33-54.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-34-04.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-34-04.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-34-04.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-34-04.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-35-10.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-35-10.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-35-10.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-35-10.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-37-34.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-37-34.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-37-34.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-37-34.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-38-30.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-38-30.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-38-30.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-38-30.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-43-04.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-43-04.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-43-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-43-16.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-43-16.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-43-16.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-45-07.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-45-07.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-45-07.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-45-07.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-48-42.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-48-42.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-49-37.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-49-37.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-49-37.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-49-37.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-54-51.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-54-51.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-54-51.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-54-51.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-56-54.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-56-54.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-57-05.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-57-05.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-57-05.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 11-57-05.log.lck" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="动作线程(unfinished)">
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-37.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-53.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-53.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-53.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-53.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-18.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-40.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-40.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-40.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-40.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-29-51.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-29-51.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-30-05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-30-05.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-30-05.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-30-05.log.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-56-01.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-56-01.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-58-29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-58-29.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-58-59.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-58-59.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-59-49.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 09-59-49.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-00-30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-00-30.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-06-37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-06-37.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-07-03.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-07-03.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-09-55.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-09-55.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-10-08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-10-08.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-10-23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-10-23.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-11-54.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-11-54.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-12-56.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-13-01.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-13-50.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-13-50.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-20-31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-20-31.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-20-41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-20-41.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-22-27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-22-27.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-22-37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-22-37.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-24-23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-24-23.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-24-34.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-24-34.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-25-31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-25-36.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-27-51.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-27-51.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-27-56.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-27-56.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-29-07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-29-07.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-29-12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-29-12.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-40.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-40.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-50.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-50.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-50.log.1.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-38-50.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-43-41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-43-41.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-06.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-06.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-16.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-16.log.1.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-44-16.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-37.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-54.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-54.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-54.log.1.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-45-54.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-16.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-27.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-27.log.1.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-48-27.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-05.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-05.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-19.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-19.log.1.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-49-19.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-55-57.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-55-57.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-56-06.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-56-06.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-56-06.log.1.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-56-06.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-59-59.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-59-59.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-59-59.log.1.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 10-59-59.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-17.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-27.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-27.log.1.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-00-27.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-06-32.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-06-32.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-07-33.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 11-07-33.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-13-45.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-13-45.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-16-12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-16-12.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-17-07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-17-07.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-29-30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-29-30.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-35-22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-35-22.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-36-46.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-36-46.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-41-54.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-41-54.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-48-14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-48-14.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-49-55.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-49-55.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-57-01.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-57-01.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-59-08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-24 14-59-08.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-25 22-38-00.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-25 22-38-00.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-25 22-43-14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-25 22-43-14.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 08-49-29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 08-49-29.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 08-53-20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 08-53-20.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 08-58-25.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 08-58-25.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-03-50.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-03-50.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-05-34.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-05-34.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-06-00.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-06-00.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-12-00.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-12-00.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-12-11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-12-11.log.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-12-11.log.1.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-12-11.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-16-29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-16-29.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-23-39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-23-39.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-24-38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-24-38.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-26-59.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-26-59.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-50-35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-50-35.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-53-38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 09-53-38.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 10-21-13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 10-21-13.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/service/ActPending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/service/GameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/service/WinnerPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/service/WinnerPending.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/service/inGame/BattleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/BattleThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/FrameThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/FrameThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/MPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/MPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,6 +126,9 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
@@ -567,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627267512530</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="动作线程(unfinished)">
+      <created>1627272015244</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1627272015244</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -632,7 +447,8 @@
     <MESSAGE value="角色动作判断更改及照片更新" />
     <MESSAGE value="目录修正" />
     <MESSAGE value="更名绘图线程 新增动作线程与阻塞判断" />
-    <option name="LAST_COMMIT_MESSAGE" value="更名绘图线程 新增动作线程与阻塞判断" />
+    <MESSAGE value="动作线程(unfinished)" />
+    <option name="LAST_COMMIT_MESSAGE" value="动作线程(unfinished)" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
