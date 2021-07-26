@@ -40,6 +40,8 @@ public class MPanel extends JPanel implements KeyListener {
     FrameThread frameThread;
     BattleThread battleThread;
     PlayNetwork playNetwork;
+    int gameOverFlag;
+    EndGame over;
 
     //刷新计时
     int numb;
@@ -114,6 +116,8 @@ public class MPanel extends JPanel implements KeyListener {
         hp1 = myHero.getHp();
         mp1 = myHero.getMp();
         act1 = myHero.getNowCondition();
+        gameOverFlag = myHero.isGameOverFlag();
+        over = new EndGame(gameOverFlag);
 
         xLoc2 = conHero.getxLoc();
         yLoc2 = conHero.getyLoc();
@@ -140,7 +144,7 @@ public class MPanel extends JPanel implements KeyListener {
         g.drawImage(HpL, 490, 0, 400, 50, this);
         g.fillRect(525, 21, hp2, 14);//血条
         g.setColor(Color.blue);
-        g.fillRect(535, 40, mp2 * 10, 17);//怒气条
+        g.fillRect(535, 40, mp2 * 10, 14);//怒气条
         //g.drawImage(role, xLoc2, yLoc2, roleStand2.getIconWidth(), roleStand2.getIconHeight(), this);//背景
 
         if (act2 == 1 && xHead2 == 1) {
@@ -230,7 +234,7 @@ public class MPanel extends JPanel implements KeyListener {
         g.drawImage(Hp, 0, 0, 400, 50, this);
         g.fillRect(35, 21, hp1, 14);//血条
         g.setColor(Color.blue);
-        g.fillRect(45, 40, mp1 * 10, 17);//怒气条
+        g.fillRect(45, 40, mp1 * 10, 14);//怒气条
 
         if (act1 == 1 && xHead1 == 1) {
             xHead1 = 1;
@@ -312,6 +316,24 @@ public class MPanel extends JPanel implements KeyListener {
             action1 = "standL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
+        }
+
+        //-1未结束，0平手，1胜利，2失败
+        if (gameOverFlag == 0) {
+            battleThread.interrupt();
+            frameThread.interrupt();
+            over.over();
+            System.exit(0);
+        } else if (gameOverFlag == 1) {
+            battleThread.interrupt();
+            frameThread.interrupt();
+            over.over();
+            System.exit(0);
+        } else if (gameOverFlag == 2) {
+            battleThread.interrupt();
+            frameThread.interrupt();
+            over.over();
+            System.exit(0);
         }
     }
 

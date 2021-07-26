@@ -23,6 +23,7 @@ public class BattleThread {
     int xMaxLoc = 790, xMinLoc = 30;
     boolean canNotifyFlag = false;
     boolean defenceFlag = false;
+    boolean isInterrupted = true;
 
     final Object obj = new Object();
 
@@ -38,7 +39,7 @@ public class BattleThread {
         @Override
         public void run() {
             synchronized (obj) {
-                while (true) {
+                while (isInterrupted) {
                     if (keyUsed == null) {
                         mPanel.sendHero(0, 0, -1, 0);
                         logger.info("Send stand");
@@ -98,6 +99,11 @@ public class BattleThread {
                 }
             }
         }
+
+    }
+
+    public boolean interrupt() {
+        return false;
     }
 
     public void setKeyUsed(String keyUsed) {
