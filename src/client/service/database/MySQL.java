@@ -1,4 +1,4 @@
-package client.Service.database;
+package client.service.database;
 
 import java.sql.*;
 

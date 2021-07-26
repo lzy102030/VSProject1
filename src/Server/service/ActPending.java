@@ -1,7 +1,7 @@
-package Server.Service;
+package server.service;
 
-import Debug.LogSystem;
-import client.Service.inGame.MyHeroPro;
+import debug.LogSystem;
+import client.service.inGame.MyHeroPro;
 
 import javax.swing.*;
 import java.util.logging.Logger;

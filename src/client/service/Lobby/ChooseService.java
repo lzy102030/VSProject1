@@ -1,8 +1,7 @@
-package client.Service.Lobby;
+package client.service.Lobby;
 
-import client.Client;
-import client.Service.inGame.MyHeroPro;
-import client.UI.Lobby.ChooseUI;
+import client.service.inGame.MyHeroPro;
+import client.ui.lobby.ChooseUI;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
