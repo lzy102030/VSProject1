@@ -1,8 +1,8 @@
-package client.UI.inGame;
+package client.ui.inGame;
 
-import client.Service.inGame.DataTransfer;
-import client.Service.inGame.MyHeroPro;
-import client.Service.inGame.PlayNetwork;
+import client.service.inGame.DataTransfer;
+import client.service.inGame.MyHeroPro;
+import client.service.inGame.PlayNetwork;
 
 import javax.sound.sampled.*;
 import javax.swing.*;

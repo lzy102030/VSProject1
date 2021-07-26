@@ -1,4 +1,4 @@
-package client.UI.inGame;
+package client.ui.inGame;
 
 public class BattleThread extends Thread {
     MPanel myPanel;

@@ -1,4 +1,4 @@
-package client.Service.inGame;
+package client.service.inGame;
 
 import java.io.Serializable;
 

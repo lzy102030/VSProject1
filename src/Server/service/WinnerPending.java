@@ -1,4 +1,4 @@
-package Server.Service;
+package server.service;
 
 public class WinnerPending {
     private int hp1, hp2;

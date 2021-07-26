@@ -1,6 +1,6 @@
-package Debug;
+package debug;
 
-import client.Service.inGame.MyHeroPro;
+import client.service.inGame.MyHeroPro;
 
 import javax.swing.*;
 import java.awt.*;

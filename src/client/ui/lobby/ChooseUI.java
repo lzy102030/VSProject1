@@ -1,13 +1,11 @@
-package client.UI.Lobby;
+package client.ui.lobby;
 
 import client.Client;
-import client.Service.inGame.DataTransfer;
-import client.Service.inGame.MyHeroPro;
+import client.service.inGame.DataTransfer;
+import client.service.inGame.MyHeroPro;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Objects;

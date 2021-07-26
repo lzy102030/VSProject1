@@ -1,8 +1,8 @@
-package Server.Service;
+package server.service;
 
-import Debug.LogSystem;
-import client.Service.inGame.MyHeroPro;
-import client.Service.inGame.MyObjectOutputStream;
+import debug.LogSystem;
+import client.service.inGame.MyHeroPro;
+import client.service.inGame.MyObjectOutputStream;
 
 import java.io.*;
 import java.net.ServerSocket;

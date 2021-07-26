@@ -1,7 +1,6 @@
-package client.Service.inGame;
+package client.service.inGame;
 
-import client.Service.Lobby.ChooseService;
-import client.UI.inGame.MPanel;
+import client.ui.inGame.MPanel;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

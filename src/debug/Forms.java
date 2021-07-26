@@ -1,4 +1,4 @@
-package Debug;
+package debug;
 
 import java.io.*;
 

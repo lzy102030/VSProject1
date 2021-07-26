@@ -1,8 +1,8 @@
 package client;
 
-import client.Service.Lobby.ChooseService;
-import client.Service.inGame.MyHeroPro;
-import client.UI.inGame.Play;
+import client.service.Lobby.ChooseService;
+import client.service.inGame.MyHeroPro;
+import client.ui.inGame.Play;
 
 import javax.swing.*;
 import java.io.IOException;
