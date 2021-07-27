@@ -88,7 +88,8 @@ public class MPanel extends JPanel implements KeyListener {
         updateHeroInfo(heroList);
         this.setFocusable(true);
         this.addKeyListener(this);
-        //this.playBGM();
+
+        new Thread(()->new Audio("client/source/bgm.wav").play()).start();
     }
 
     public void setPlayNetwork(PlayNetwork playNetwork) {
@@ -145,7 +146,9 @@ public class MPanel extends JPanel implements KeyListener {
         g.fillRect(525, 21, hp2, 14);//血条
         g.setColor(Color.blue);
         g.fillRect(535, 40, mp2 * 10, 14);//怒气条
-        //g.drawImage(role, xLoc2, yLoc2, roleStand2.getIconWidth(), roleStand2.getIconHeight(), this);//背景
+        //[TODO]
+        //判断角色位置后绘制血条、怒气条
+
 
         if (act2 == 1 && xHead2 == 1) {
             xHead2 = 1;
@@ -383,18 +386,5 @@ public class MPanel extends JPanel implements KeyListener {
         ImageIcon imageIcon = new ImageIcon(Objects.requireNonNull(
                 this.getClass().getResource("/client/source/" + name + "/" + action + numb + ".png")));
         return imageIcon;
-    }
-
-    //播放音乐
-    private void playBGM() {
-        try {
-            Clip bgm = AudioSystem.getClip();
-            InputStream is = this.getClass().getClassLoader().getResourceAsStream("source/bgm.wav");//""中写音乐文件名.wav
-            AudioInputStream ais = AudioSystem.getAudioInputStream(is);
-            bgm.open(ais);
-            bgm.loop(Clip.LOOP_CONTINUOUSLY);
-        } catch (LineUnavailableException | UnsupportedAudioFileException | IOException e) {
-            e.printStackTrace();
-        }
     }
 }

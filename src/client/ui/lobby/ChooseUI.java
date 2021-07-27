@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class ChooseUI {
-    JFrame frame = new JFrame("英雄选择");
+    JFrame frame = new JFrame();
     JPanel jp1 = new JPanel();
     JButton b1 = new JButton();
     JButton b2 = new JButton();
@@ -34,7 +34,6 @@ public class ChooseUI {
 
         createUserID();
 
-        launchFrame();
         javax.swing.SwingUtilities.invokeLater(this::launchFrame);
     }
 
@@ -43,9 +42,22 @@ public class ChooseUI {
     }
 
     private void launchFrame() {
-        frame.setBounds(300,300,800,500);
+        frame.setFont(new Font("System", Font.PLAIN, 14));
+        Font f = frame.getFont();
+        FontMetrics fm = frame.getFontMetrics(f);
+        int x = fm.stringWidth("英雄选择");
+        int y = fm.stringWidth(" ");
+        int z = frame.getWidth()/2 - (x/2);
+        int w = z/y;
+        String pad ="";
+        pad = String.format("%"+w+"s", pad);
+        frame.setTitle(pad+"英雄选择");
 
-        jp1.setSize(1000, 600);
+        Toolkit theKit = frame.getToolkit();            // Get the window toolkit
+        Dimension wndSize = theKit.getScreenSize();       // Get screen size
+        frame.setBounds(wndSize.width / 4, wndSize.height / 5,700,400);
+
+        //jp1.setSize(1000, 600);
 
         ImageIcon icon1 = new ImageIcon(Objects.requireNonNull(
                 this.getClass().getResource("/client/source/草薙京.jpg")));
@@ -144,8 +156,8 @@ public class ChooseUI {
             c.fill = GridBagConstraints.HORIZONTAL;
         }
 
-        JLabel title = new JLabel("yingxiongxuanze", JLabel.CENTER);
-        //title.setFont(new Font("Consolas", Font.BOLD, 30));
+        JLabel title = new JLabel("请选择英雄", JLabel.CENTER);
+        title.setFont(new Font("宋体", Font.BOLD, 30));
         title.setForeground(Color.black);
         c.gridx = 0;
         c.gridy = 0;
