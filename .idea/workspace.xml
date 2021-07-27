@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="mysql数据库网络连接">
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="mysql数据库网络连接"/>
       <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-18-09.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-18-09.log.lck" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log" afterDir="false" />
@@ -73,6 +73,7 @@
       <change beforePath="$PROJECT_DIR$/src/server/service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/service/ActPending.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/service/GameServer.java" afterDir="false" />
     </list>
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="mysql数据库网络数据读取 客户端网络退出" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +87,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="KEEP" />
   </component>
@@ -448,6 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627272015244</updated>
     </task>
+    <task id="LOCAL-00027" summary="mysql数据库网络数据读取 客户端网络退出">
+      <created>1627355558525</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1627355558525</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <task id="LOCAL-00027" summary="动作线程(unfinished) 数据库添加">
       <created>1627285796405</created>
       <option name="number" value="00027" />
@@ -562,6 +572,8 @@
     <MESSAGE value="完成客户端action发送功能" />
     <MESSAGE value="mysql数据库网络连接" />
     <option name="LAST_COMMIT_MESSAGE" value="mysql数据库网络连接" />
+    <MESSAGE value="mysql数据库网络数据读取 客户端网络退出" />
+    <option name="LAST_COMMIT_MESSAGE" value="mysql数据库网络数据读取 客户端网络退出" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
