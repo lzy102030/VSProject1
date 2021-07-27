@@ -8,6 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Objects;
 
 public class ChooseUI {
@@ -23,14 +24,17 @@ public class ChooseUI {
     JButton b8 = new JButton();
 
     static ObjectOutputStream serverOut;
+    HashMap<String, Integer> heroInfoMap;
     MyHeroPro hero = null;
     int userID;
+    int hp = 330, mp = 0;
 
     final static boolean shouldFill = true;
     final static boolean RIGHT_TO_LEFT = false;
 
-    public ChooseUI(ObjectOutputStream serverOut) {
+    public ChooseUI(ObjectOutputStream serverOut, HashMap<String, Integer> heroInfoMap) {
         ChooseUI.serverOut = serverOut;
+        this.heroInfoMap = heroInfoMap;
 
         createUserID();
 
@@ -95,49 +99,49 @@ public class ChooseUI {
         addComponentsToPane(frame.getContentPane());
 
         b1.addActionListener(e -> {
-            hero = new MyHeroPro("caotijing", 10, 5, 100, 0, -1, 0, userID);
+            hero = new MyHeroPro("caotijing", heroInfoMap.get("caotijing"), hp, mp, -1, 0, userID);
             new DataTransfer(serverOut).sendHero(hero);
             waitForGame();
         });
 
         b2.addActionListener(e -> {
-            hero = new MyHeroPro("buzhihuowu", 10, 5, 100, 0, -1, 0, userID);
+            hero = new MyHeroPro("buzhihuowu", heroInfoMap.get("buzhihuowu"), hp, mp, -1, 0, userID);
             new DataTransfer(serverOut).sendHero(hero);
             waitForGame();
         });
 
         b3.addActionListener(e -> {
-            hero = new MyHeroPro("chunli", 10, 5, 100, 0, -1, 0, userID);
+            hero = new MyHeroPro("chunli", heroInfoMap.get("chunli"), hp, mp, -1, 0, userID);
             new DataTransfer(serverOut).sendHero(hero);
             waitForGame();
         });
 
         b4.addActionListener(e -> {
-            hero = new MyHeroPro("bashenan", 10, 5, 100, 0, -1, 0, userID);
+            hero = new MyHeroPro("bashenan", heroInfoMap.get("bashenan"), hp, mp, -1, 0, userID);
             new DataTransfer(serverOut).sendHero(hero);
             waitForGame();
         });
 
         b5.addActionListener(e -> {
-            hero = new MyHeroPro("yigenisi", 10, 5, 100, 0, -1, 0, userID);
+            hero = new MyHeroPro("yigenisi", heroInfoMap.get("yigenisi"), hp, mp, -1, 0, userID);
             new DataTransfer(serverOut).sendHero(hero);
             waitForGame();
         });
 
         b6.addActionListener(e -> {
-            hero = new MyHeroPro("kelisi", 10, 5, 100, 0, -1, 0, userID);
+            hero = new MyHeroPro("kelisi", heroInfoMap.get("kelisi"), hp, mp, -1, 0, userID);
             new DataTransfer(serverOut).sendHero(hero);
             waitForGame();
         });
 
         b7.addActionListener(e -> {
-            hero = new MyHeroPro("baofengzi", 10, 5, 100, 0, -1, 0, userID);
+            hero = new MyHeroPro("baofengzi", heroInfoMap.get("baofengzi"), hp, mp, -1, 0, userID);
             new DataTransfer(serverOut).sendHero(hero);
             waitForGame();
         });
 
         b8.addActionListener(e -> {
-            hero = new MyHeroPro("yadianna", 10, 5, 100, 0, -1, 0, userID);
+            hero = new MyHeroPro("yadianna", heroInfoMap.get("yadianna"), hp, mp, -1, 0, userID);
             new DataTransfer(serverOut).sendHero(hero);
             waitForGame();
         });

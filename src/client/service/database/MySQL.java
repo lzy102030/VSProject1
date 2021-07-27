@@ -1,6 +1,7 @@
 package client.service.database;
 
 import java.sql.*;
+import java.util.HashMap;
 
 public class MySQL {
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
@@ -11,7 +12,9 @@ public class MySQL {
     static final String USER = "root";
     static final String PASS = "QylLzy2021VsP";
 
-    public static void main(String[] args) {
+    HashMap<String, Integer> heroInfoMap = new HashMap<>();
+
+    public MySQL() {
         Connection conn = null;
         Statement stmt = null;
         try {
@@ -19,15 +22,17 @@ public class MySQL {
             Class.forName(JDBC_DRIVER);
 
             // 打开链接
-            System.out.println("连接数据库...");
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
+
             // 执行查询
-            System.out.println(" 实例化Statement对象...");
+            ResultSet rs = null;
+
             stmt = conn.createStatement();
             String sql;
             sql = "SELECT * FROM hero_info";
-            ResultSet rs = stmt.executeQuery(sql);
+            rs = stmt.executeQuery(sql);
+
 
             // 展开结果集数据库
             while (rs.next()) {
@@ -36,27 +41,20 @@ public class MySQL {
                 String name = rs.getString("hero_name");
                 int impact = rs.getInt("hero_impact");
 
-                // 输出数据
-                System.out.print("ID: " + id);
-                System.out.print(", 名称: " + name);
-                System.out.print(", 攻击力: " + impact);
-                System.out.print("\n");
+                heroInfoMap.put(name, impact);
             }
             // 完成后关闭
             rs.close();
             stmt.close();
             conn.close();
-        } catch (SQLException se) {
-            // 处理 JDBC 错误
+        } catch (Exception se) {
+            // 处理 JDBC 错误   处理 Class.forName 错误
             se.printStackTrace();
-        } catch (Exception e) {
-            // 处理 Class.forName 错误
-            e.printStackTrace();
         } finally {
             // 关闭资源
             try {
                 if (stmt != null) stmt.close();
-            } catch (SQLException se2) {
+            } catch (SQLException ignored) {
             }// 什么都不做
             try {
                 if (conn != null) conn.close();
@@ -64,7 +62,14 @@ public class MySQL {
                 se.printStackTrace();
             }
         }
-        System.out.println("Goodbye!");
+    }
+
+    public static void main(String[] args) {
+        new MySQL();
+    }
+
+    public HashMap<String, Integer> getHeroInfoMap() {
+        return heroInfoMap;
     }
 }
 

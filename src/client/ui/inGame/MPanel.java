@@ -42,6 +42,7 @@ public class MPanel extends JPanel implements KeyListener {
     PlayNetwork playNetwork;
     int gameOverFlag;
     EndGame over;
+    Play play;
     final int x;
 
     //刷新计时
@@ -77,12 +78,14 @@ public class MPanel extends JPanel implements KeyListener {
 
     boolean firstTransfer = true;
 
-    public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro myHero, ArrayList<MyHeroPro> heroList) {
+    public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro myHero, ArrayList<MyHeroPro> heroList, Play play) {
         this.serverOut = serverOut;
         this.serverIn = serverIn;
         this.myHero = myHero;
         this.heroList = heroList;
+        this.play = play;
 
+        over = new EndGame();
         frameThread = new FrameThread(this);
         frameThread.start();
         battleThread = new BattleThread(this);
@@ -120,7 +123,7 @@ public class MPanel extends JPanel implements KeyListener {
         mp1 = myHero.getMp();
         act1 = myHero.getNowCondition();
         gameOverFlag = myHero.isGameOverFlag();
-        over = new EndGame(gameOverFlag);
+        over.setGameOverFlag(gameOverFlag);
 
         xLoc2 = conHero.getxLoc();
         yLoc2 = conHero.getyLoc();
@@ -330,11 +333,23 @@ public class MPanel extends JPanel implements KeyListener {
 
         //-1未结束，0平手，1胜利，2失败
         if (gameOverFlag != -1) {
-            battleThread.interrupt();
-            frameThread.interrupt();
-            over.over();
-            System.exit(0);
+            exitFromGame();
         }
+    }
+
+    public void exitFromGame() {
+        play.dispose();
+        battleThread.interrupt();
+        frameThread.interrupt();
+
+        try {
+            serverOut.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        over.over();
+        System.exit(0);
     }
 
     public void sendHero(int xChange, int yChange, int xHeadChange, int actChange) {

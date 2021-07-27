@@ -23,7 +23,7 @@ public class Play extends JFrame {
         this.hero = hero;
         this.heroList = heroList;
 
-        mPanel = new MPanel(serverOut, serverIn, hero, heroList);
+        mPanel = new MPanel(serverOut, serverIn, hero, heroList, this);
         playNetwork = new PlayNetwork(serverOut, serverIn);
         playNetwork.setmPanel(mPanel);
         mPanel.setPlayNetwork(playNetwork);

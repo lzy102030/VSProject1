@@ -102,8 +102,8 @@ public class BattleThread {
 
     }
 
-    public boolean interrupt() {
-        return false;
+    public void interrupt() {
+        isInterrupted = false;
     }
 
     public void setKeyUsed(String keyUsed) {
