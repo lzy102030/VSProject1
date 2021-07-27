@@ -72,12 +72,13 @@ public class MPanel extends JPanel implements KeyListener {
     String action2; //人物动作  0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击,12技能， 14脸防御，15 16 17受击, 20无敌
 
     //unify move amount settings
-    int xMove = 50, yMove = 100;
+    int xMove = 50;
     int yMaxLevel = 1, yMinLevel = 0;
     int xMaxLoc = 790, xMinLoc = 30;
 
     boolean firstTransfer = true;
 
+    //[todo]最终对战界面画面居中显示 待写
     public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro myHero, ArrayList<MyHeroPro> heroList, Play play) {
         this.serverOut = serverOut;
         this.serverIn = serverIn;
@@ -151,6 +152,7 @@ public class MPanel extends JPanel implements KeyListener {
         if (firstTransfer) {
             x = xLoc1;
         }
+
         if (x == 50) {
             //paint right
             g.setColor(Color.red);
@@ -165,6 +167,7 @@ public class MPanel extends JPanel implements KeyListener {
             g.fillRect(365 - hp1, 21, hp1, 14);//血条
             g.setColor(Color.blue);
             g.fillRect(45, 40, mp1 * 10, 14);//怒气条
+
         } else if (x == 700) {
             //paint left
             g.setColor(Color.red);
@@ -183,7 +186,6 @@ public class MPanel extends JPanel implements KeyListener {
         }
 
         if (act2 == 1 && xHead2 == 1) {
-            xHead2 = 1;
             action2 = "move";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
@@ -192,7 +194,6 @@ public class MPanel extends JPanel implements KeyListener {
             action2 = "moveL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            xHead1 = 0;
 
         } else if (act2 == 3 && xHead2 == 1) {
             action2 = "down";
@@ -255,12 +256,10 @@ public class MPanel extends JPanel implements KeyListener {
 
 
         if (act1 == 1 && xHead1 == 1) {
-            xHead1 = 1;
             action1 = "move";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         } else if (act1 == 1 && xHead1 == 0) {
-            xHead1 = 0;
             action1 = "moveL";
             actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
