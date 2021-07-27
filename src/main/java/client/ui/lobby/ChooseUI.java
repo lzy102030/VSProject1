@@ -64,29 +64,29 @@ public class ChooseUI {
         //jp1.setSize(1000, 600);
 
         ImageIcon icon1 = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/source/草薙京.jpg")));
+                this.getClass().getResource("/source/草薙京.jpg")));
         ImageIcon icon2 = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/source/不知火舞.jpg")));
+                this.getClass().getResource("/source/不知火舞.jpg")));
         ImageIcon icon3 = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/source/春丽.jpg")));
+                this.getClass().getResource("/source/春丽.jpg")));
         ImageIcon icon4 = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/source/八神庵.jpg")));
+                this.getClass().getResource("/source/八神庵.jpg")));
         ImageIcon icon5 = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/source/伊格尼斯.png")));
+                this.getClass().getResource("/source/伊格尼斯.png")));
         ImageIcon icon6 = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/source/克里斯.png")));
+                this.getClass().getResource("/source/克里斯.png")));
         ImageIcon icon7 = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/source/暴风子.png")));
+                this.getClass().getResource("/source/暴风子.png")));
         ImageIcon icon8 = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/source/雅典娜.png")));
-        icon1.setImage(icon1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon2.setImage(icon2.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon3.setImage(icon3.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon4.setImage(icon4.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon5.setImage(icon5.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon6.setImage(icon6.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon7.setImage(icon7.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon8.setImage(icon8.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
+                this.getClass().getResource("/source/雅典娜.png")));
+        icon1.setImage(icon1.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon2.setImage(icon2.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon3.setImage(icon3.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon4.setImage(icon4.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon5.setImage(icon5.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon6.setImage(icon6.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon7.setImage(icon7.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon8.setImage(icon8.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
         b1.setIcon(icon1);
         b2.setIcon(icon2);
         b3.setIcon(icon3);

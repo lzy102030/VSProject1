@@ -20,13 +20,13 @@ import java.util.Objects;
 
 public class MPanel extends JPanel implements KeyListener {
     ImageIcon backGround = new ImageIcon(Objects.requireNonNull(
-            this.getClass().getResource("/client/source/背景.jpg")));
+            this.getClass().getResource("/source/背景.jpg")));
     ImageIcon vs = new ImageIcon(Objects.requireNonNull(
-            this.getClass().getResource("/client/source/vs.png")));
+            this.getClass().getResource("/source/vs.png")));
     ImageIcon hpL = new ImageIcon(Objects.requireNonNull(
-            this.getClass().getResource("/client/source/hpL.png")));
+            this.getClass().getResource("/source/hpL.png")));
     ImageIcon hp = new ImageIcon(Objects.requireNonNull(
-            this.getClass().getResource("/client/source/hp.png")));
+            this.getClass().getResource("/source/hp.png")));
     Image back = backGround.getImage();
     Image pk = vs.getImage();
     Image Hp = hp.getImage();
@@ -94,7 +94,7 @@ public class MPanel extends JPanel implements KeyListener {
         this.addKeyListener(this);
         x = xLoc1;
 
-        new Thread(() -> new Audio("client/source/bgm.wav").play()).start();
+        new Thread(() -> new Audio("bgm.wav").play()).start();
     }
 
     public void setPlayNetwork(PlayNetwork playNetwork) {
@@ -422,7 +422,7 @@ public class MPanel extends JPanel implements KeyListener {
     //调用图片
     private ImageIcon getImage(String name, String action, int numb) {
         ImageIcon imageIcon = new ImageIcon(Objects.requireNonNull(
-                this.getClass().getResource("/client/source/" + name + "/" + action + numb + ".png")));
+                this.getClass().getResource("/source/" + name + "/" + action + numb + ".png")));
         return imageIcon;
     }
 }
