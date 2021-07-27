@@ -4,62 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="mysql数据库网络连接"/>
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-18-09.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-18-09.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-28-29.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-28-29.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-28-45.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-27.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-27.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-37.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-37.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-30-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-30-06.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-29.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-29.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-44.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-44.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-14.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-25.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-25.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-01-33.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-01-33.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-26-40.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-26-40.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-26.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-26.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-16.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-26.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-26.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-58.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-58.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-31-08.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-31-08.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-18.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-18.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-29.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-29.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-42.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-42.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-53.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-53.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-36-57.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-36-57.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-09.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-09.log.lck" afterDir="false" />
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="mysql数据库网络数据读取">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="mysql数据库网络连接">
       <change beforePath="$PROJECT_DIR$/src/client/service/database/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/database/MySQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/service/inGame/BattleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/BattleThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" afterDir="false" />
@@ -73,7 +18,6 @@
       <change beforePath="$PROJECT_DIR$/src/server/service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/service/ActPending.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/service/GameServer.java" afterDir="false" />
     </list>
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="mysql数据库网络数据读取 客户端网络退出" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -450,14 +394,6 @@
       <option name="project" value="LOCAL" />
       <updated>1627272015244</updated>
     </task>
-    <task id="LOCAL-00027" summary="mysql数据库网络数据读取 客户端网络退出">
-      <created>1627355558525</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1627355558525</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
     <task id="LOCAL-00027" summary="动作线程(unfinished) 数据库添加">
       <created>1627285796405</created>
       <option name="number" value="00027" />
@@ -500,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627306179350</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="workspace文件优化">
+      <created>1627355839937</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1627355839937</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -571,7 +514,6 @@
     <MESSAGE value="防御长按修复" />
     <MESSAGE value="完成客户端action发送功能" />
     <MESSAGE value="mysql数据库网络连接" />
-    <option name="LAST_COMMIT_MESSAGE" value="mysql数据库网络连接" />
     <MESSAGE value="mysql数据库网络数据读取 客户端网络退出" />
     <option name="LAST_COMMIT_MESSAGE" value="mysql数据库网络数据读取 客户端网络退出" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />

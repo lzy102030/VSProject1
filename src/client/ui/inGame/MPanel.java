@@ -42,6 +42,7 @@ public class MPanel extends JPanel implements KeyListener {
     PlayNetwork playNetwork;
     int gameOverFlag;
     EndGame over;
+    Play play;
 
     //刷新计时
     int numb;
@@ -76,11 +77,12 @@ public class MPanel extends JPanel implements KeyListener {
 
     boolean firstTransfer = true;
 
-    public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro myHero, ArrayList<MyHeroPro> heroList) {
+    public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro myHero, ArrayList<MyHeroPro> heroList, Play play) {
         this.serverOut = serverOut;
         this.serverIn = serverIn;
         this.myHero = myHero;
         this.heroList = heroList;
+        this.play = play;
 
         over = new EndGame();
         frameThread = new FrameThread(this);
@@ -304,6 +306,7 @@ public class MPanel extends JPanel implements KeyListener {
     }
 
     public void exitFromGame() {
+        play.dispose();
         battleThread.interrupt();
         frameThread.interrupt();
 
