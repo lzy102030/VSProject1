@@ -1,27 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="动作线程(unfinished)">
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-37.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-37.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-53.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-53.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-53.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-23-53.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-18.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-18.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-40.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-40.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-40.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-24-40.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-29-51.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-29-51.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-30-05.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-30-05.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-30-05.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 15-30-05.log.lck" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="mysql数据库网络连接">
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-18-09.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-18-09.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-28-29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-28-29.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-28-45.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-27.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-37.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-30-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-30-06.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-29.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-44.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-44.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-14.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-25.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-25.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-01-33.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-01-33.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-26-40.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-26-40.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-26.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-26.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log.1.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-16.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-26.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-26.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-58.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-58.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-31-08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-31-08.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-18.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-29.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-42.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-42.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-53.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-53.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-36-57.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-36-57.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-09.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-09.log.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/database/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/database/MySQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/service/inGame/BattleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/BattleThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/inGame/PlayNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/PlayNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/lobby/ChooseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/lobby/ChooseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/EndGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/EndGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/FrameThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/FrameThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/MPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/MPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/lobby/ChooseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/lobby/ChooseUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/service/ActPending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/service/GameServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +97,10 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/server/service/WinnerPending.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/server/service/GameServer.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/debug/TestMain.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/debug/ConsoleUI.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/debug/forms.txt" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/client/ui/inGame/Play.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/server/service/ActPending.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1vWtjwAlXlqC1FSnsqtouvvR5Ul" />
@@ -127,9 +173,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="模块" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -166,6 +213,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MySQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.service.database.MySQL" />
+      <module name="VSProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.service.database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Play" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.ui.inGame.Play" />
       <module name="VSProject" />
@@ -183,11 +243,13 @@
       <item itemvalue="应用程序.Client" />
       <item itemvalue="应用程序.Play" />
       <item itemvalue="应用程序.GameServer" />
+      <item itemvalue="应用程序.MySQL" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.Client" />
         <item itemvalue="应用程序.GameServer" />
+        <item itemvalue="应用程序.MySQL" />
       </list>
     </recent_temporary>
   </component>
@@ -382,7 +444,49 @@
       <option name="project" value="LOCAL" />
       <updated>1627272015244</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="动作线程(unfinished) 数据库添加">
+      <created>1627285796405</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1627285796405</updated>
+    </task>
+    <task id="LOCAL-00028" summary="redo comment">
+      <created>1627287398506</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1627287398506</updated>
+    </task>
+    <task id="LOCAL-00029" summary="redo comment">
+      <created>1627287641841</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1627287641841</updated>
+    </task>
+    <task id="LOCAL-00030" summary="防御长按修复">
+      <created>1627295765524</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1627295765524</updated>
+    </task>
+    <task id="LOCAL-00031" summary="完成客户端action发送功能">
+      <created>1627300411351</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1627300411351</updated>
+    </task>
+    <task id="LOCAL-00032" summary="mysql数据库网络连接">
+      <created>1627306179350</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1627306179350</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -448,7 +552,12 @@
     <MESSAGE value="目录修正" />
     <MESSAGE value="更名绘图线程 新增动作线程与阻塞判断" />
     <MESSAGE value="动作线程(unfinished)" />
-    <option name="LAST_COMMIT_MESSAGE" value="动作线程(unfinished)" />
+    <MESSAGE value="动作线程(unfinished) 数据库添加" />
+    <MESSAGE value="redo comment" />
+    <MESSAGE value="防御长按修复" />
+    <MESSAGE value="完成客户端action发送功能" />
+    <MESSAGE value="mysql数据库网络连接" />
+    <option name="LAST_COMMIT_MESSAGE" value="mysql数据库网络连接" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
