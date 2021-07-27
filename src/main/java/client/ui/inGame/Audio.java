@@ -38,7 +38,8 @@ public class Audio {
 
     public Audio(String fileName) {
         try {
-            audioInputStream = AudioSystem.getAudioInputStream(Audio.class.getClassLoader().getResource(fileName));
+            //[todo] 音频循环
+            audioInputStream = AudioSystem.getAudioInputStream(Audio.class.getResource("/source/" + fileName));
             audioFormat = audioInputStream.getFormat();
             dataLine_info = new DataLine.Info(SourceDataLine.class, audioFormat);
             sourceDataLine = (SourceDataLine) AudioSystem.getLine(dataLine_info);
@@ -69,21 +70,5 @@ public class Audio {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-
-    public void close() {
-        try {
-            audioInputStream.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void main(String[] args) {
-        // Audio a = new Audio("audio/explode.wav");
-        Audio a = new Audio("audio/war1.wav");
-        a.loop();
-
     }
 }

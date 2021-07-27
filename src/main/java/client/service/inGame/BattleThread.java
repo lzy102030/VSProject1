@@ -11,14 +11,13 @@ public class BattleThread {
     MPanel mPanel;
     Thread moveT;
 
-    int actionTime = 100;
+    int actionNormalTime = 100, actionHugeAtkTime = 1000;
     String keyUsed = null;
 
     //unify move amount settings
     int xMove = 50, yMove = 100;
 
-    boolean canNotifyFlag = false;
-    boolean defenceFlag = false;
+    boolean defenceFlag = false, hugeAttackFlag = false;
     boolean isInterrupted = true;
 
     final Object obj = new Object();
@@ -42,7 +41,6 @@ public class BattleThread {
                         logger.info("Send stand");
 
                         try {
-                            canNotifyFlag = true;
                             obj.wait();
                         } catch (InterruptedException e) {
                             System.err.println("[ERROR]Unexpected sleep out!");
@@ -73,6 +71,7 @@ public class BattleThread {
                             logger.info("Send defence");
                         } else if (keyUsed == "L") {
                             mPanel.sendHero(0, 0, -1, 12);
+                            hugeAttackFlag = true;
                             logger.info("Send huge attack");
                         } else {
                             System.err.println("[ERROR]None input found!");
@@ -83,8 +82,11 @@ public class BattleThread {
                             if (defenceFlag) {
                                 obj.wait();
                                 defenceFlag = false;
+                            } else if (hugeAttackFlag) {
+                                obj.wait(actionHugeAtkTime);
+                                hugeAttackFlag = false;
                             } else {
-                                obj.wait(actionTime);
+                                obj.wait(actionNormalTime);
                             }
                         } catch (InterruptedException e) {
                             System.err.println("[ERROR]Unexpected sleep out!");
@@ -104,14 +106,13 @@ public class BattleThread {
 
     public void setKeyUsed(String keyUsed) {
         synchronized (obj) {
-            //if (canNotifyFlag) {
-            if (defenceFlag && keyUsed == "U") {
+            if ((defenceFlag && keyUsed == "U") || hugeAttackFlag) {
                 return;
             }
+
             this.keyUsed = keyUsed;
             obj.notifyAll();
         }
-        //  }
     }
 }
 
