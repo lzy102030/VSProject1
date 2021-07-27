@@ -30,7 +30,6 @@ public class BattleThread {
         moveT.start();
     }
 
-    //[TODO]xhead不更新
     private class MoveChange implements Runnable {
         @Override
         public void run() {
