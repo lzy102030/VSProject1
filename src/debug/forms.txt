@@ -1,6 +1,0 @@
- hero.getxLoc() + 
-                "  y-Loc=" + hero.getyLoc() + 
-                "  xHead=" + hero.getxHead() +
-                "  Act=" + hero.getNowCondition() + 
-                "  HP=" + hero.getHp() + 
-                "  MP=" + hero.getMp());

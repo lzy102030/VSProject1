@@ -4,8 +4,820 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="优化客户端关闭">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_itextpdf_itextpdf_5_5_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VSProjectByMaven.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FormsTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VSProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-07-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-07-30.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-07-48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-07-48.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-07-48.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-07-48.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-18-32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-18-32.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-18-48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-18-48.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-18-48.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-18-48.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-20-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-20-08.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-20-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-20-31.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-20-31.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 16-20-31.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 18-39-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 18-39-17.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 18-39-36.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 18-39-36.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 18-39-36.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 18-39-36.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-12-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-12-04.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-12-18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-12-18.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-14-52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-14-52.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-15-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-15-06.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-15-06.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-15-06.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-23-47.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-23-47.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-24-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-24-12.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-33-03.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-33-03.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-33-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-33-13.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-33-13.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-33-13.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-41-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-41-08.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-41-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-41-29.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-44-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-44-16.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-44-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-44-30.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-45-28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-45-28.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-45-42.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-45-42.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-45-42.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-45-42.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-56-25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-56-25.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-56-38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-56-38.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-56-38.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-56-38.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-58-20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-58-20.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-58-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-58-31.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-58-31.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 19-58-31.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-01-03.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-01-03.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-01-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-01-16.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-02-21.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-02-21.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-02-27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-02-27.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-02-44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-02-44.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-03-44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-03-44.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-03-56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-03-56.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-03-56.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 20-03-56.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-01-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-01-30.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-03-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-03-19.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-07-42.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-07-42.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-10-33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-10-33.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-12-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-12-06.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-17-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-17-10.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-23-48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-23-48.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-34-38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-34-38.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-34-56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 21-34-56.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-18-09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-18-09.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-26 22-19-02.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-39-50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-39-50.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-40-05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-40-05.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-43-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-43-23.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-43-36.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-43-36.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-43-37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-43-37.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-51-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-51-11.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-51-24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-51-25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-54-35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-54-35.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-54-48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-54-48.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-54-48.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-54-48.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-56-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-56-16.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-56-28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-56-28.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-56-28.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-56-28.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-58-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 08-58-16.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-01-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-01-23.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-06-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-06-29.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-07-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-07-23.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-09-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-09-13.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-11-56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-11-56.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-22-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-22-14.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-28-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-28-29.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-28-45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-27.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-29-37.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-30-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-30-06.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-17.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-29.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-31.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-31.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-31.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-35-44.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-14.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 09-39-25.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-01-33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-01-33.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-23-50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-23-50.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-24-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-24-08.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-24-08.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-24-08.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-26-40.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-26-40.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-27-38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-27-38.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-27-48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-27-48.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-27-48.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-27-48.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-26.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-29-44.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-16.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-26.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-58.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-30-58.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-31-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-31-08.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-18.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-32-29.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-42.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-42.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-33-53.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-36-57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-36-57.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-09.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-33.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-44.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-44.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-37-44.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-45-26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-45-26.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-45-38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 10-45-38.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 11-09-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 11-09-31.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 11-09-45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 11-09-45.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 11-20-03.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 11-20-03.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 11-20-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 11-20-19.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-03-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-03-51.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-03-51.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-04-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-04-04.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-04-04.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-04-04.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-05-18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-05-18.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-05-32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-05-32.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-14-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-14-08.log.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-14-21.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-14-21.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/logs/log 2021-07-27 14-14-21.log.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/database/MySQL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/database/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/inGame/BattleThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/inGame/DataTransfer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/inGame/MyObjectOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/inGame/PlayNetwork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/service/lobby/ChooseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/attack0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/attack1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/attack2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/attack3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/attackL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/attackL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/attackL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/attackL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/defend0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/defend1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/defend2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/defend3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/defendL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/defendL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/defendL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/defendL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/down0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/down2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/down3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/downL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/downL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/downL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/downL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/leg0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/leg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/leg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/leg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/legL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/legL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/legL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/legL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/move0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/move1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/move2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/move3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/moveL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/moveL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/moveL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/moveL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/skill0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/skill1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/skill2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/skill3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/skillL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/skillL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/skillL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/skillL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/stand0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/stand1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/stand2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/stand3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/standL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/standL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/standL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/standL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/up0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/up1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/up2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/up3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/upL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/upL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/upL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/baofengzi/upL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/attack0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/attack1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/attack2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/attack3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/attackL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/attackL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/attackL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/attackL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/defend0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/defend1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/defend2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/defend3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/defendL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/defendL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/defendL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/defendL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/down0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/down2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/down3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/downL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/downL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/downL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/downL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/leg0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/leg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/leg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/leg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/legL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/legL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/legL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/legL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/move0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/move1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/move2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/move3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/moveL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/moveL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/moveL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/moveL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/skill0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/skill1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/skill2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/skill3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/skillL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/skillL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/skillL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/skillL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/stand0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/stand1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/stand2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/stand3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/standL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/standL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/standL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/standL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/up0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/up1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/up2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/up3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/upL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/upL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/upL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bashenan/upL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bgm.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/bgm.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/attack0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/attack1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/attack2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/attack3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/attackL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/attackL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/attackL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/attackL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/defend0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/defend1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/defend2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/defend3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/defendL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/defendL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/defendL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/defendL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/down0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/down2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/down3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/downL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/downL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/downL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/downL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/leg0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/leg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/leg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/leg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/legL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/legL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/legL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/legL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/move0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/move1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/move2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/move3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/moveL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/moveL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/moveL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/moveL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/skill0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/skill1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/skill2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/skill3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/skillL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/skillL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/skillL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/skillL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/stand0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/stand1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/stand2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/stand3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/standL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/standL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/standL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/standL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/up0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/up1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/up2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/up3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/upL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/upL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/upL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/buzhihuowu/upL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/attack0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/attack1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/attack2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/attack3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/attackL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/attackL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/attackL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/attackL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/defend0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/defend1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/defend2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/defend3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/defendL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/defendL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/defendL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/defendL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/down0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/down2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/down3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/downL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/downL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/downL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/downL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/leg0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/leg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/leg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/leg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/legL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/legL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/legL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/legL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/move0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/move1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/move2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/move3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/moveL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/moveL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/moveL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/moveL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/skill0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/skill1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/skill2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/skill3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/skillL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/skillL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/skillL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/skillL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/stand0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/stand1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/stand2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/stand3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/standL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/standL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/standL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/standL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/up0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/up1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/up2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/up3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/upL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/upL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/upL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/caotijing/upL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/attack0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/attack1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/attack2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/attack3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/attackL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/attackL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/attackL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/attackL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/defend0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/defend1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/defend2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/defend3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/defendL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/defendL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/defendL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/defendL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/down0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/down2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/down3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/downL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/downL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/downL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/downL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/leg0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/leg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/leg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/leg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/legL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/legL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/legL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/legL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/move0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/move1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/move2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/move3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/moveL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/moveL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/moveL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/moveL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/skill0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/skill1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/skill2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/skill3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/skillL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/skillL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/skillL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/skillL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/stand0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/stand1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/stand2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/stand3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/standL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/standL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/standL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/standL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/up0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/up1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/up2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/up3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/upL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/upL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/upL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/chunli/upL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/hp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/hpL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/attack0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/attack1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/attack2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/attack3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/attackL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/attackL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/attackL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/attackL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/defend0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/defend1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/defend2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/defend3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/defendL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/defendL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/defendL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/defendL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/down0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/down2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/down3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/downL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/downL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/downL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/downL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/leg0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/leg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/leg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/leg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/legL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/legL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/legL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/legL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/move0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/move1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/move2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/move3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/moveL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/moveL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/moveL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/moveL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/skill0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/skill1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/skill2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/skill3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/skillL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/skillL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/skillL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/skillL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/stand0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/stand1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/stand2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/stand3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/standL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/standL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/standL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/standL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/up0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/up1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/up2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/up3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/upL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/upL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/upL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/kelisi/upL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/vs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/vs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/attack0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/attack1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/attack2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/attack3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/attackL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/attackL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/attackL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/attackL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/defend0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/defend1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/defend2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/defend3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/defendL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/defendL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/defendL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/defendL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/down0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/down2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/down3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/downL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/downL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/downL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/downL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/leg0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/leg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/leg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/leg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/legL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/legL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/legL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/legL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/move0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/move1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/move2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/move3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/moveL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/moveL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/moveL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/moveL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/skill0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/skill1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/skill2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/skill3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/skillL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/skillL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/skillL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/skillL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/stand0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/stand1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/stand2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/stand3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/standL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/standL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/standL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/standL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/up0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/up1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/up2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/up3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/upL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/upL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/upL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yadianna/upL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/attack0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/attack1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/attack2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/attack3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/attackL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/attackL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/attackL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/attackL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/defend0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/defend1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/defend2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/defend3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/defendL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/defendL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/defendL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/defendL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/down0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/down2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/down3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/downL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/downL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/downL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/downL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/leg0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/leg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/leg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/leg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/legL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/legL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/legL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/legL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/move0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/move1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/move2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/move3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/moveL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/moveL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/moveL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/moveL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/skill0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/skill1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/skill2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/skill3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/skillL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/skillL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/skillL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/skillL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/stand0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/stand1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/stand2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/stand3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/standL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/standL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/standL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/standL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/up0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/up1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/up2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/up3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/upL0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/upL1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/upL2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/yigenisi/upL3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/不知火舞.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/伊格尼斯.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/克里斯.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/八神庵.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/春丽.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/暴风子.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/背景.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/草薙京.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/source/雅典娜.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/Audio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/EndGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/FrameThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/MPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/Play.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ui/lobby/ChooseUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/debug/ConsoleUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/debug/DrawPic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/debug/Forms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/debug/LogSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/debug/TestMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/debug/forms.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/service/ActPending.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/service/GameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/service/WinnerPending.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/role1/stand/春丽_0-08.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +833,11 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="KEEP" />
   </component>
@@ -31,16 +848,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/debug/TestMain.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/debug/ConsoleUI.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/server/service/WinnerPending.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/server/service/ActPending.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/debug/forms.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/server/service/GameServer.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/client/ui/inGame/Play.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1vWtjwAlXlqC1FSnsqtouvvR5Ul" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
