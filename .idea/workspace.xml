@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="mysql数据库网络连接">
-      <change beforePath="$PROJECT_DIR$/src/client/service/database/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/database/MySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/service/inGame/BattleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/BattleThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/MyHeroPro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/service/inGame/PlayNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/inGame/PlayNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/service/lobby/ChooseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/service/lobby/ChooseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/EndGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/EndGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/FrameThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/FrameThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/MPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/MPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ui/inGame/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/inGame/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ui/lobby/ChooseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/lobby/ChooseUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/service/ActPending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/service/GameServer.java" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="优化客户端关闭">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +125,7 @@
       <recent name="E:\work\JavaTerm\VSProject\src" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Client">
+  <component name="RunManager" selected="应用程序.GameServer">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="VSProject" />
@@ -197,8 +186,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Client" />
         <item itemvalue="应用程序.GameServer" />
+        <item itemvalue="应用程序.Client" />
         <item itemvalue="应用程序.MySQL" />
       </list>
     </recent_temporary>
@@ -443,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627355839937</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="优化客户端关闭">
+      <created>1627356065930</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1627356065930</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -490,7 +486,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="123master" />
     <MESSAGE value="fix test" />
     <MESSAGE value="ui 对战 choose" />
     <MESSAGE value="角色动作" />
@@ -515,7 +510,8 @@
     <MESSAGE value="完成客户端action发送功能" />
     <MESSAGE value="mysql数据库网络连接" />
     <MESSAGE value="mysql数据库网络数据读取 客户端网络退出" />
-    <option name="LAST_COMMIT_MESSAGE" value="mysql数据库网络数据读取 客户端网络退出" />
+    <MESSAGE value="优化客户端关闭" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化客户端关闭" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
