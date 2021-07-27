@@ -79,14 +79,14 @@ public class ChooseUI {
                 this.getClass().getResource("/client/source/暴风子.png")));
         ImageIcon icon8 = new ImageIcon(Objects.requireNonNull(
                 this.getClass().getResource("/client/source/雅典娜.png")));
-        icon1.setImage(icon1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon2.setImage(icon2.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon3.setImage(icon3.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon4.setImage(icon4.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon5.setImage(icon5.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon6.setImage(icon6.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon7.setImage(icon7.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        icon8.setImage(icon8.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
+        icon1.setImage(icon1.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon2.setImage(icon2.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon3.setImage(icon3.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon4.setImage(icon4.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon5.setImage(icon5.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon6.setImage(icon6.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon7.setImage(icon7.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        icon8.setImage(icon8.getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
         b1.setIcon(icon1);
         b2.setIcon(icon2);
         b3.setIcon(icon3);
