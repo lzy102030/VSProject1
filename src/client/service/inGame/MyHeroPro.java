@@ -40,8 +40,7 @@ public class MyHeroPro implements Serializable, Comparable<MyHeroPro> {
     }
     //到此
 
-    public MyHeroPro(String name, int impactAmt, int flashDis,
-                     int hp, int mp, int gameOverFlag, int nowCondition, int userID) {
+    public MyHeroPro(String name, int impactAmt, int hp, int mp, int gameOverFlag, int nowCondition, int userID) {
         this.name = name;
         this.impactAmt = impactAmt;
         this.hp = hp;

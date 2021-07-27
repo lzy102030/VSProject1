@@ -5,7 +5,11 @@ import javax.swing.*;
 public class EndGame {
     private int gameOverFlag;
 
-    public EndGame(int gameOverFlag){
+    public EndGame(){
+
+    }
+
+    public void setGameOverFlag(int gameOverFlag) {
         this.gameOverFlag = gameOverFlag;
     }
 

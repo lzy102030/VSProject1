@@ -82,6 +82,7 @@ public class MPanel extends JPanel implements KeyListener {
         this.myHero = myHero;
         this.heroList = heroList;
 
+        over = new EndGame();
         frameThread = new FrameThread(this);
         frameThread.start();
         battleThread = new BattleThread(this);
@@ -89,7 +90,7 @@ public class MPanel extends JPanel implements KeyListener {
         this.setFocusable(true);
         this.addKeyListener(this);
 
-        new Thread(()->new Audio("client/source/bgm.wav").play()).start();
+        new Thread(() -> new Audio("client/source/bgm.wav").play()).start();
     }
 
     public void setPlayNetwork(PlayNetwork playNetwork) {
@@ -118,7 +119,7 @@ public class MPanel extends JPanel implements KeyListener {
         mp1 = myHero.getMp();
         act1 = myHero.getNowCondition();
         gameOverFlag = myHero.isGameOverFlag();
-        over = new EndGame(gameOverFlag);
+        over.setGameOverFlag(gameOverFlag);
 
         xLoc2 = conHero.getxLoc();
         yLoc2 = conHero.getyLoc();
@@ -155,18 +156,18 @@ public class MPanel extends JPanel implements KeyListener {
             action2 = "move";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            
+
         } else if (act2 == 1 && xHead2 == 0) {
             action2 = "moveL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             xHead1 = 0;
-            
+
         } else if (act2 == 3 && xHead2 == 1) {
             action2 = "down";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            
+
         } else if (act2 == 3 && xHead2 == 0) {
             action2 = "downL";
             actionTurn = getImage(name2, action2, numb);
@@ -298,11 +299,22 @@ public class MPanel extends JPanel implements KeyListener {
 
         //-1未结束，0平手，1胜利，2失败
         if (gameOverFlag != -1) {
-            battleThread.interrupt();
-            frameThread.interrupt();
-            over.over();
-            System.exit(0);
+            exitFromGame();
         }
+    }
+
+    public void exitFromGame() {
+        battleThread.interrupt();
+        frameThread.interrupt();
+
+        try {
+            serverOut.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        over.over();
+        System.exit(0);
     }
 
     public void sendHero(int xChange, int yChange, int xHeadChange, int actChange) {
