@@ -11,6 +11,9 @@ public class ActPending {
     private MyHeroPro o1, o2;
     private static ActPending ActPendingInstance = new ActPending();
     private Logger logger = LogSystem.getLogger();
+    private int p1ImpactCount = 0, p2ImpactCount = 0,
+            p1DefenceCount = 0, p2DefenceCount = 0,
+            p1MpCount = 0, p2MpCount = 0;
 
     private ActPending() {
 
@@ -85,8 +88,11 @@ public class ActPending {
             if ((o1Condition < 10 || o1Condition >= 15)
                     && (o2Condition < 10 || o2Condition >= 15)) {     //玩家均处于移动/受击/无敌等状态时
                 return;
-            } else if ((o1Condition == 10 && o2Condition == 14)
-                    || (o1Condition == 14 && o2Condition == 10)) {   //玩家一方处于普攻 另一方格挡时
+            } else if (o1Condition == 10 && o2Condition == 14) {    //玩家1普攻 玩家2格挡时
+                p2DefenceCount += o1.getImpactAmt();
+                return;
+            } else if (o1Condition == 14 && o2Condition == 10) {     //玩家2普攻 玩家1格挡时
+                p1DefenceCount += o2.getImpactAmt();
                 return;
             } else if (o1Condition == 11 && o2Condition == 11) {    //玩家均使用长攻击
                 return;
@@ -124,6 +130,10 @@ public class ActPending {
             o2.setMp(o2.getMp() + mpAmt);                                         //玩家2少量增长mp
             o2.setNowCondition(attackReactCond(oPkCondition));                    //玩家2进入受击状态
             o1.setMp(o1.getMp() + mpAmt * 3);                                     //玩家1大量增长mp
+
+            p1ImpactCount += realImpactAmt;
+            p1MpCount += mpAmt * 3;
+            p2MpCount += mpAmt;
         } else {    //玩家2攻击有效
             realImpactAmt = o2.getImpactAmt() * impactAmtTimes;
 
@@ -131,6 +141,10 @@ public class ActPending {
             o1.setMp(o1.getMp() + mpAmt);                                         //玩家1少量增长mp
             o1.setNowCondition(attackReactCond(oPkCondition));                    //玩家1进入受击状态
             o2.setMp(o2.getMp() + mpAmt * 3);                                     //玩家2大量增长mp
+
+            p2ImpactCount += realImpactAmt;
+            p2MpCount += mpAmt * 3;
+            p1MpCount += mpAmt;
         }
 
         if (o1.getMp() > 15) {
@@ -160,5 +174,29 @@ public class ActPending {
         } else {     //受击满退回普通状态
             return 0;
         }
+    }
+
+    public int getP1ImpactCount() {
+        return p1ImpactCount;
+    }
+
+    public int getP2ImpactCount() {
+        return p2ImpactCount;
+    }
+
+    public int getP1DefenceCount() {
+        return p1DefenceCount;
+    }
+
+    public int getP2DefenceCount() {
+        return p2DefenceCount;
+    }
+
+    public int getP1Mp() {
+        return p1MpCount;
+    }
+
+    public int getP2() {
+        return p2MpCount;
     }
 }

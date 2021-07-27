@@ -15,7 +15,7 @@ public class Play extends JFrame {
     ObjectInputStream serverIn;
     MPanel mPanel;
     PlayNetwork playNetwork;
-    int x = 0, y = 0;
+
 
     public Play(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro hero, ArrayList<MyHeroPro> heroList) {
         this.serverOut = serverOut;

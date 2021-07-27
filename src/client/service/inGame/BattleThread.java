@@ -3,10 +3,7 @@ package client.service.inGame;
 import client.ui.inGame.MPanel;
 import debug.LogSystem;
 
-import java.util.Objects;
 import java.util.logging.Logger;
-
-import static java.lang.Thread.sleep;
 
 public class BattleThread {
     Logger logger = LogSystem.getLogger();
@@ -14,13 +11,12 @@ public class BattleThread {
     MPanel mPanel;
     Thread moveT;
 
-    int actionTime = 1000;
+    int actionTime = 100;
     String keyUsed = null;
 
     //unify move amount settings
     int xMove = 50, yMove = 100;
-    int yMaxLevel = 1, yMinLevel = 0;
-    int xMaxLoc = 790, xMinLoc = 30;
+
     boolean canNotifyFlag = false;
     boolean defenceFlag = false;
     boolean isInterrupted = true;
@@ -34,6 +30,7 @@ public class BattleThread {
         moveT = new Thread(new MoveChange());
         moveT.start();
     }
+
     //[TODO]xhead不更新
     private class MoveChange implements Runnable {
         @Override
@@ -87,7 +84,7 @@ public class BattleThread {
                                 obj.wait();
                                 defenceFlag = false;
                             } else {
-                                obj.wait(100);
+                                obj.wait(actionTime);
                             }
                         } catch (InterruptedException e) {
                             System.err.println("[ERROR]Unexpected sleep out!");
@@ -99,7 +96,6 @@ public class BattleThread {
                 }
             }
         }
-
     }
 
     public void interrupt() {
