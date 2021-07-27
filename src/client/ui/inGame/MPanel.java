@@ -42,6 +42,7 @@ public class MPanel extends JPanel implements KeyListener {
     PlayNetwork playNetwork;
     int gameOverFlag;
     EndGame over;
+    final int x;
 
     //刷新计时
     int numb;
@@ -88,8 +89,9 @@ public class MPanel extends JPanel implements KeyListener {
         updateHeroInfo(heroList);
         this.setFocusable(true);
         this.addKeyListener(this);
+        x = xLoc1;
 
-        new Thread(()->new Audio("client/source/bgm.wav").play()).start();
+        new Thread(() -> new Audio("client/source/bgm.wav").play()).start();
     }
 
     public void setPlayNetwork(PlayNetwork playNetwork) {
@@ -140,14 +142,44 @@ public class MPanel extends JPanel implements KeyListener {
         time += 50;
         numb = time / 200 % 4;
 
-        //paint role2
+        /*paint role2
         g.setColor(Color.red);
         g.drawImage(HpL, 490, 0, 400, 50, this);
         g.fillRect(525, 21, hp2, 14);//血条
         g.setColor(Color.blue);
-        g.fillRect(535, 40, mp2 * 10, 14);//怒气条
+        g.fillRect(535, 40, mp2 * 10, 14);//怒气条*/
         //[TODO]
         //判断角色位置后绘制血条、怒气条
+        if (xLoc1 == 50) {
+            //paint right
+            g.setColor(Color.red);
+            g.drawImage(HpL, 490, 0, 400, 50, this);
+            g.fillRect(525, 21, hp2, 14);//血条
+            g.setColor(Color.blue);
+            g.fillRect(535, 40, mp2 * 10, 14);
+
+            //paint left
+            g.setColor(Color.red);
+            g.drawImage(Hp, 0, 0, 400, 50, this);
+            g.fillRect(35, 21, hp1, 14);//血条
+            g.setColor(Color.blue);
+            g.fillRect(45, 40, mp1 * 10, 14);//怒气条
+        } else if (xLoc1 == 700) {
+            //paint left
+            g.setColor(Color.red);
+            g.drawImage(HpL, 490, 0, 400, 50, this);
+            g.fillRect(525, 21, hp1, 14);//血条
+            g.setColor(Color.blue);
+            g.fillRect(535, 40, mp1 * 10, 14);
+
+            //paint right
+            g.setColor(Color.red);
+            g.drawImage(Hp, 0, 0, 400, 50, this);
+            g.fillRect(35, 21, hp2, 14);//血条
+            g.setColor(Color.blue);
+            g.fillRect(45, 40, mp2 * 10, 14);//怒气条
+
+        }
 
 
         if (act2 == 1 && xHead2 == 1) {
@@ -155,18 +187,18 @@ public class MPanel extends JPanel implements KeyListener {
             action2 = "move";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            
+
         } else if (act2 == 1 && xHead2 == 0) {
             action2 = "moveL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
             xHead1 = 0;
-            
+
         } else if (act2 == 3 && xHead2 == 1) {
             action2 = "down";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-            
+
         } else if (act2 == 3 && xHead2 == 0) {
             action2 = "downL";
             actionTurn = getImage(name2, action2, numb);
@@ -221,12 +253,12 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
         }
 
-        //paint role1
+        /*paint role1
         g.setColor(Color.red);
         g.drawImage(Hp, 0, 0, 400, 50, this);
         g.fillRect(35, 21, hp1, 14);//血条
         g.setColor(Color.blue);
-        g.fillRect(45, 40, mp1 * 10, 14);//怒气条
+        g.fillRect(45, 40, mp1 * 10, 14);//怒气条*/
 
         if (act1 == 1 && xHead1 == 1) {
             xHead1 = 1;
