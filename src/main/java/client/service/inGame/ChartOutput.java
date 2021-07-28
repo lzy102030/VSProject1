@@ -28,7 +28,7 @@ public class ChartOutput {
     private OutputStream outputStream;// 接受数据的输出流
     private CategoryDataset dataset;// 数据集对象
 
-    public ChartOutput(double[][] data) {
+    public ChartOutput(double[][] data, String timeTag) {
         super();
 
         String[] rowKeys = {"玩家1", "玩家2"};
@@ -39,7 +39,7 @@ public class ChartOutput {
         file.mkdirs();
         String path = file.getAbsolutePath().replace("\\", "/");
         try {
-            outputStream = new FileOutputStream(path + "/BattleInfo.png");
+            outputStream = new FileOutputStream(path + "/BattleInfo" + timeTag + ".png");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

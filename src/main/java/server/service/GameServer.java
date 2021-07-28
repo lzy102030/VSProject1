@@ -1,5 +1,6 @@
 package server.service;
 
+import client.service.database.MySQL;
 import client.service.inGame.MyHeroPro;
 import client.service.inGame.MyObjectOutputStream;
 
@@ -8,6 +9,7 @@ import java.io.*;
 
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -202,34 +204,40 @@ public class GameServer {
     private void endGameProcess() {
         serverUI.exitNow();
 
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("MMddHHmm");
+        String timeTag = sdf.format(date);
+
         try {
             serverSocket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        sendDataCount();
+        sendDataCount(timeTag);
+
+        mySQLDataProcess(timeTag);
+
+        System.exit(0);
     }
 
-    //[todo]发送统计数据 待写
-    private void sendDataCount() {
-        double[][] data = new double[][]{
-                {
-                        actPending.getP1ImpactCount(),
-                        actPending.getP1DefenceCount(),
-                        heroList.get(0).getHp(),
-                        actPending.getP1Mp()
-                },
-                {
-                        actPending.getP2ImpactCount(),
-                        actPending.getP2DefenceCount(),
-                        heroList.get(1).getHp(),
-                        actPending.getP2Mp()
-                }};
+    private void mySQLDataProcess(String timeTag) {
+        String tableName = "GameData" + timeTag;
+        double[][] data = actPending.getGameData();
+
+        new MySQL().createDataTable(tableName);
+
+        new MySQL().insertData(data, tableName);
+
+        new MySQL().createPDF(tableName);
+    }
+
+    private void sendDataCount(String timeTag) {
+        double[][] data = actPending.getGameData();
         double maxLimit = actPending.getMaxCount() + 10;
 
         try {
-            new ChartOutput(data).drawAsPNG(maxLimit);
+            new ChartOutput(data, timeTag).drawAsPNG(maxLimit);
         } catch (IOException e) {
             e.printStackTrace();
         }

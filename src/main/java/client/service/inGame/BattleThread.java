@@ -15,7 +15,7 @@ public class BattleThread {
     String keyUsed = null;
 
     //unify move amount settings
-    int xMove = 50, yMove = 100;
+    int xMove = 30, yMove = 100;
 
     boolean defenceFlag = false, hugeAttackFlag = false;
     boolean isInterrupted = true;

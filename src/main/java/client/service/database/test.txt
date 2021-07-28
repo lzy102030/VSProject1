@@ -1,7 +1,7 @@
 CREATE TABLE `hero_info` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id，主键',
-  `hero_name` varchar(50) COMMENT '学生姓名',
-  `hero_impact` int COMMENT '学生年龄',
+  `hero_name` varchar(50) COMMENT '英雄名称',
+  `hero_impact` int COMMENT '英雄攻击力',
   PRIMARY KEY (`id`)
 );
 
@@ -59,3 +59,12 @@ VALUES
 ;
 
 UPDATE  user   SET  host = REPLACE(host, 'localhost', '%');
+
+CREATE TABLE `test` (
+  `userid` int COMMENT '用户id',
+  `impact` int COMMENT '造成伤害',
+  `defence` int COMMENT '格挡伤害',
+  `hp` int COMMENT '剩余血量',
+  `mp` int COMMENT '获得怒气',
+  PRIMARY KEY (`userid`)
+);

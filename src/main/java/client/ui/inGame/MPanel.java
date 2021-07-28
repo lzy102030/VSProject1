@@ -72,7 +72,7 @@ public class MPanel extends JPanel implements KeyListener {
     String action2; //人物动作  0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击,12技能， 14脸防御，15 16 17受击, 20无敌
 
     //unify move amount settings
-    int xMove = 50;
+    int xMove = 30;
     int yMaxLevel = 1, yMinLevel = 0;
     int xMaxLoc = 790, xMinLoc = 30;
 

@@ -9,7 +9,7 @@ import java.util.Comparator;
 import java.util.logging.Logger;
 
 public class ActPending {
-    private int mpAmt = 1, actDis = 40;
+    private int mpAmt = 1, actDis = 65;
     private MyHeroPro o1, o2;
     private static ActPending ActPendingInstance = new ActPending();
     private Logger logger = LogSystem.getLogger();
@@ -158,13 +158,13 @@ public class ActPending {
         }
 
         String infoStr = player == 1 ?
-                "Player #1 Attack Player #2. Got Damage " :
-                "Player #2 Attack Player #1. Got Damage ";
+                "Player #1 Attack Player #2. Get Damage " :
+                "Player #2 Attack Player #1. Get Damage ";
         String sparePattern = "                                   ";
 
         logger.info("[Server] " + infoStr + realImpactAmt + "pts.\n" +
-                sparePattern + "Now Player #1 HP is " + o1.getHp() + "   MP is " + o1.getMp() + "\n" +
-                sparePattern + "    Player #2 HP is " + o2.getHp() + "   MP is " + o2.getMp());
+                sparePattern + " Now Player #1 HP is " + o1.getHp() + "   MP is " + o1.getMp() + "\n" +
+                sparePattern + "     Player #2 HP is " + o2.getHp() + "   MP is " + o2.getMp());
     }
 
     //受击状态判定
@@ -178,28 +178,20 @@ public class ActPending {
         }
     }
 
-    public int getP1ImpactCount() {
-        return p1ImpactCount;
-    }
-
-    public int getP2ImpactCount() {
-        return p2ImpactCount;
-    }
-
-    public int getP1DefenceCount() {
-        return p1DefenceCount;
-    }
-
-    public int getP2DefenceCount() {
-        return p2DefenceCount;
-    }
-
-    public int getP1Mp() {
-        return p1MpCount;
-    }
-
-    public int getP2Mp() {
-        return p2MpCount;
+    public double[][] getGameData() {
+        return new double[][]{
+                {
+                        p1ImpactCount,
+                        p1DefenceCount,
+                        o1.getHp(),
+                        p1MpCount
+                },
+                {
+                        p2ImpactCount,
+                        p2DefenceCount,
+                        o2.getHp(),
+                        p2MpCount
+                }};
     }
 
     public int getMaxCount() {
