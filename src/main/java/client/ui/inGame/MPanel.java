@@ -9,6 +9,8 @@ import debug.LogSystem;
 import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.IOException;
@@ -19,6 +21,8 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class MPanel extends JPanel implements KeyListener {
+    private Image iBuffer;
+    private Graphics gBuffer;
     ImageIcon backGround = new ImageIcon(Objects.requireNonNull(
             this.getClass().getResource("/source/背景.jpg")));
     ImageIcon vs = new ImageIcon(Objects.requireNonNull(
@@ -424,4 +428,18 @@ public class MPanel extends JPanel implements KeyListener {
                 this.getClass().getResource("/source/" + name + "/" + action + numb + ".png")));
         return imageIcon;
     }
+
+    //双缓冲技术提高画面流畅度
+    public void update(Graphics scr){
+        if(iBuffer==null)
+        {
+            iBuffer=createImage(this.getSize().width,this.getSize().height);
+            gBuffer=iBuffer.getGraphics();
+        }
+        gBuffer.setColor(getBackground());
+        gBuffer.fillRect(0,0,this.getSize().width,this.getSize().height);
+        paint(gBuffer);
+        scr.drawImage(iBuffer,0,0,this);
+    }
+
 }
