@@ -129,8 +129,6 @@ public class GameServer {
                     break;
                 }
 
-                long startTime = System.currentTimeMillis();
-
                 //[Tips]服务端判定时间 avg: 2 ms  (max: 4 ms    min: 1 ms)
 
                 if (heroList.size() < 2) {
@@ -175,9 +173,6 @@ public class GameServer {
 
                     //send message to every client
                     sendCondition(heroList);
-
-                    long usedTime = System.currentTimeMillis() - startTime;
-                    System.out.println(usedTime);
 
                     //结束游戏network
                     if (winPendFlag != -1) {

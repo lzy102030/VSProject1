@@ -4,6 +4,7 @@ import client.service.inGame.MyHeroPro;
 import client.service.inGame.PlayNetwork;
 
 import javax.swing.*;
+import java.awt.*;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
@@ -45,7 +46,10 @@ public class Play extends JFrame {
     }
 
     public void launchFrame() {
-        this.setSize(900, 500);
+        Toolkit theKit = this.getToolkit();            // Get the window toolkit
+        Dimension wndSize = theKit.getScreenSize();       // Get screen size
+        this.setBounds(wndSize.width / 4, wndSize.height / 5,900,500);
+        //this.setSize(900, 500);
         this.add(mPanel);
     }
 

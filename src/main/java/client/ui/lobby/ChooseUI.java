@@ -13,7 +13,6 @@ import java.util.Objects;
 
 public class ChooseUI {
     JFrame frame = new JFrame();
-    JPanel jp1 = new JPanel();
     JButton b1 = new JButton();
     JButton b2 = new JButton();
     JButton b3 = new JButton();
