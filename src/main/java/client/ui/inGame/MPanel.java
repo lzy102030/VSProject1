@@ -9,6 +9,8 @@ import debug.LogSystem;
 import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.IOException;
@@ -424,4 +426,5 @@ public class MPanel extends JPanel implements KeyListener {
                 this.getClass().getResource("/source/" + name + "/" + action + numb + ".png")));
         return imageIcon;
     }
+
 }
