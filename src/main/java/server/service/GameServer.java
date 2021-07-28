@@ -1,6 +1,5 @@
 package server.service;
 
-import debug.LogSystem;
 import client.service.inGame.MyHeroPro;
 import client.service.inGame.MyObjectOutputStream;
 
@@ -13,6 +12,7 @@ import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import client.service.inGame.ChartOutput;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import server.ui.ServerUI;
@@ -117,7 +117,6 @@ public class GameServer {
                 e.printStackTrace();
             }
 
-
             //get the input stream from client
 
             while (true) {
@@ -214,6 +213,25 @@ public class GameServer {
 
     //[todo]发送统计数据 待写
     private void sendDataCount() {
+        double[][] data = new double[][]{
+                {
+                        actPending.getP1ImpactCount(),
+                        actPending.getP1DefenceCount(),
+                        heroList.get(0).getHp(),
+                        actPending.getP1Mp()
+                },
+                {
+                        actPending.getP2ImpactCount(),
+                        actPending.getP2DefenceCount(),
+                        heroList.get(1).getHp(),
+                        actPending.getP2Mp()
+                }};
+        double maxLimit = actPending.getMaxCount() + 10;
 
+        try {
+            new ChartOutput(data).drawAsPNG(maxLimit);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

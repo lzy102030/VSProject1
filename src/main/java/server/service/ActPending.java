@@ -4,6 +4,8 @@ import debug.LogSystem;
 import client.service.inGame.MyHeroPro;
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.logging.Logger;
 
 public class ActPending {
@@ -158,10 +160,11 @@ public class ActPending {
         String infoStr = player == 1 ?
                 "Player #1 Attack Player #2. Got Damage " :
                 "Player #2 Attack Player #1. Got Damage ";
+        String sparePattern = "                                   ";
 
         logger.info("[Server] " + infoStr + realImpactAmt + "pts.\n" +
-                "        Now Player #1 HP is " + o1.getHp() + "   MP is " + o1.getMp() + "\n" +
-                "            Player #2 HP is " + o2.getHp() + "   MP is " + o2.getMp());
+                sparePattern + "Now Player #1 HP is " + o1.getHp() + "   MP is " + o1.getMp() + "\n" +
+                sparePattern + "    Player #2 HP is " + o2.getHp() + "   MP is " + o2.getMp());
     }
 
     //受击状态判定
@@ -195,7 +198,28 @@ public class ActPending {
         return p1MpCount;
     }
 
-    public int getP2() {
+    public int getP2Mp() {
         return p2MpCount;
+    }
+
+    public int getMaxCount() {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        arrayList.add(p1ImpactCount);
+        arrayList.add(p2ImpactCount);
+        arrayList.add(p1DefenceCount);
+        arrayList.add(p2DefenceCount);
+        arrayList.add(p1MpCount);
+        arrayList.add(p2MpCount);
+
+        arrayList.sort((o1, o2) -> {
+            if (o1 > o2) {
+                return 1;
+            } else {
+                return -1;
+            }
+        });
+
+        return arrayList.get(5);
     }
 }

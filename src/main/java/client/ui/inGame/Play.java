@@ -45,14 +45,6 @@ public class Play extends JFrame {
         setVisible(true);
     }
 
-    public static void main(String[] args) {
-        Play battle = new Play();
-
-        battle.setResizable(false);
-        battle.launchFrame();
-        battle.setVisible(true);
-    }
-
     public void launchFrame() {
         Toolkit theKit = this.getToolkit();            // Get the window toolkit
         Dimension wndSize = theKit.getScreenSize();       // Get screen size
