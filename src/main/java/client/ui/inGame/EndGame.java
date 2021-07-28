@@ -25,20 +25,19 @@ public class EndGame extends Frame {
 
     public void over() {
         if (gameOverFlag == 0) {
-            JOptionPane.showMessageDialog(null, "平局", "结果", JOptionPane.PLAIN_MESSAGE);
+            JOptionPane.showMessageDialog(null, "平局", "游戏结束", JOptionPane.PLAIN_MESSAGE);
         } else if (gameOverFlag == 1) {
             //JOptionPane.showMessageDialog(null, "恭喜你胜利了！", "结果", JOptionPane.PLAIN_MESSAGE);
             this.gameWin();
         } else if (gameOverFlag == 2) {
-            JOptionPane.showMessageDialog(null, "很抱歉，你失败了！", "结果", JOptionPane.PLAIN_MESSAGE);
+            JOptionPane.showMessageDialog(null, "很抱歉，你失败了！", "游戏结束", JOptionPane.PLAIN_MESSAGE);
         }
     }
 
     class GameWinDialog extends Dialog {
         JTextField email = new JTextField(20);
-        JButton submit = new JButton("submit");
-        JButton again = new JButton("Again");
-        JLabel hint = new JLabel("Please enter your e-mail and we will send a message to you!");
+        JButton submit = new JButton("确定");
+        JLabel hint = new JLabel("恭喜你胜利了！请输入你的邮箱，我们会想你发送强●者●证●明！");
         JPanel p = new JPanel();
 
         public GameWinDialog() {
