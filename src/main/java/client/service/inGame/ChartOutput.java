@@ -1,4 +1,4 @@
-package debug.chart;
+package client.service.inGame;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtilities;
@@ -19,74 +19,37 @@ import org.jfree.data.general.DatasetUtilities;
 import org.jfree.ui.TextAnchor;
 
 import java.awt.*;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 
-public class JFreeChartOutput {
-    private String title;// 大标题（如：什么什么图）
-    private String categoryAxisLabel;// X轴标题（如：按季度）
-    private String valueAxisLabel;// Y轴标题 （如：销量）
+public class ChartOutput {
+    private String title = "对战信息";// 大标题（如：什么什么图）
+    private String categoryAxisLabel = null;// X轴标题（如：按季度）
+    private String valueAxisLabel = "Pts";// Y轴标题 （如：销量）
     private OutputStream outputStream;// 接受数据的输出流
     private CategoryDataset dataset;// 数据集对象
 
-    public JFreeChartOutput() {
+    public ChartOutput(double[][] data) {
         super();
+
+        String[] rowKeys = {"玩家1", "玩家2"};
+        String[] columnKeys = {"造成伤害", "格挡伤害", "剩余血量", "获得怒气"};
+
+        // 打开一个输出流
+        File file = new File("debug/logs");
+        file.mkdirs();
+        String path = file.getAbsolutePath().replace("\\", "/");
+        try {
+            outputStream = new FileOutputStream(path + "/BattleInfo.png");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        dataset = DatasetUtilities.createCategoryDataset(
+                rowKeys, columnKeys, data);
+
     }
 
-    public JFreeChartOutput(String title, String categoryAxisLabel,
-                            String valueAxisLabel, OutputStream outputStream,
-                            CategoryDataset dataset) {
-        super();
-        this.title = title;
-        this.categoryAxisLabel = categoryAxisLabel;
-        this.valueAxisLabel = valueAxisLabel;
-        this.outputStream = outputStream;
-        this.dataset = dataset;
-    }
-
-    public String getCategoryAxisLabel() {
-        return categoryAxisLabel;
-    }
-
-    public void setCategoryAxisLabel(String categoryAxisLabel) {
-        this.categoryAxisLabel = categoryAxisLabel;
-    }
-
-    public CategoryDataset getDataset() {
-        return dataset;
-    }
-
-    public void setDataset(CategoryDataset dataset) {
-        this.dataset = dataset;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getValueAxisLabel() {
-        return valueAxisLabel;
-    }
-
-    public void setValueAxisLabel(String valueAxisLabel) {
-        this.valueAxisLabel = valueAxisLabel;
-    }
-
-    public OutputStream getOutputStream() {
-        return outputStream;
-    }
-
-    public void setOutputStream(OutputStream outputStream) {
-        this.outputStream = outputStream;
-    }
-
-    public void drawAsPNG() throws IOException {
+    public void drawAsPNG(double maxLimit) throws IOException {
         // 创建3D柱形图标
         JFreeChart jfreechart = ChartFactory.createBarChart3D(title,
                 categoryAxisLabel, valueAxisLabel, dataset,
@@ -101,7 +64,7 @@ public class JFreeChartOutput {
 
         /********/
         NumberAxis numberAxis = (NumberAxis) categoryPlot.getRangeAxis();
-        numberAxis.setRange(0.0, 100.0);
+        numberAxis.setRange(0.0, maxLimit);
         numberAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
 
         /********/
@@ -139,21 +102,5 @@ public class JFreeChartOutput {
 
         // 将图表已数据流的方式返回给客户端
         ChartUtilities.writeChartAsPNG(outputStream, jfreechart, 500, 300);
-    }
-
-    public static void main(String[] agrs) throws IOException {
-        double[][] data = new double[][]{{200, 80.8, 26.9, 60.5},
-                {40.3, 56.3, 24.5, 30.9}};
-        String[] rowKeys = {"玩家1", "玩家2"};
-        String[] columnKeys = {"造成伤害", "格挡伤害", "剩余血量", "剩余怒气"};
-        CategoryDataset dataset = DatasetUtilities.createCategoryDataset(
-                rowKeys, columnKeys, data);
-        // 打开一个输出流
-        File file = new File("debug/logs");
-        file.mkdirs();
-        String path = file.getAbsolutePath().replace("\\", "/");
-        OutputStream outputStream = new FileOutputStream(path + "/BarChart.png");
-        new JFreeChartOutput("对战信息", null, "Pts", outputStream,
-                dataset).drawAsPNG();
     }
 }

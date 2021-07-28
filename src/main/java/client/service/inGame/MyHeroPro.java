@@ -2,7 +2,9 @@ package client.service.inGame;
 
 import java.io.Serializable;
 
-public class MyHeroPro implements Serializable, Comparable<MyHeroPro> {
+public class MyHeroPro implements MyHeroInterface,
+        Serializable,
+        Comparable<MyHeroPro> {
     private String name;
 
     private int xLoc;

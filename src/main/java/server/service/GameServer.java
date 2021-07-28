@@ -1,6 +1,5 @@
 package server.service;
 
-import debug.LogSystem;
 import client.service.inGame.MyHeroPro;
 import client.service.inGame.MyObjectOutputStream;
 
@@ -12,6 +11,8 @@ import java.net.Socket;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import client.service.inGame.ChartOutput;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import server.ui.ServerUI;
@@ -116,9 +117,7 @@ public class GameServer {
                 e.printStackTrace();
             }
 
-
             //get the input stream from client
-
 
             while (true) {
                 try {
@@ -129,6 +128,8 @@ public class GameServer {
                 } catch (IOException e) {
                     break;
                 }
+
+                long startTime = System.currentTimeMillis();
 
                 //[Tips]服务端判定时间 avg: 2 ms  (max: 4 ms    min: 1 ms)
 
@@ -175,6 +176,9 @@ public class GameServer {
                     //send message to every client
                     sendCondition(heroList);
 
+                    long usedTime = System.currentTimeMillis() - startTime;
+                    System.out.println(usedTime);
+
                     //结束游戏network
                     if (winPendFlag != -1) {
                         break;
@@ -214,6 +218,25 @@ public class GameServer {
 
     //[todo]发送统计数据 待写
     private void sendDataCount() {
+        double[][] data = new double[][]{
+                {
+                        actPending.getP1ImpactCount(),
+                        actPending.getP1DefenceCount(),
+                        heroList.get(0).getHp(),
+                        actPending.getP1Mp()
+                },
+                {
+                        actPending.getP2ImpactCount(),
+                        actPending.getP2DefenceCount(),
+                        heroList.get(1).getHp(),
+                        actPending.getP2Mp()
+                }};
+        double maxLimit = actPending.getMaxCount() + 10;
 
+        try {
+            new ChartOutput(data).drawAsPNG(maxLimit);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
