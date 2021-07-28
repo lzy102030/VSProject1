@@ -4,27 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="maven 迁移">
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-18-05.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-18-05.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-18-18.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-18-18.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-18-18.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-18-18.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-19-26.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-19-26.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-19-37.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-19-37.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-19-37.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-19-37.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-22-41.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-22-41.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-22-52.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-22-52.log.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-22-52.log.1.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-27 21-22-52.log.lck" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="修复角色跟随移动bug 前端赶紧爬">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_14_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 08-58-53.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-00-50.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-01-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-01-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-01-57.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-02-20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-03-08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-10-07.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-13-45.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-15-20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-15-20.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-17-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-17-22.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-20-18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-22-24.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 09-22-24.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/service/GetUserIP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/ui/ServerUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/inGame/MPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/inGame/MPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VSProjectByMaven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VSProjectByMaven.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/BattleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/BattleThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/ActPending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/GameServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +172,7 @@
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -177,7 +185,7 @@
       <recent name="E:\work\JavaTerm\VSProject\src" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Client">
+  <component name="RunManager" selected="应用程序.GameServer">
     <configuration name="ClassPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClassPath" />
       <module name="VSProjectByMaven" />
@@ -215,6 +223,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GetUserIP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.service.GetUserIP" />
+      <module name="VSProjectByMaven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MySQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.service.database.MySQL" />
       <module name="VSProject" />
@@ -228,30 +249,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Play" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client.ui.inGame.Play" />
-      <module name="VSProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="client.ui.inGame.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="应用程序.Client" />
-      <item itemvalue="应用程序.Play" />
       <item itemvalue="应用程序.GameServer" />
       <item itemvalue="应用程序.MySQL" />
       <item itemvalue="应用程序.ClassPath" />
+      <item itemvalue="应用程序.GetUserIP" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Client" />
         <item itemvalue="应用程序.GameServer" />
+        <item itemvalue="应用程序.GetUserIP" />
+        <item itemvalue="应用程序.Client" />
         <item itemvalue="应用程序.ClassPath" />
         <item itemvalue="应用程序.MySQL" />
       </list>
@@ -532,7 +541,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627388501078</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="修复角色跟随移动bug 前端赶紧爬">
+      <created>1627393280963</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1627393280963</updated>
+    </task>
+    <task id="LOCAL-00040" summary="修复角色跟随移动bug 前端赶紧爬">
+      <created>1627393303893</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1627393303893</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="角色动作" />
     <MESSAGE value="角色移动" />
     <MESSAGE value="Graphics g的使用" />
     <MESSAGE value="Graphics g的使用优化" />
@@ -604,7 +626,8 @@
     <MESSAGE value="优化客户端关闭" />
     <MESSAGE value="maven init" />
     <MESSAGE value="maven 迁移" />
-    <option name="LAST_COMMIT_MESSAGE" value="maven 迁移" />
+    <MESSAGE value="修复角色跟随移动bug 前端赶紧爬" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复角色跟随移动bug 前端赶紧爬" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

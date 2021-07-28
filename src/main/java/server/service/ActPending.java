@@ -159,10 +159,9 @@ public class ActPending {
                 "Player #1 Attack Player #2. Got Damage " :
                 "Player #2 Attack Player #1. Got Damage ";
 
-        logger.info("[Server]" + infoStr + realImpactAmt + "pts.\n" +
+        logger.info("[Server] " + infoStr + realImpactAmt + "pts.\n" +
                 "        Now Player #1 HP is " + o1.getHp() + "   MP is " + o1.getMp() + "\n" +
                 "            Player #2 HP is " + o2.getHp() + "   MP is " + o2.getMp());
-
     }
 
     //受击状态判定

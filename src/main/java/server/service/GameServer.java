@@ -4,40 +4,44 @@ import debug.LogSystem;
 import client.service.inGame.MyHeroPro;
 import client.service.inGame.MyObjectOutputStream;
 
+
 import java.io.*;
-import java.net.Inet4Address;
-import java.net.InetAddress;
+
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import server.ui.ServerUI;
 
 public class GameServer {
     static ServerSocket serverSocket = null;
     static List<Socket> clientSockets = null;
     static ArrayList<MyHeroPro> heroList = null;
     static ActPending actPending = ActPending.getActPendingInstance();
+    ServerUI serverUI;
+
     static int count = 1, port = 2000;
-    int sendCount = 0;
     int x1Loc = 50, y1Loc = 300, x1Head = 1;
     int x2Loc = 700, y2Loc = 300, x2Head = 0;
+
     ObjectOutputStream out;
-    static Logger logger;
+
+    private static Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
     //constructor
     private GameServer() {
+        serverUI = new ServerUI();
+
         ExecutorService executorService = Executors.newCachedThreadPool();
 
         try {
             serverSocket = new ServerSocket(port);
-
-            InetAddress ip4 = Inet4Address.getLocalHost();
-            System.out.println(ip4.getHostAddress());
-
             clientSockets = new ArrayList<>();
             heroList = new ArrayList<>();
+
             //Socket s = serverSocket.accept();
             while (true) {
                 //wait for accept new client
@@ -47,14 +51,12 @@ public class GameServer {
                 executorService.execute(new SingleServer(s, count++));
             }
         } catch (IOException e) {
-            System.out.println("Server closed.");
+            logger.info("[Server] Server closed.");
         }
     }
 
     public static void main(String[] args) {
-        logger = LogSystem.getLogger();
-
-        logger.info("[Server]Server started.");
+        logger.info("[Server] Server started.");
 
         new GameServer();
     }
@@ -89,7 +91,6 @@ public class GameServer {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            sendCount++;
         }
     }
 
@@ -200,6 +201,8 @@ public class GameServer {
     }
 
     private void endGameProcess() {
+        serverUI.exitNow();
+
         try {
             serverSocket.close();
         } catch (IOException e) {

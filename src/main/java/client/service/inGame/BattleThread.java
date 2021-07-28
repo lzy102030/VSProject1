@@ -1,12 +1,12 @@
 package client.service.inGame;
 
 import client.ui.inGame.MPanel;
-import debug.LogSystem;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import java.util.logging.Logger;
 
 public class BattleThread {
-    Logger logger = LogSystem.getLogger();
+    private static Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
     MPanel mPanel;
     Thread moveT;
@@ -37,8 +37,7 @@ public class BattleThread {
                 while (isInterrupted) {
                     if (keyUsed == null) {
                         mPanel.sendHero(0, 0, -1, 0);
-                        logger.info("Send stand");
-
+                        logger.trace("[Client] Send stand");
                         try {
                             obj.wait();
                         } catch (InterruptedException e) {
@@ -48,33 +47,32 @@ public class BattleThread {
                     } else {
                         if (keyUsed == "D") {
                             mPanel.sendHero(xMove, 0, 1, 1);
-                            logger.info("Send right move");
+                            logger.trace("[Client] Send right move");
                         } else if (keyUsed == "A") {
                             mPanel.sendHero(-xMove, 0, 0, 1);
-                            logger.info("Send left move");
+                            logger.trace("[Client] Send left move");
                         } else if (keyUsed == "W") {
                             mPanel.sendHero(0, -yMove, -1, 2);
-                            logger.info("Send up");
+                            logger.trace("[Client] Send up");
                         } else if (keyUsed == "S") {
                             mPanel.sendHero(0, yMove, -1, 3);
-                            logger.info("Send down");
+                            logger.trace("[Client] Send down");
                         } else if (keyUsed == "J") {
                             mPanel.sendHero(0, 0, -1, 10);
-                            logger.info("Send normal attack");
+                            logger.trace("[Client] Send normal attack");
                         } else if (keyUsed == "K") {
                             mPanel.sendHero(0, 0, -1, 11);
-                            logger.info("Send hard attack");
+                            logger.trace("[Client] Send hard attack");
                         } else if (keyUsed == "U") {
                             mPanel.sendHero(0, 0, -1, 14);
                             defenceFlag = true;
-                            logger.info("Send defence");
+                            logger.trace("[Client] Send defence");
                         } else if (keyUsed == "L") {
                             mPanel.sendHero(0, 0, -1, 12);
                             hugeAttackFlag = true;
-                            logger.info("Send huge attack");
+                            logger.trace("[Client] Send huge attack");
                         } else {
-                            System.err.println("[ERROR]None input found!");
-                            logger.severe("None input found!");
+                            logger.error("[Client] Logical Fatal! None input found!");
                         }
 
                         try {
@@ -87,6 +85,7 @@ public class BattleThread {
                             } else {
                                 obj.wait(actionNormalTime);
                             }
+
                         } catch (InterruptedException e) {
                             System.err.println("[ERROR]Unexpected sleep out!");
                             e.printStackTrace();

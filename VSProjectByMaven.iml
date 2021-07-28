@@ -15,5 +15,8 @@
     <orderEntry type="library" name="Maven: org.jfree:jfreechart:1.0.19" level="project" />
     <orderEntry type="library" name="Maven: org.jfree:jcommon:1.0.23" level="project" />
     <orderEntry type="library" name="Maven: com.itextpdf:itextpdf:5.5.13" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.14.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.14.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
   </component>
 </module>
