@@ -69,7 +69,7 @@ public class ConsoleUI {
 
     private void createAndShowGUI() {
         //Create and set up the window.
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 
         Toolkit theKit = frame.getToolkit();            // Get the window toolkit
         Dimension wndSize = theKit.getScreenSize();       // Get screen size
