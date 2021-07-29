@@ -4,7 +4,6 @@ import client.service.database.MySQL;
 import client.service.inGame.MyHeroPro;
 import client.service.inGame.MyObjectOutputStream;
 
-
 import java.io.*;
 
 import java.net.ServerSocket;
@@ -14,7 +13,7 @@ import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import client.service.inGame.ChartOutput;
+import server.service.ChartOutput;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import server.service.ActPending;

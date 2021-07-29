@@ -1,4 +1,4 @@
-package client.service.inGame;
+package server.service;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtilities;

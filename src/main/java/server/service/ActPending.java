@@ -1,20 +1,19 @@
 package server.service;
 
-import debug.LogSystem;
 import client.service.inGame.MyHeroPro;
 
 import javax.swing.*;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.logging.Logger;
 
 //游戏业务逻辑 动作实现与判定
 public class ActPending {
     //基本数据信息
-    private int mpAmt = 1, actDis = 60;
+    private int mpAmt = 1, actDis = 55;
     private MyHeroPro o1, o2;
     private static ActPending ActPendingInstance = new ActPending();
-    private Logger logger = LogSystem.getLogger();
+
+    private static Logger logger = LogSystem.getLogger();
 
     //游戏数据记录区
     private int p1ImpactCount = 0, p2ImpactCount = 0,

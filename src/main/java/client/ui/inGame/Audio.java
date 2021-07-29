@@ -1,7 +1,6 @@
 package client.ui.inGame;
 
 import javax.sound.sampled.*;
-import java.io.IOException;
 
 public class Audio {
     private AudioFormat audioFormat = null;

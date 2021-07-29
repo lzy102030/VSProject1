@@ -1,4 +1,4 @@
-package debug;
+package server.service;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class LogSystem {
             consoleHandler.setLevel(Level.OFF);
             logger.addHandler(consoleHandler);
 
-            File file = new File("debug/logs");
+            File file = new File("logs");
             file.mkdirs();
             String path = file.getAbsolutePath().replace("\\", "/");
             FileHandler fileHandler = new FileHandler(path + "/log " + time + ".log");
