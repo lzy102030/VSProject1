@@ -4,27 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="新增阻止用户退出邮箱输入界面 修复邮箱退出报错">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_232.xml" beforeDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="后端注释添加">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_SparseBitSet_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/database/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/database/MySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/database/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/debug/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/BattleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/BattleThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/ChartOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/ChartOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/DataTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/DataTransfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyHeroPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyHeroPro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyObjectOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyObjectOutputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/PlayNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/PlayNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/lobby/ChooseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/lobby/ChooseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/inGame/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/inGame/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/lobby/ChooseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/lobby/ChooseUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/ActPending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/CreateDataPDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/CreateDataPDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/GameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/GetUserIP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/GetUserIP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/WinnerPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/WinnerPending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/ui/ServerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ui/ServerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/GameServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,11 +203,11 @@
     <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="15" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="server.service.GameServer" />
+      <option name="MAIN_CLASS_NAME" value="server.GameServer" />
       <module name="VSProjectByMaven" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="server.service.*" />
+          <option name="PATTERN" value="server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -577,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627461215448</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="后端注释添加">
+      <created>1627525480040</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1627525480040</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -624,7 +616,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="图片" />
     <MESSAGE value="7.21" />
     <MESSAGE value="人物动作" />
     <MESSAGE value="人物动作连贯" />
@@ -650,7 +641,8 @@
     <MESSAGE value="log格式优化 新增统计表图片输出 新增策略模式接口 优化结束游戏后续进程" />
     <MESSAGE value="对战UI更新" />
     <MESSAGE value="新增阻止用户退出邮箱输入界面 修复邮箱退出报错" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增阻止用户退出邮箱输入界面 修复邮箱退出报错" />
+    <MESSAGE value="后端注释添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端注释添加" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">

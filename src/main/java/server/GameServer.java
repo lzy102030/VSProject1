@@ -1,4 +1,4 @@
-package server.service;
+package server;
 
 import client.service.database.MySQL;
 import client.service.inGame.MyHeroPro;
@@ -17,6 +17,8 @@ import java.util.concurrent.Executors;
 import client.service.inGame.ChartOutput;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import server.service.ActPending;
+import server.service.WinnerPending;
 import server.ui.ServerUI;
 
 public class GameServer {
