@@ -2,6 +2,7 @@ package client.service.inGame;
 
 import java.io.*;
 
+//向服务器下发
 public class DataTransfer {
     ObjectOutputStream oos;
 

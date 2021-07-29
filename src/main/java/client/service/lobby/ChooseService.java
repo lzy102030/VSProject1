@@ -10,6 +10,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+//选人阶段的网络端
 public class ChooseService {
     ObjectOutputStream serverOut;
     ObjectInputStream serverIn;
@@ -22,12 +23,14 @@ public class ChooseService {
         this.serverOut = serverOut;
         this.serverIn = serverIn;
 
+        //从数据库获取英雄信息
         heroInfoMap = new MySQL().getHeroInfoMap();
 
-        //remote thread start for checking new contents
+        //启动线程接受新内容
         Thread thread = new Thread(new RemoteReader());
         thread.start();
 
+        //启动UI
         chooseUI = new ChooseUI(serverOut, heroInfoMap);
     }
 
@@ -47,7 +50,6 @@ public class ChooseService {
                 } while (heroListReceive == null);
                 heroList = (ArrayList<MyHeroPro>) heroListReceive;
                 chooseUI.callForGame(heroList);
-
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -55,6 +55,7 @@ public class GetUserIP {
         HttpURLConnection urlConnection;
         BufferedReader in = null;
 
+        //获取网页信息
         try {
             url = new URL(chinaz);
             urlConnection = (HttpURLConnection) url.openConnection();
@@ -62,8 +63,6 @@ public class GetUserIP {
             while ((read = in.readLine()) != null) {
                 inputLine.append(read + "\r\n");
             }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -76,13 +75,16 @@ public class GetUserIP {
             }
         }
 
+        //正则表达式处理接收的网页端数据
         Pattern p = Pattern.compile("\\<dd class\\=\"fz24\">(.*?)\\<\\/dd>");
         Matcher m = p.matcher(inputLine.toString());
+
+        //获取ip地址
         if (m.find()) {
             String ipstr = m.group(1);
             ip = ipstr;
-            //System.out.println(ipstr);
         }
+
         return ip;
     }
 }

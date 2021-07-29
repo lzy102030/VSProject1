@@ -2,6 +2,7 @@ package client.service.inGame;
 
 import java.io.Serializable;
 
+//项目的基本类
 public class MyHeroPro implements MyHeroInterface,
         Serializable,
         Comparable<MyHeroPro> {
@@ -9,23 +10,20 @@ public class MyHeroPro implements MyHeroInterface,
 
     private int xLoc;
     private int yLoc;
-    private int xHead;  //0左 1右
+    private int xHead;                  //0左 1右
 
     private int impactAmt;
 
     private int hp;
     private int mp;
 
-    private int userID = -1;  //-1未选中，选中后更改为对应的用户id
-    private int gameOverFlag = -1; //-1未结束，0平手，1胜利，2失败
+    private int userID = -1;           //-1未选中，选中后更改为对应的用户id
+    private int gameOverFlag = -1;     //-1未结束，0平手，1胜利，2失败
 
-    private int nowCondition; //0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击,12技能， 14脸防御，15 16 17受击, 20无敌
+    private int nowCondition;
+    //0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击,12技能， 14脸防御，15 16 17受击, 20无敌
 
-    //[DEBUG]debug用构造器 以下两个都是
-    public MyHeroPro(String name) {
-        this.name = name;
-    }
-
+    //debug用构造器
     public MyHeroPro(String name, int xLoc, int yLoc, int xHead,
                      int impactAmt, int defendInt, int defendAmt, int flashDis,
                      int hp, int mp, int userID, int gameOverFlag, int nowCondition) {
@@ -40,8 +38,8 @@ public class MyHeroPro implements MyHeroInterface,
         this.gameOverFlag = gameOverFlag;
         this.nowCondition = nowCondition;
     }
-    //到此
 
+    //游戏进程中release版使用构造器
     public MyHeroPro(String name, int impactAmt, int hp, int mp, int gameOverFlag, int nowCondition, int userID) {
         this.name = name;
         this.impactAmt = impactAmt;
@@ -52,6 +50,7 @@ public class MyHeroPro implements MyHeroInterface,
         this.userID = userID;
     }
 
+    //信息获取类
     public String getName() {
         return name;
     }
@@ -92,6 +91,7 @@ public class MyHeroPro implements MyHeroInterface,
         return gameOverFlag;
     }
 
+    //常规修改类
     public void setLoc(int xLoc, int yLoc, int xHead) {
         this.xLoc = xLoc;
         this.yLoc = yLoc;
@@ -114,6 +114,8 @@ public class MyHeroPro implements MyHeroInterface,
         this.gameOverFlag = flag;
     }
 
+    //覆写Collection的相等方法 使其判定依据修改为userID
+    //实现heroList只能存有用户的一个最新对象
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof MyHeroPro)) {
@@ -125,6 +127,8 @@ public class MyHeroPro implements MyHeroInterface,
         return heroPro.userID == this.userID;
     }
 
+    //覆写比较方法 使其判定依据为userID
+    //实现用户的简单排序
     @Override
     public int compareTo(MyHeroPro o) {
         if (this.userID > o.userID) {

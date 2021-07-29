@@ -4,45 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="新增pdf输出 新增mySQL数据库建表与写入 优化统计图输出图片 优化人物位移">
-      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281509.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281535.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281537.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281538.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281539.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281559.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281621.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281624.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281625.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07281537.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07281538.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07281559.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07281621.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07281624.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07281625.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-06-27.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-08-51.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-35-08.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-37-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-37-16.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-38-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-38-06.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-39-24.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-54-28.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-54-54.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-54-54.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-56-24.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-56-24.log.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 15-59-13.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 16-21-31.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 16-24-25.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 16-25-20.log" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="新增阻止用户退出邮箱输入界面 修复邮箱退出报错">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_232.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VSProjectByMaven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VSProjectByMaven.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/inGame/EndGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/inGame/EndGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/inGame/MailOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/inGame/MailOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/debug/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/debug/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/database/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/database/MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/database/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/debug/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/BattleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/BattleThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/ChartOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/ChartOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/DataTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/DataTransfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyHeroPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyHeroPro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyObjectOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyObjectOutputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/PlayNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/PlayNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/lobby/ChooseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/lobby/ChooseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/inGame/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/inGame/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/lobby/ChooseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/lobby/ChooseUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/ActPending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/CreateDataPDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/CreateDataPDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/GetUserIP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/GetUserIP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/WinnerPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/WinnerPending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/ui/ServerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ui/ServerUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +41,8 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="UML Component" />
+        <option value="UML Class" />
       </list>
     </option>
   </component>
@@ -178,6 +162,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -187,7 +172,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
@@ -200,6 +185,7 @@
       <recent name="D:\Java\Others\VSProjectByMaven\src\main\java\debug\chart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\Others\VSProjectByMaven\src\main\java\debug" />
       <recent name="E:\work\JavaTerm\VSProject\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -273,8 +259,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Client" />
         <item itemvalue="应用程序.GameServer" />
+        <item itemvalue="应用程序.Client" />
         <item itemvalue="应用程序.Data" />
         <item itemvalue="应用程序.MySQL" />
         <item itemvalue="应用程序.JfreeChartTest3" />
@@ -584,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627440778567</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="新增阻止用户退出邮箱输入界面 修复邮箱退出报错">
+      <created>1627461215448</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1627461215448</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -631,7 +624,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Graphics g的使用优化" />
     <MESSAGE value="图片" />
     <MESSAGE value="7.21" />
     <MESSAGE value="人物动作" />
@@ -657,8 +649,13 @@
     <MESSAGE value="重写log系统 新增server端ui 完善部分退出操作" />
     <MESSAGE value="log格式优化 新增统计表图片输出 新增策略模式接口 优化结束游戏后续进程" />
     <MESSAGE value="对战UI更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="对战UI更新" />
+    <MESSAGE value="新增阻止用户退出邮箱输入界面 修复邮箱退出报错" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增阻止用户退出邮箱输入界面 修复邮箱退出报错" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VSProject$Play.ic" NAME="Play 覆盖结果" MODIFIED="1627005371894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

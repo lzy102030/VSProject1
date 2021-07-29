@@ -26,6 +26,7 @@ public class GameServer {
     static ActPending actPending = ActPending.getActPendingInstance();
     ServerUI serverUI;
 
+    //游戏数据存放
     static int count = 1, port = 2000;
     int x1Loc = 50, y1Loc = 300, x1Head = 1;
     int x2Loc = 700, y2Loc = 300, x2Head = 0;
@@ -38,6 +39,7 @@ public class GameServer {
     private GameServer() {
         serverUI = new ServerUI();
 
+        //启动线程池管理服务
         ExecutorService executorService = Executors.newCachedThreadPool();
 
         try {
@@ -45,7 +47,6 @@ public class GameServer {
             clientSockets = new ArrayList<>();
             heroList = new ArrayList<>();
 
-            //Socket s = serverSocket.accept();
             while (true) {
                 //wait for accept new client
                 Socket s = serverSocket.accept();
@@ -73,16 +74,6 @@ public class GameServer {
 
     //send message for every client
     private synchronized void sendCondition(ArrayList<MyHeroPro> heroList) {
-        int i = 1;
-        for (MyHeroPro hero : heroList) {
-            logger.info("[Server]User #" + i++ +
-                    " x-Loc=" + hero.getxLoc() +
-                    " y-Loc=" + hero.getyLoc() +
-                    " xHead=" + hero.getxHead() +
-                    "  Act=" + hero.getNowCondition() +
-                    " HP=" + hero.getHp() +
-                    " MP=" + hero.getMp());
-        }
         ObjectOutputStream out;
 
         //use arraylist for the clients stored
@@ -97,6 +88,7 @@ public class GameServer {
         }
     }
 
+    //线程池单例实现
     private class SingleServer implements Runnable {
         Socket s;
         int clientID;
@@ -131,8 +123,9 @@ public class GameServer {
                     break;
                 }
 
-                //[Tips]服务端判定时间 avg: 2 ms  (max: 4 ms    min: 1 ms)
+                //[Tips]服务端判定时间 avg: 2 ms  (max: 4 ms   min: 1 ms)
 
+                //当heroList小于2时 赋予角色初值
                 if (heroList.size() < 2) {
                     if (clientID == 1) {
                         hero.setLoc(x1Loc, y1Loc, x1Head);
@@ -141,11 +134,8 @@ public class GameServer {
                     }
                 }
 
+                //更新英雄list
                 updateHeroList(hero);
-
-                //[DEBUG Output]
-                logger.info("[Server]client #" + clientID + " transferred " + hero.getName() + " #" + hero.getUserID());
-                //[End]
 
                 //动作act判定是否生效
                 if (heroList.size() == 2) {
@@ -195,6 +185,7 @@ public class GameServer {
                 e.printStackTrace();
             }
 
+            //当客户端列表无连接时 进入结束游戏后的阶段
             if (clientSockets.size() == 0) {
                 endGameProcess();
             }
@@ -202,40 +193,45 @@ public class GameServer {
     }
 
     private void endGameProcess() {
+        //关闭UI
         serverUI.exitNow();
 
+        //构造游戏数据时间戳
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("MMddHHmm");
         String timeTag = sdf.format(date);
 
+        //关闭服务器
         try {
             serverSocket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+        //处理游戏数据记录
         sendDataCount(timeTag);
 
+        //数据库的游戏数据操作
         mySQLDataProcess(timeTag);
 
         System.exit(0);
     }
 
     private void mySQLDataProcess(String timeTag) {
+        //准备数据与表名称
         String tableName = "GameData" + timeTag;
         double[][] data = actPending.getGameData();
 
-        new MySQL().createDataTable(tableName);
-
-        new MySQL().insertData(data, tableName);
-
-        new MySQL().createPDF(tableName);
+        new MySQL().createDataTable(tableName);   //建表
+        new MySQL().insertData(data, tableName);   //存入数据
+        new MySQL().createPDF(tableName);    //读取并生成pdf
     }
 
     private void sendDataCount(String timeTag) {
         double[][] data = actPending.getGameData();
         double maxLimit = actPending.getMaxCount() + 10;
 
+        //绘制统计图表
         try {
             new ChartOutput(data, timeTag).drawAsPNG(maxLimit);
         } catch (IOException e) {

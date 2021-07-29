@@ -8,11 +8,15 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.logging.Logger;
 
+//游戏业务逻辑 动作实现与判定
 public class ActPending {
-    private int mpAmt = 1, actDis = 65;
+    //基本数据信息
+    private int mpAmt = 1, actDis = 60;
     private MyHeroPro o1, o2;
     private static ActPending ActPendingInstance = new ActPending();
     private Logger logger = LogSystem.getLogger();
+
+    //游戏数据记录区
     private int p1ImpactCount = 0, p2ImpactCount = 0,
             p1DefenceCount = 0, p2DefenceCount = 0,
             p1MpCount = 0, p2MpCount = 0;
@@ -27,7 +31,6 @@ public class ActPending {
 
     public void setActPending(MyHeroPro o1, MyHeroPro o2) {
         if (o1 == null | o2 == null) {
-            //[TODO]Release需删除
             JOptionPane.showMessageDialog(null,
                     "[ERROR]Logical Fatal in List Sorting.");
         } else {
@@ -157,6 +160,7 @@ public class ActPending {
             o2.setMp(15);
         }
 
+        //log信息录入
         String infoStr = player == 1 ?
                 "Player #1 Attack Player #2. Get Damage " :
                 "Player #2 Attack Player #1. Get Damage ";
@@ -178,6 +182,7 @@ public class ActPending {
         }
     }
 
+    //获取游戏数据记录
     public double[][] getGameData() {
         return new double[][]{
                 {
@@ -194,7 +199,9 @@ public class ActPending {
                 }};
     }
 
+    //获取最大数值
     public int getMaxCount() {
+        //使用ArrayList快速排序
         ArrayList<Integer> arrayList = new ArrayList<>();
 
         arrayList.add(p1ImpactCount);

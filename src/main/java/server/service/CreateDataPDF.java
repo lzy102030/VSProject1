@@ -15,14 +15,17 @@ import java.sql.Statement;
 
 public class CreateDataPDF {
     public CreateDataPDF(Connection connection, String tableName) {
-        File file = new File("debug/logs");
+        //建立相对路径
+        File file = new File("logs");
         file.mkdirs();
         String path = file.getAbsolutePath().replace("\\", "/");
 
+        //绘制背景
         Rectangle rectangle = new Rectangle(PageSize.A4);
         rectangle.setBackgroundColor(BaseColor.WHITE);
         Document document = new Document(rectangle);
 
+        //调用pdf输出
         PdfWriter writer = null;
         try {
             writer = PdfWriter.getInstance(document, new FileOutputStream(path + "/" + tableName + ".pdf"));
@@ -32,6 +35,7 @@ public class CreateDataPDF {
 
         writer.setPdfVersion(PdfWriter.PDF_VERSION_1_7);
 
+        //录入信息
         document.addTitle("GameData");
         document.addAuthor("Noneid & lzy");
         document.addSubject("Game data from mysql data server");
@@ -42,24 +46,31 @@ public class CreateDataPDF {
 
         document.open();
 
+        //调用表格输出
         PdfPTable table = new PdfPTable(5);
         PdfPCell cell;
         cell = new PdfPCell(new Phrase("                                                       Data"));
         cell.setColspan(5);
         table.addCell(cell);
 
+        //表头信息录入
         table.addCell("User-id");
         table.addCell("Damage");
         table.addCell("Defence");
         table.addCell("Remain-HP");
         table.addCell("Got-MP");
 
+        //数据库连接
         ResultSet resultSet = null;
         Statement statement;
+
         try {
+            //数据库查询指令
             String sql = "Select * from " + tableName;
             statement = connection.createStatement();
             resultSet = statement.executeQuery(sql);
+
+            //添加数据库信息到表格
             while (resultSet.next()) {
                 for (int i = 1; i <= 5; ++i) {
                     table.addCell(String.valueOf(resultSet.getInt(i)));
@@ -68,6 +79,7 @@ public class CreateDataPDF {
         } catch (SQLException throwable) {
             throwable.printStackTrace();
         } finally {
+            //关闭资源
             try {
                 if (resultSet != null) {
                     resultSet.close();
@@ -77,6 +89,7 @@ public class CreateDataPDF {
             }
         }
 
+        //录入表格
         try {
             document.add(table);
         } catch (DocumentException e) {

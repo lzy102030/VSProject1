@@ -24,34 +24,27 @@ public class Play extends JFrame {
         this.hero = hero;
         this.heroList = heroList;
 
+        //启动客户端网络与UI
         mPanel = new MPanel(serverOut, serverIn, hero, heroList, this);
         playNetwork = new PlayNetwork(serverOut, serverIn);
         playNetwork.setmPanel(mPanel);
         mPanel.setPlayNetwork(playNetwork);
-        setResizable(false);
-        launchFrame();
-        setVisible(true);
-    }
 
-    public Play() {
-
-    }
-
-    public Play(ObjectOutputStream serverOut) {
-        this.serverOut = serverOut;
-
+        //启动UI
         setResizable(false);
         launchFrame();
         setVisible(true);
     }
 
     public void launchFrame() {
-        Toolkit theKit = this.getToolkit();            // Get the window toolkit
-        Dimension wndSize = theKit.getScreenSize();       // Get screen size
+        //获取屏幕大小
+        Toolkit theKit = this.getToolkit();
+        Dimension wndSize = theKit.getScreenSize();
+
+        //设为居中显示
         this.setBounds(wndSize.width / 4, wndSize.height / 5,900,500);
-        //this.setSize(900, 500);
+
         this.add(mPanel);
     }
-
 }
 

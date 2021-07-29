@@ -6,6 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
+//对战进程的网络端处理
 public class PlayNetwork {
     ObjectOutputStream serverOut;
     ObjectInputStream serverIn;
@@ -16,7 +17,7 @@ public class PlayNetwork {
         this.serverOut = serverOut;
         this.serverIn = serverIn;
 
-        //remote thread start for checking new contents
+        //启动线程接受新内容
         Thread thread = new Thread(new RemoteReader());
         thread.start();
     }
@@ -30,7 +31,7 @@ public class PlayNetwork {
         public void run() {
             Object heroListReceive = null;
             while (true) {
-                //当接收到herolist 代表双方均完成选人
+                //游戏阶段 接收herolist后下发数据修正并绘制
                 do {
                     try {
                         heroListReceive = serverIn.readObject();
@@ -39,6 +40,7 @@ public class PlayNetwork {
                     }
                 } while (heroListReceive == null);
                 heroList = (ArrayList<MyHeroPro>) heroListReceive;
+                //保护绘制对象有效性
                 if (heroList != null) {
                     mPanel.updateHeroInfo(heroList);
                 }

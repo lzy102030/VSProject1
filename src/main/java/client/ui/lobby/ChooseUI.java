@@ -50,15 +50,15 @@ public class ChooseUI {
         FontMetrics fm = frame.getFontMetrics(f);
         int x = fm.stringWidth("英雄选择");
         int y = fm.stringWidth(" ");
-        int z = frame.getWidth()/2 - (x/2);
-        int w = z/y;
-        String pad ="";
-        pad = String.format("%"+w+"s", pad);
-        frame.setTitle(pad+"英雄选择");
+        int z = frame.getWidth() / 2 - (x / 2);
+        int w = z / y;
+        String pad = "";
+        pad = String.format("%" + w + "s", pad);
+        frame.setTitle(pad + "英雄选择");
 
         Toolkit theKit = frame.getToolkit();            // Get the window toolkit
         Dimension wndSize = theKit.getScreenSize();       // Get screen size
-        frame.setBounds(wndSize.width / 4, wndSize.height / 5,700,400);
+        frame.setBounds(wndSize.width / 4, wndSize.height / 5, 700, 400);
 
         //jp1.setSize(1000, 600);
 
@@ -97,6 +97,7 @@ public class ChooseUI {
 
         addComponentsToPane(frame.getContentPane());
 
+        //调用英雄发送 准备进入游戏
         b1.addActionListener(e -> {
             hero = new MyHeroPro("caotijing", heroInfoMap.get("caotijing"), hp, mp, -1, 0, userID);
             new DataTransfer(serverOut).sendHero(hero);
@@ -146,7 +147,7 @@ public class ChooseUI {
         });
     }
 
-    public void addComponentsToPane(Container pane){
+    public void addComponentsToPane(Container pane) {
         if (RIGHT_TO_LEFT) {
             pane.setComponentOrientation(
                     ComponentOrientation.RIGHT_TO_LEFT);
@@ -236,6 +237,7 @@ public class ChooseUI {
         frame.setVisible(true);
     }
 
+    //等待另一方玩家登录与选择
     private void waitForGame() {
         frame.setVisible(false);
         Container pane = frame.getContentPane();
@@ -258,6 +260,7 @@ public class ChooseUI {
         frame.setVisible(true);
     }
 
+    //调用对战界面
     public void callForGame(ArrayList<MyHeroPro> heroList) {
         frame.dispose();
         Client.callForGame(hero, heroList);

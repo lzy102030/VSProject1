@@ -6,27 +6,30 @@ import java.sql.*;
 import java.util.HashMap;
 
 public class MySQL {
-    static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    static final String DB_URL = //"jdbc:mysql://localhost:3306/VSProject?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
-            "jdbc:mysql://noneid.myds.me:3306/test0728?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+    private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+
+    //数据库网址
+    private static final String DB_URL = //"jdbc:mysql://localhost:3306/VSProject?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+            "jdbc:mysql://noneid.myds.me:3306/vsproject?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
 
     Connection connection = null;
 
-    // 数据库的用户名与密码，需要根据自己的设置
+    //数据库的用户名与密码
     static final String USER = "root";
     static final String PASS = "QylLzy2021VsP";
 
+    //英雄信息存储
     HashMap<String, Integer> heroInfoMap = new HashMap<>();
 
     public MySQL() {
-        // 注册 JDBC 驱动
+        //注册JDBC驱动 初始化数据库连接
         try {
             Class.forName(JDBC_DRIVER);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 
-        // 打开链接
+        //打开链接
         try {
             connection = DriverManager.getConnection(DB_URL, USER, PASS);
         } catch (SQLException throwables) {
@@ -34,40 +37,41 @@ public class MySQL {
         }
     }
 
-    //[todo] 建表与添加 添加可能使用线程
+    //读取英雄信息
     private void readHeroInfo() {
-        Statement stmt = null;
-        ResultSet rs;
+        Statement statement = null;
+        ResultSet resultSet;
 
         try {
-            // 执行查询
-            stmt = connection.createStatement();
+            //执行查询
+            statement = connection.createStatement();
             String sql;
             sql = "SELECT * FROM hero_info";
-            rs = stmt.executeQuery(sql);
+            resultSet = statement.executeQuery(sql);
 
+            //展开结果集数据库
+            while (resultSet.next()) {
+                //通过字段检索
+                String name = resultSet.getString("hero_name");
+                int impact = resultSet.getInt("hero_impact");
 
-            // 展开结果集数据库
-            while (rs.next()) {
-                // 通过字段检索
-                String name = rs.getString("hero_name");
-                int impact = rs.getInt("hero_impact");
-
+                //存入map
                 heroInfoMap.put(name, impact);
             }
+
             // 完成后关闭
-            rs.close();
-            stmt.close();
+            resultSet.close();
+            statement.close();
             connection.close();
         } catch (Exception se) {
-            // 处理 JDBC 错误   处理 Class.forName 错误
             se.printStackTrace();
         } finally {
             // 关闭资源
             try {
-                if (stmt != null) stmt.close();
+                if (statement != null) statement.close();
             } catch (SQLException ignored) {
-            }// 什么都不做
+            }
+
             try {
                 if (connection != null) connection.close();
             } catch (SQLException se) {
@@ -76,14 +80,16 @@ public class MySQL {
         }
     }
 
+    //返回给主程序heroMap
     public HashMap<String, Integer> getHeroInfoMap() {
         readHeroInfo();
 
         return heroInfoMap;
     }
 
+    //建表
     public void createDataTable(String tableName) {
-        Statement stmt = null;
+        Statement statement = null;
 
         String sql = "CREATE TABLE `" + tableName + "` (" +
                 "  `userid` int COMMENT '用户id'," +
@@ -95,16 +101,17 @@ public class MySQL {
                 ")";
 
         try {
-            stmt = connection.createStatement();
-            stmt.execute(sql);
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            statement = connection.createStatement();
+            statement.execute(sql);
+        } catch (SQLException throwable) {
+            throwable.printStackTrace();
         } finally {
             // 关闭资源
             try {
-                if (stmt != null) stmt.close();
+                if (statement != null) statement.close();
             } catch (SQLException ignored) {
-            }// 什么都不做
+            }
+
             try {
                 if (connection != null) connection.close();
             } catch (SQLException se) {
@@ -113,14 +120,12 @@ public class MySQL {
         }
     }
 
-    public static void main(String[] args) {
-        new MySQL();
-    }
-
+    //存入数据
     public void insertData(double[][] data, String tableName) {
         PreparedStatement preparedStatement = null;
 
         try {
+            //使用prepareStatement方法组合构造数据库指令
             for (int i = 0; i < 2; ++i) {
                 String sql = "insert into " + tableName + " (userid,impact,defence,hp,mp) values(?,?,?,?,?)";
 
@@ -131,7 +136,7 @@ public class MySQL {
                     preparedStatement.setString(j + 2, String.valueOf((int) data[i][j]));
                 }
 
-                preparedStatement.executeUpdate();// 返回值代表收到影响的行数
+                preparedStatement.executeUpdate();
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -140,7 +145,8 @@ public class MySQL {
             try {
                 if (preparedStatement != null) preparedStatement.close();
             } catch (SQLException ignored) {
-            }// 什么都不做
+            }
+
             try {
                 if (connection != null) connection.close();
             } catch (SQLException se) {
@@ -149,6 +155,7 @@ public class MySQL {
         }
     }
 
+    //绘制pdf并输出
     public void createPDF(String tableName) {
         new CreateDataPDF(connection, tableName);
     }

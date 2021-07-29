@@ -6,13 +6,13 @@
         <Console name="Console" target="SYSTEM_OUT">
             <!--             控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch） -->
             <ThresholdFilter level="OFF" onMatch="ACCEPT" onMismatch="DENY"/>
-            <!--             这个都知道是输出日志的格式 -->
+
             <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/>
         </Console>
 
         <!--         文件会打印出所有信息，这个log每次运行程序会自动清空，由append属性决定，这个也挺有用的，适合临时测试用 -->
         <!--         append为TRUE表示消息增加到指定文件中，false表示消息覆盖指定的文件内容，默认值是true -->
-        <File name="log" fileName="log/info.log" append="false">
+        <File name="log" fileName="logs/info.log" append="false">
             <ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY"/>
 
             <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/>

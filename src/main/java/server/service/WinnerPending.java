@@ -1,5 +1,6 @@
 package server.service;
 
+//角色的胜利判定
 public class WinnerPending {
     private int hp1, hp2;
 

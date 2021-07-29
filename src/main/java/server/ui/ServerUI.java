@@ -36,6 +36,7 @@ public class ServerUI {
         frame.setVisible(true);
     }
 
+    //关闭UI界面确认
     private void exitConfirm() {
         int n = JOptionPane.showConfirmDialog(null,
                 """
@@ -54,7 +55,7 @@ public class ServerUI {
         frame.dispose();
     }
 
-
+    //获取IP信息
     public void getIPInfo() {
         GetUserIP userIP = new GetUserIP();
 
@@ -64,6 +65,7 @@ public class ServerUI {
             e.printStackTrace();
         }
 
+        //网络连接错误提示
         if (localIP == null) {
             JOptionPane.showMessageDialog(null,
                     "网络连接错误，请检查您的网络后重试。","警告",
