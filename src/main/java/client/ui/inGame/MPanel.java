@@ -21,8 +21,10 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class MPanel extends JPanel implements KeyListener {
+    //双缓冲技术用于存放缓冲图片
     private Image iBuffer;
     private Graphics gBuffer;
+    //载入背景，角色状态栏等图片
     ImageIcon backGround = new ImageIcon(Objects.requireNonNull(
             this.getClass().getResource("/source/背景.jpg")));
     ImageIcon vs = new ImageIcon(Objects.requireNonNull(
@@ -53,7 +55,7 @@ public class MPanel extends JPanel implements KeyListener {
     int numb;
     int time;
 
-    //role1
+    //角色一的相关变量
     int hp1;
     int mp1;
     int xLoc1;
@@ -64,7 +66,7 @@ public class MPanel extends JPanel implements KeyListener {
     String name1 = null;//人物名称
     String action1;//人物动作  0站立，1跑动，2上跳，3下跳，10拳攻击，11脚攻击,12技能，14防御，15 16 17受击, 20无敌
 
-    //role2
+    //角色二的相关变量
     int hp2;
     int mp2;
     int xLoc2;
@@ -82,7 +84,6 @@ public class MPanel extends JPanel implements KeyListener {
 
     boolean firstTransfer = true;
 
-    //[todo]最终对战界面画面居中显示 待写
     public MPanel(ObjectOutputStream serverOut, ObjectInputStream serverIn, MyHeroPro myHero, ArrayList<MyHeroPro> heroList, Play play) {
         this.serverOut = serverOut;
         this.serverIn = serverIn;
@@ -115,6 +116,7 @@ public class MPanel extends JPanel implements KeyListener {
             conHero = heroList.get(0);
         }
 
+        //判断是否为第一次传输数据
         if (firstTransfer) {
             xLoc1 = myHero.getxLoc();
             yLoc1 = myHero.getyLoc();
@@ -148,39 +150,37 @@ public class MPanel extends JPanel implements KeyListener {
         g.drawImage(pk, 410, 0, 80, 80, this);
         g.drawImage(HpL, 490, 0, 400, 50, this);
         g.drawImage(Hp, 0, 0, 400, 50, this);
-        //刷新计时
+        //刷新计时以获取不同的图片
         time += 50;
         numb = time / 200 % 4;
 
-        //判断角色位置后绘制血条、怒气条
+        //根据第一次数据传输判断角色位置后绘制血条、怒气条
         if (firstTransfer) {
             x = xLoc1;
         }
 
         if (x == 50) {
-            //paint right
+            //paint right role
             g.setColor(Color.red);
-            //g.drawImage(HpL, 490, 0, 400, 50, this);
             g.fillRect(525, 21, hp2, 14);//血条
             g.setColor(Color.blue);
             g.fillRect(535, 40, mp2 * 10, 14);
 
-            //paint left
+            //paint left role
             g.setColor(Color.red);
-            //g.drawImage(Hp, 0, 0, 400, 50, this);
             g.fillRect(365 - hp1, 21, hp1, 14);//血条
             g.setColor(Color.blue);
             g.fillRect(45, 40, mp1 * 10, 14);//怒气条
 
         } else if (x == 700) {
-            //paint left
+            //paint left role
             g.setColor(Color.red);
             //g.drawImage(HpL, 490, 0, 400, 50, this);
             g.fillRect(525, 21, hp1, 14);//血条
             g.setColor(Color.blue);
             g.fillRect(535, 40, mp1 * 10, 14);
 
-            //paint right
+            //paint right role
             g.setColor(Color.red);
             //g.drawImage(Hp, 0, 0, 400, 50, this);
             g.fillRect(365 - hp2, 21, hp2, 14);//血条
@@ -189,21 +189,19 @@ public class MPanel extends JPanel implements KeyListener {
 
         }
 
+        //role2动作判定
         if (act2 == 1 && xHead2 == 1) {
             action2 = "move";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-
         } else if (act2 == 1 && xHead2 == 0) {
             action2 = "moveL";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-
         } else if (act2 == 3 && xHead2 == 1) {
             action2 = "down";
             actionTurn = getImage(name2, action2, numb);
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
-
         } else if (act2 == 3 && xHead2 == 0) {
             action2 = "downL";
             actionTurn = getImage(name2, action2, numb);
@@ -258,7 +256,7 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn.paintIcon(this, g, xLoc2, yLoc2);
         }
 
-
+        //role1动作判定
         if (act1 == 1 && xHead1 == 1) {
             action1 = "move";
             actionTurn = getImage(name1, action1, numb);
@@ -325,12 +323,13 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         }
 
-        //-1未结束，0平手，1胜利，2失败
+        //游戏结束判定 -1未结束，0平手，1胜利，2失败
         if (gameOverFlag != -1) {
             exitFromGame();
         }
     }
 
+    //关闭流，结束线程并退出游戏
     public void exitFromGame() {
         play.dispose();
         battleThread.interrupt();
@@ -346,6 +345,7 @@ public class MPanel extends JPanel implements KeyListener {
         System.exit(0);
     }
 
+    //发送新的角色数据
     public void sendHero(int xChange, int yChange, int xHeadChange, int actChange) {
         xLoc1 = xLoc1 + xChange;
         yLoc1 = yLoc1 + yChange;
@@ -429,7 +429,7 @@ public class MPanel extends JPanel implements KeyListener {
         return imageIcon;
     }
 
-    //双缓冲技术提高画面流畅度
+    //双缓冲技术防止画面闪烁
     public void update(Graphics scr){
         if(iBuffer==null)
         {
