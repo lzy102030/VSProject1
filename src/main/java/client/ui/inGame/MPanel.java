@@ -291,11 +291,11 @@ public class MPanel extends JPanel implements KeyListener {
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         } else if (act1 == 11 && xHead1 == 1) {
             action1 = "leg";
-            actionTurn = getImage(name1, "leg", numb);
+            actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         } else if (act1 == 11 && xHead1 == 0) {
             action1 = "legL";
-            actionTurn = getImage(name1, "leg", numb);
+            actionTurn = getImage(name1, action1, numb);
             actionTurn.paintIcon(this, g, xLoc1, yLoc1);
         } else if (act1 == 14 && xHead1 == 1) {
             action1 = "defend";

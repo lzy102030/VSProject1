@@ -4,27 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="新增阻止用户退出邮箱输入界面 修复邮箱退出报错">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_232.xml" beforeDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="注释添加">
+      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281604.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07281926.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07282211.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07282224.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07282240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/BattleInfo07290956.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07281604.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07281926.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07282211.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07282240.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/GameData07290956.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 11-38-46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 11-38-46.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 13-48-01.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 13-51-49.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 13-58-45.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 14-02-46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 14-07-43.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 14-21-36.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 14-25-02.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 16-01-23.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 16-02-19.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 16-02-47.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 16-03-41.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 19-25-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 22-10-05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 22-17-57.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 22-18-37.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 22-23-35.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 22-23-35.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-28 22-40-08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-29 09-55-43.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug/logs/log 2021-07-29 10-32-10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/BattleInfo07291033.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/GameData07291033.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/database/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/database/MySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/database/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/debug/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/BattleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/BattleThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/ChartOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/ChartOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/DataTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/DataTransfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyHeroPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyHeroPro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyObjectOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/MyObjectOutputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/PlayNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/inGame/PlayNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/lobby/ChooseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/service/lobby/ChooseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/inGame/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/inGame/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/lobby/ChooseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/lobby/ChooseUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/ActPending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/CreateDataPDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/CreateDataPDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/GameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/GetUserIP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/GetUserIP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/WinnerPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/WinnerPending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/ui/ServerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ui/ServerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VSProjectByMaven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VSProjectByMaven.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/inGame/MPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/inGame/MPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +110,9 @@
         </option>
       </RecentBranches>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jrt://C:/Users/lzy/.jdks/corretto-15.0.2!/java.logging/java/util/logging/LogManager.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="2" />
@@ -167,7 +189,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jl1.0.1.jar" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -192,7 +214,7 @@
       <recent name="server.service" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Client">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="15" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -251,19 +273,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.Client" />
-      <item itemvalue="应用程序.GameServer" />
-      <item itemvalue="应用程序.JfreeChartTest3" />
-      <item itemvalue="应用程序.MySQL" />
-      <item itemvalue="应用程序.Data" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Data" />
+      <item itemvalue="Application.GameServer" />
+      <item itemvalue="Application.JfreeChartTest3" />
+      <item itemvalue="Application.MySQL" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.GameServer" />
-        <item itemvalue="应用程序.Client" />
-        <item itemvalue="应用程序.Data" />
-        <item itemvalue="应用程序.MySQL" />
-        <item itemvalue="应用程序.JfreeChartTest3" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.GameServer" />
       </list>
     </recent_temporary>
   </component>
@@ -577,6 +596,13 @@
       <option name="project" value="LOCAL" />
       <updated>1627461215448</updated>
     </task>
+    <task id="LOCAL-00044" summary="注释添加">
+      <created>1627525440756</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1627525440756</updated>
+    </task>
     <option name="localTasksCounter" value="44" />
     <servers />
   </component>
@@ -649,6 +675,8 @@
     <MESSAGE value="重写log系统 新增server端ui 完善部分退出操作" />
     <MESSAGE value="log格式优化 新增统计表图片输出 新增策略模式接口 优化结束游戏后续进程" />
     <MESSAGE value="对战UI更新" />
+    <MESSAGE value="发送邮件功能优化" />
+    <MESSAGE value="注释添加" />
     <MESSAGE value="新增阻止用户退出邮箱输入界面 修复邮箱退出报错" />
     <option name="LAST_COMMIT_MESSAGE" value="新增阻止用户退出邮箱输入界面 修复邮箱退出报错" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
@@ -658,11 +686,11 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/VSProject$Play.ic" NAME="Play 覆盖结果" MODIFIED="1627005371894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>client.UI.OtherVersion.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/VSProject$Client.ic" NAME="Client 覆盖结果" MODIFIED="1627032869925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>client.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/VSProject$Play.ic" NAME="Play 覆盖结果" MODIFIED="1627005371894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>client.UI.OtherVersion.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/VSProject$Play__1_.ic" NAME="Play (1) 覆盖结果" MODIFIED="1627010282505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>client.UI.inGame.*</FILTER>
