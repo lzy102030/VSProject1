@@ -23,6 +23,7 @@ public class EndGame extends Frame {
         this.gameOverFlag = gameOverFlag;
     }
 
+    //游戏结束后弹出不同的窗口
     public void over() {
         if (gameOverFlag == 0) {
             JOptionPane.showMessageDialog(null, "平局", "游戏结束", JOptionPane.PLAIN_MESSAGE);
@@ -34,6 +35,7 @@ public class EndGame extends Frame {
         }
     }
 
+    //发送邮件的类
     class GameWinDialog extends Dialog {
         JTextField email = new JTextField(20);
         JButton submit = new JButton("确定");

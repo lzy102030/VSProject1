@@ -9,11 +9,10 @@ public class FrameThread extends Thread {
     public FrameThread(MPanel myPanel) {
         this.myPanel = myPanel;
     }
-
+    //独立线程控制战斗画面刷新
     public void run() {
         while (isOver) {
             myPanel.repaint();
-
             try {
                 Thread.sleep(frameFlushTime);
             } catch (InterruptedException e) {

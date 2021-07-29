@@ -33,23 +33,10 @@ public class Play extends JFrame {
         setVisible(true);
     }
 
-    public Play() {
-
-    }
-
-    public Play(ObjectOutputStream serverOut) {
-        this.serverOut = serverOut;
-
-        setResizable(false);
-        launchFrame();
-        setVisible(true);
-    }
-
     public void launchFrame() {
         Toolkit theKit = this.getToolkit();            // Get the window toolkit
         Dimension wndSize = theKit.getScreenSize();       // Get screen size
         this.setBounds(wndSize.width / 4, wndSize.height / 5,900,500);
-        //this.setSize(900, 500);
         this.add(mPanel);
     }
 
