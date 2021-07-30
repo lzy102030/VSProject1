@@ -64,7 +64,7 @@ public class GetUserIP {
                 inputLine.append(read + "\r\n");
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            return "获取互联网IP失败";
         } finally {
             if (in != null) {
                 try {

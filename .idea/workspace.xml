@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="目录修正">
-      <change afterPath="$PROJECT_DIR$/logs/BattleInfo07291820.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/BattleInfo07291826.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/BattleInfo07291828.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/BattleInfo07291900.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/BattleInfo07291902.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/GameData07291820.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/GameData07291826.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/GameData07291828.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/GameData07291900.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/GameData07291902.pdf" afterDir="false" />
+    <list default="true" id="582807f3-1ec0-4c85-8fac-d85079d79e03" name="默认变更列表" comment="log系统bug修复">
+      <change afterPath="$PROJECT_DIR$/java.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/service/inGame/ChartOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/ChartOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/inGame/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/inGame/Audio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ui/inGame/MPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/ui/inGame/MPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/debug/LogSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/LogSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/GameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/ActPending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/ActPending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/GetUserIP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/GetUserIP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +183,7 @@
       <recent name="server.service" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Client">
+  <component name="RunManager" selected="应用程序.GameServer">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="VSProjectByMaven" />
@@ -212,7 +197,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GameServer" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="server.GameServer" />
       <module name="VSProjectByMaven" />
       <extension name="coverage">
@@ -225,52 +210,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="15" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="server.service.GameServer" />
-      <module name="VSProjectByMaven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="server.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JfreeChartTest3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JfreeChartTest3" />
-      <module name="VSProjectByMaven" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MySQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client.service.database.MySQL" />
-      <module name="VSProjectByMaven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="client.service.database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="应用程序.GameServer" />
-      <item itemvalue="应用程序.JfreeChartTest3" />
-      <item itemvalue="应用程序.MySQL" />
-      <item itemvalue="应用程序.GameServer (1)" />
       <item itemvalue="应用程序.Client" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.GameServer" />
         <item itemvalue="应用程序.Client" />
-        <item itemvalue="应用程序.GameServer (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +230,8 @@
       <option name="presentableId" value="Default" />
       <updated>1626689810531</updated>
       <workItem from="1627546226812" duration="777000" />
-      <workItem from="1627547661606" duration="7664000" />
+      <workItem from="1627547661606" duration="9844000" />
+      <workItem from="1627605967811" duration="315000" />
     </task>
     <task id="LOCAL-00001" summary="123master">
       <created>1626690160803</created>
@@ -586,14 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627461215448</updated>
     </task>
-    <task id="LOCAL-00044" summary="注释添加">
-      <created>1627525440756</created>
+    <task id="LOCAL-00044" summary="log系统bug修复">
+      <created>1627557130456</created>
       <option name="number" value="00044" />
       <option name="presentableId" value="LOCAL-00044" />
       <option name="project" value="LOCAL" />
-      <updated>1627525440756</updated>
+      <updated>1627557130456</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,16 +591,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="图片" />
-    <MESSAGE value="7.21" />
-    <MESSAGE value="人物动作" />
-    <MESSAGE value="人物动作连贯" />
     <MESSAGE value="人物动作连贯Plus" />
     <MESSAGE value="添加角色2，人物图片更新" />
     <MESSAGE value="人物图片更新" />
     <MESSAGE value="角色动作判断更改" />
     <MESSAGE value="角色动作判断更改及照片更新" />
-    <MESSAGE value="目录修正" />
     <MESSAGE value="更名绘图线程 新增动作线程与阻塞判断" />
     <MESSAGE value="动作线程(unfinished)" />
     <MESSAGE value="动作线程(unfinished) 数据库添加" />
@@ -671,7 +614,9 @@
     <MESSAGE value="发送邮件功能优化" />
     <MESSAGE value="注释添加" />
     <MESSAGE value="新增阻止用户退出邮箱输入界面 修复邮箱退出报错" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增阻止用户退出邮箱输入界面 修复邮箱退出报错" />
+    <MESSAGE value="目录修正" />
+    <MESSAGE value="log系统bug修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="log系统bug修复" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
